@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1a" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="plugin.audio.absolute-radio"/>
     <import addon="plugin.audio.bbc-radio"/>
-    <import addon="plugin.audio.mp3-music"/>
+    <!--<import addon="plugin.audio.mp3-music"/>-->
     <import addon="plugin.audio.prb-radio"/>
     <import addon="plugin.video.dumpert"/>
-    <import addon="plugin.video.exodus"/>
     <import addon="plugin.video.iplayerwww"/>
-    <import addon="plugin.video.pressplay"/>
     <import addon="plugin.video.Rising.Tides"/>
     <import addon="plugin.video.sporthdme"/>
     <import addon="plugin.video.ted.talks"/>
