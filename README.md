@@ -1,4 +1,4 @@
-![PRB logo](https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/blob/master/repository.prb-entertainment-pack/icon.png)
+![PRB logo](https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/blob/master/repository.prb-entertainment-pack-matrix/icon.png)
 
 PRB Entertainment Pack
 ======================
