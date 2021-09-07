@@ -2097,7 +2097,7 @@ v5.1.2 (2020-03-21) by enen92
 <!-- Sports HD Video Addon -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.1.10" provider-name="Bugatsinho">
   <requires>
-    <!--import addon="xbmc.python" version="2.1.0"/-->
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.dateutil" />
     <import addon="script.module.six" />
   </requires>
