@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.ip-2-location" name="IP 2 Location" version="1.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Displays Location of IP Address</summary>
+    <summary lang="de_DE">Zeigt den Standort der IP-Adresse an</summary>
+    <summary lang="es_ES">Muestra la ubicación de la dirección IP</summary>
+    <summary lang="fr_FR">Affiche l'emplacement de l'adresse IP</summary>
+    <summary lang="it_IT">Visualizza la posizione dell'indirizzo IP</summary>
+    <description lang="en_GB">Founded in 2013 by former Facebook engineer Ben Dowling, IPinfo prides itself on being the most reliable, accurate, and in-depth source of IP address data available anywhere. IPinfo process terabytes of data to produce custom IP geolocation, company, carrier and IP type data sets.[CR][CR]Supply an IP address to see where it's location is or leave blank ie 0.0.0.0 to find your IP address.</description>
+    <description lang="de_DE">IPinfo wurde 2013 vom ehemaligen Facebook-Ingenieur Ben Dowling gegründet und ist stolz darauf, die zuverlässigste, genaueste und umfassendste Quelle für IP-Adressdaten zu sein, die es gibt. IPinfo verarbeitet Terabytes an Daten, um benutzerdefinierte IP-Geolokalisierungs-, Firmen-, Netzbetreiber- und IP-Typ-Datensätze zu erstellen.[CR][CR]Geben Sie eine IP-Adresse an, um zu sehen, wo sich der Standort befindet, oder lassen Sie das Feld 0.0.0.0 leer, um Ihre IP-Adresse zu finden.</description>
+    <description lang="es_ES">Fundada en 2013 por el ex ingeniero de Facebook Ben Dowling, IPinfo se enorgullece de ser la fuente más confiable, precisa y profunda de datos de direcciones IP disponible en cualquier lugar. IPinfo procesa terabytes de datos para producir conjuntos de datos personalizados de geolocalización IP, empresa, operador y tipo IP.[CR][CR]Proporcione una dirección IP para ver dónde está su ubicación o déjela en blanco, es decir, 0.0.0.0 para encontrar su dirección IP.</description>
+    <description lang="fr_FR">Fondée en 2013 par l'ancien ingénieur de Facebook Ben Dowling, IPinfo se targue d'être la source de données d'adresse IP la plus fiable, la plus précise et la plus approfondie disponible partout. IPinfo traite des téraoctets de données pour produire des ensembles de données personnalisés de géolocalisation IP, d'entreprise, d'opérateur et de type IP.[CR][CR]Fournissez une adresse IP pour voir où se trouve son emplacement ou laissez vide, par exemple 0.0.0.0 pour trouver votre adresse IP.</description>
+    <description lang="it_IT">Fondata nel 2013 dall'ex ingegnere di Facebook Ben Dowling, IPinfo è orgogliosa di essere la fonte di dati sugli indirizzi IP più affidabile, accurata e approfondita disponibile ovunque. IPinfo elabora terabyte di dati per produrre dati di geolocalizzazione IP personalizzati, società, operatore e tipo di IP.[CR][CR]Fornisci un indirizzo IP per vedere dove si trova o lascia vuoto, ad esempio 0.0.0.0 per trovare il tuo indirizzo IP.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] does not host or distribute any of the content provided by this addon. Does not have any affiliation with the content provider and accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] hostet oder verteilt keine der von diesem Add-On bereitgestellten Inhalte. Hat keine Verbindung zum Inhaltsanbieter und übernimmt keine Verantwortung für das enthaltene Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no aloja ni distribuye el contenido proporcionado por este complemento. No tiene ninguna afiliación con el proveedor de contenido y no acepta responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'héberge ni ne distribue aucun des contenus fournis par cet addon. N'a aucune affiliation avec le fournisseur de contenu et n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non ospita né distribuisce alcun contenuto fornito da questo componente aggiuntivo. Non ha alcuna affiliazione con il fornitore di contenuti e non si assume alcuna responsabilità per l'addon incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot001.jpg</screenshot>
+      <screenshot>resources/media/screenshot002.jpg</screenshot>
+      <screenshot>resources/media/screenshot003.jpg</screenshot>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.ip-2-location</source>
+  </extension>
+</addon>

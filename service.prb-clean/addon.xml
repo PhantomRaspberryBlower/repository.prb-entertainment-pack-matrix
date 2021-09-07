@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.prb-clean" name="PRB Clean" version="1.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Cleans PRB Entertainment Pack</summary>
+    <summary lang="de_DE">Reinigt PRB Entertainment Pack</summary>
+    <summary lang="es_ES">Limpia el paquete de entretenimiento PRB</summary>
+    <summary lang="fr_FR">Nettoie le pack de divertissement PRB</summary>
+    <summary lang="it_IT">Pulisce il pacchetto di intrattenimento PRB</summary>
+    <description lang="en_GB">PRB Clean removes depricated addons, cleans colours from addon names, cleans music addons and enables RSS feeds.</description>
+    <description lang="de_DE">PRB Clean entfernt veraltete Add-Ons, reinigt Farben aus Add-On-Namen, reinigt Musik-Add-Ons und aktiviert RSS-Feeds.</description>
+    <description lang="es_ES">PRB Clean elimina los complementos obsoletos, limpia los colores de los nombres de los complementos, limpia los complementos de música y habilita las fuentes RSS.</description>
+    <description lang="fr_FR">PRB Clean supprime les modules complémentaires obsolètes, nettoie les couleurs des noms des modules complémentaires, nettoie les modules complémentaires musicaux et active les flux RSS.</description>
+    <description lang="it_IT">PRB Clean rimuove i componenti aggiuntivi deprecati, pulisce i colori dai nomi dei componenti aggiuntivi, pulisce i componenti aggiuntivi musicali e abilita i feed RSS.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] accepts no responsibility for included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] übernimmt keine Verantwortung für das enthaltene Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no acepta ninguna responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non si assume alcuna responsabilità per il componente aggiuntivo incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/service.prb-clean</source>
+  </extension>
+</addon>
+
+

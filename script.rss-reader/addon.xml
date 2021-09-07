@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.rss-reader" name="RSS Reader" version="1.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Displays RSS Feeds</summary>
+    <summary lang="de_DE">Zeigt RSS-Feeds an</summary>
+    <summary lang="es_ES">Muestra fuentes RSS</summary>
+    <summary lang="fr_FR">Affiche les flux RSS</summary>
+    <summary lang="it_IT">Visualizza i feed RSS</summary>
+    <description lang="en_GB">RSS (Rich Site Summary; often called Really Simple Syndication) is a type of web feed which allows users to access updates to online content. Websites usually use RSS feeds to publish frequently updated information, such as blog entries, news headlines, audio, video. An RSS document (called "feed") includes full or summarized text, and metadata, like publishing date and author's name.</description>
+    <description lang="de_DE">RSS (Rich Site Summary; oft Really Simple Syndication genannt) ist eine Art Web-Feed, mit dem Benutzer auf Aktualisierungen von Online-Inhalten zugreifen können. Websites verwenden normalerweise RSS-Feeds, um häufig aktualisierte Informationen wie Blogeinträge, Schlagzeilen, Audio, Video zu veröffentlichen. Ein RSS-Dokument (auch "Feed" genannt) enthält vollständigen oder zusammengefassten Text und Metadaten, wie das Veröffentlichungsdatum und den Namen des Autors.</description>
+    <description lang="es_ES">RSS (Rich Site Summary; a menudo llamado Really Simple Syndication) es un tipo de fuente web que permite a los usuarios acceder a actualizaciones de contenido en línea. Los sitios web suelen utilizar fuentes RSS para publicar información actualizada con frecuencia, como entradas de blogs, titulares de noticias, audio y vídeo. Un documento RSS (llamado "fuente") incluye texto completo o resumido y metadatos, como la fecha de publicación y el nombre del autor.</description>
+    <description lang="fr_FR">RSS (Rich Site Summary ; souvent appelé Really Simple Syndication) est un type de flux Web qui permet aux utilisateurs d'accéder aux mises à jour du contenu en ligne. Les sites Web utilisent généralement des flux RSS pour publier des informations fréquemment mises à jour, telles que des entrées de blog, des titres d'actualités, de l'audio, de la vidéo. Un document RSS (appelé « flux ») comprend du texte complet ou résumé, ainsi que des métadonnées, telles que la date de publication et le nom de l'auteur.</description>
+    <description lang="it_IT">RSS (Rich Site Summary; spesso chiamato Really Simple Syndication) è un tipo di feed Web che consente agli utenti di accedere agli aggiornamenti dei contenuti online. I siti Web di solito utilizzano i feed RSS per pubblicare informazioni aggiornate di frequente, come post di blog, titoli di notizie, audio, video. Un documento RSS (chiamato "feed") include testo completo o riassunto e metadati, come la data di pubblicazione e il nome dell'autore.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] does not host or distribute any of the content provided by this addon. Does not have any affiliation with the content provider and accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] hostet oder verteilt keine der von diesem Add-On bereitgestellten Inhalte. Hat keine Verbindung zum Inhaltsanbieter und übernimmt keine Verantwortung für das enthaltene Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no aloja ni distribuye el contenido proporcionado por este complemento. No tiene ninguna afiliación con el proveedor de contenido y no acepta responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'héberge ni ne distribue aucun des contenus fournis par cet addon. N'a aucune affiliation avec le fournisseur de contenu et n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non ospita né distribuisce alcun contenuto fornito da questo componente aggiuntivo. Non ha alcuna affiliazione con il fornitore di contenuti e non si assume alcuna responsabilità per l'addon incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot001.jpg</screenshot>
+      <screenshot>resources/media/screenshot002.jpg</screenshot>
+      <screenshot>resources/media/screenshot003.jpg</screenshot>
+      <screenshot>resources/media/screenshot004.jpg</screenshot>
+      <screenshot>resources/media/screenshot005.jpg</screenshot>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.rss-reader</source>
+  </extension>
+</addon>

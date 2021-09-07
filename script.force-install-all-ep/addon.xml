@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="plugin.audio.absolute-radio"/>
+    <import addon="plugin.audio.bbc-radio"/>
+    <import addon="plugin.audio.mp3-music"/>
+    <import addon="plugin.audio.prb-radio"/>
+    <import addon="plugin.video.dumpert"/>
+    <import addon="plugin.video.exodus"/>
+    <import addon="plugin.video.iplayerwww"/>
+    <import addon="plugin.video.pressplay"/>
+    <import addon="plugin.video.Rising.Tides"/>
+    <import addon="plugin.video.sporthdme"/>
+    <import addon="plugin.video.ted.talks"/>
+    <import addon="plugin.video.theoath"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="repository.prb-entertainment-pack-matrix"/>
+    <import addon="script.globalsearch"/>
+    <import addon="script.module.youtube.dl"/>
+    <import addon="script.openweathermap.maps"/>
+    <import addon="script.rss.editor"/>
+    <import addon="script.rss-reader"/>
+    <import addon="script.system-info"/>
+    <import addon="service.subtitles.opensubtitles_by_opensubtitles"/>
+    <import addon="service.prb-clean"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>    
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Entertainment Pack</summary>
+    <summary lang="de_DE">.</summary>
+    <summary lang="es_ES">.</summary>
+    <summary lang="fr_FR">.</summary>
+    <summary lang="it_IT">.</summary>
+    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Exodus, Fido Video, Exodus, MP3 Music, PressPlay, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, TED Talks, The Oath, UKTV Play, Websters Wildshots, World News Live, Yoda, YouTube[CR]</description>
+    <description lang="de_DE">.</description>
+    <description lang="es_ES">.</description>
+    <description lang="fr_FR">.</description>
+    <description lang="it_IT">.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] accepts no responsibility for included addons.</disclaimer>
+    <disclaimer lang="de_DE">.</disclaimer>
+    <disclaimer lang="es_ES">.</disclaimer>
+    <disclaimer lang="fr_FR">.</disclaimer>
+    <disclaimer lang="it_IT">.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot000.jpg</screenshot>
+      <screenshot>resources/media/screenshot001.jpg</screenshot>
+      <screenshot>resources/media/screenshot002.jpg</screenshot>
+      <screenshot>resources/media/screenshot003.jpg</screenshot>
+    </assets>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.force-install-all-ep</source>
+  </extension>
+</addon>

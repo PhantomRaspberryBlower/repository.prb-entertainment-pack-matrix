@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.system-info" name="System Info" version="1.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.21.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Displays System Information</summary>
+    <summary lang="de_DE">Zeigt Systeminformationen an</summary>
+    <summary lang="es_ES">Muestra información del sistema</summary>
+    <summary lang="fr_FR">Affiche les informations système</summary>
+    <summary lang="it_IT">Visualizza le informazioni di sistema</summary>
+    <description lang="en_GB">Displays information about Software, CPU, Hardware, Memory, Storage, Addons Installed and Network settings. Including connections to previous networks.</description>
+    <description lang="de_DE">Zeigt Informationen über Software, CPU, Hardware, Arbeitsspeicher, Speicher, installierte Add-ons und Netzwerkeinstellungen an. Einschließlich Verbindungen zu früheren Netzwerken.</description>
+    <description lang="es_ES">Muestra información sobre software, CPU, hardware, memoria, almacenamiento, complementos instalados y configuración de red. Incluidas las conexiones a redes anteriores.</description>
+    <description lang="fr_FR">Affiche des informations sur le logiciel, le processeur, le matériel, la mémoire, le stockage, les modules complémentaires installés et les paramètres réseau. Y compris les connexions aux réseaux précédents.</description>
+    <description lang="it_IT">Visualizza informazioni su software, CPU, hardware, memoria, archiviazione, componenti aggiuntivi installati e impostazioni di rete. Comprese le connessioni alle reti precedenti.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] übernimmt keine Verantwortung für das mitgelieferte Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no acepta ninguna responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non si assume alcuna responsabilità per l'addon incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <banner></banner>
+      <screenshot>resources/media/screenshot001.jpg</screenshot>
+      <screenshot>resources/media/screenshot002.jpg</screenshot>
+      <screenshot>resources/media/screenshot003.jpg</screenshot>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.system-info</source>
+  </extension>
+</addon>

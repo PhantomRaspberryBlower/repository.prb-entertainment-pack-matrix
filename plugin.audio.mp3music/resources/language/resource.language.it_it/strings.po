@@ -1,0 +1,403 @@
+# Kodi Media Center language file
+# Addon Name: MP3 Music
+# Addon id: plugin.audio.mp3music
+# Addon Provider: Phantom Raspberry Blower
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@kodi.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# General settings
+msgctxt "#30000"
+msgid "General"
+msgstr "Generale"
+
+msgctxt "#30001"
+msgid "Amount to pre-cache"
+msgstr "Importo da pre-memorizzare nella cache"
+
+msgctxt "#30002"
+msgid "Queue songs on selection"
+msgstr "Metti in coda i brani durante la selezione"
+
+msgctxt "#30003"
+msgid "Queue albums on selection"
+msgstr "Metti in coda gli album in selezione"
+
+msgctxt "#30004"
+msgid "Hide fanart when playing"
+msgstr "Nascondi fanart durante la riproduzione"
+
+# Download settings
+msgctxt "#30005"
+msgid "Downloads"
+msgstr "Download"
+
+msgctxt "#30006"
+msgid "Custom music directory"
+msgstr "Directory musicale personalizzata"
+
+msgctxt "#30007"
+msgid "Music directory"
+msgstr "Directory musicale"
+
+msgctxt "#30008"
+msgid "Artist/album folder structure"
+msgstr "Struttura della cartella artista/album"
+
+msgctxt "#30009"
+msgid "Show progress"
+msgstr "Mostra progressi"
+
+msgctxt "#30010"
+msgid "Queue downloads"
+msgstr "Download in coda"
+
+msgctxt "#30011"
+msgid "Select 'Custom music directory' and define your music download location."
+msgstr "Seleziona "Cartella musicale personalizzata" e definisci la posizione di download della tua musica."
+
+msgctxt "#30012"
+msgid "Choose 'Queue downloads' to download selected songs/albums in one go."
+msgstr "Scegli "Coda download" per scaricare brani/album selezionati in una volta sola."
+
+# Notifications
+msgctxt "#30013"
+msgid "Download finished"
+msgstr "Download terminato"
+
+msgctxt "#30014"
+msgid "Download started"
+msgstr "Download avviato"
+
+msgctxt "#30015"
+msgid "Album download finished"
+msgstr "Download dell'album terminato"
+
+msgctxt "#30016"
+msgid "Unlocked"
+msgstr "sbloccato"
+
+msgctxt "#30017"
+msgid "Music library"
+msgstr "Libreria musicale"
+
+msgctxt "#30018"
+msgid "ID3 tags updated"
+msgstr "Tag ID3 aggiornati"
+
+msgctxt "#30019"
+msgid "Playlist"
+msgstr "elenco di riproduzione"
+
+msgctxt "#30020"
+msgid "Cleared"
+msgstr "Cancellato"
+
+# Dialogs
+msgctxt "#30021"
+msgid "Album download in progress."
+msgstr "Download dell'album in corso."
+
+msgctxt "#30022"
+msgid "Please wait for the current download to finish."
+msgstr "Attendi il completamento del download in corso."
+
+msgctxt "#30023"
+msgid "MP3 Music"
+msgstr "MP3 Music"
+
+msgctxt "#30024"
+msgid "Browse"
+msgstr "Navigare"
+
+msgctxt "#30025"
+msgid "Browse songs or play full album?"
+msgstr "Sfogliare i brani o riprodurre l'intero album?"
+
+msgctxt "#30026"
+msgid "Play now"
+msgstr "Riproduci ora"
+
+msgctxt "#30027"
+msgid "Creating your playlist."
+msgstr "Creazione della tua playlist."
+
+msgctxt "#30028"
+msgid "Select group"
+msgstr "Seleziona gruppo"
+
+# Strings
+msgctxt "#30029"
+msgid "Added to favourites"
+msgstr "Aggiunto ai preferiti"
+
+msgctxt "#30030"
+msgid "Removed from favourites"
+msgstr "Rimosso dai preferiti"
+
+# Menus
+msgctxt "#30031"
+msgid "Artists"
+msgstr "Artiste"
+
+msgctxt "#30032"
+msgid "Top Albums"
+msgstr "Album migliori"
+
+msgctxt "#30033"
+msgid "New Albums"
+msgstr "Nuovi album"
+
+msgctxt "#30034"
+msgid "Compilations"
+msgstr "Compilazioni"
+
+msgctxt "#30035"
+msgid "Search Artists"
+msgstr "Cerca artisti"
+
+msgctxt "#30036"
+msgid "Search Albums"
+msgstr "Cerca negli album"
+
+msgctxt "#30037"
+msgid "Search Songs"
+msgstr "Cerca canzoni"
+
+msgctxt "#30038"
+msgid "Favourite Artists"
+msgstr "Artisti preferiti"
+
+msgctxt "#30039"
+msgid "Favourite Albums"
+msgstr "Album preferiti"
+
+msgctxt "#30040"
+msgid "Favourite Songs"
+msgstr "Canzoni preferite"
+
+msgctxt "#30041"
+msgid "Instant Mix Favourtie Albums (shuffle and play)"
+msgstr "Mix istantaneo degli album preferiti (riproduzione casuale e riproduzione)"
+
+msgctxt "#30042"
+msgid "Instant Mix Favourtie Songs (shuffle and play)"
+msgstr "Mix istantaneo dei brani preferiti (riproduzione casuale e riproduzione)"
+
+msgctxt "#30043"
+msgid "Clear Playlist"
+msgstr "Cancella playlist"
+
+msgctxt "#30044"
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgctxt "#30045"
+msgid "Added to download queue"
+msgstr "Aggiunto alla coda di download"
+
+msgctxt "#30046"
+msgid "Clear Downloads"
+msgstr "Cancella download"
+
+msgctxt "#30047"
+msgid "Start Downloads"
+msgstr "Avvia download"
+
+msgctxt "#30048"
+msgid "Remove"
+msgstr "Rimuovere"
+
+msgctxt "#30049"
+msgid "Search"
+msgstr "Ricerca"
+
+msgctxt "#30050"
+msgid "Favourites"
+msgstr "Preferite"
+
+msgctxt "#30051"
+msgid "Clear Download List"
+msgstr "Cancella elenco download"
+
+msgctxt "#30052"
+msgid "Are you sure?"
+msgstr "Sei sicuro?"
+
+msgctxt "#30053"
+msgid "Adding to your playlist"
+msgstr "Aggiunta alla tua playlist"
+
+msgctxt "#30054"
+msgid "MP3 Music downloads complete."
+msgstr "Download di MP3 Music completati."
+
+msgctxt "#30055"
+msgid "Downloading"
+msgstr "Download"
+
+msgctxt "#30056"
+msgid "%s of %s tracks downloaded"
+msgstr "%s di %s tracce scaricate"
+
+msgctxt "#30057"
+msgid "All Songs"
+msgstr "Tutte le canzoni"
+
+msgctxt "#30058"
+msgid "All Albums"
+msgstr "Tutti gli album"
+
+msgctxt "#30059"
+msgid "Add New Group"
+msgstr "Aggiungi nuovo gruppo"
+
+msgctxt "#30060"
+msgid "Create New Group"
+msgstr "Crea nuovo gruppo"
+
+msgctxt "#30061"
+msgid "Artist Info"
+msgstr "Informazioni sull'artista"
+
+msgctxt "#30062"
+msgid "Unable to download artist info"
+msgstr "Impossibile scaricare le informazioni sull'artista"
+
+msgctxt "#30063"
+msgid "[COLOR yellow]Artist Information[/COLOR]"
+msgstr "[COLOR yellow]Informazioni sull'artista[/COLOR]"
+
+msgctxt "#30064"
+msgid "Clear Download Lock"
+msgstr "Cancella blocco download"
+
+msgctxt "#30065"
+msgid "[COLOR lime]Add to Favourite Artists[/COLOR]"
+msgstr "[COLOR lime]Aggiungi agli artisti preferiti[/COLOR]"
+
+msgctxt "#30066"
+msgid "[COLOR orange]Remove from Favourite Artists[/COLOR]"
+msgstr "[COLOR arancione]Rimuovi dagli artisti preferiti[/COLOR]"
+
+msgctxt "#30067"
+msgid "[COLOR cyan]Download Album[/COLOR]"
+msgstr "[COLOR ciano]Scarica album[/COLOR]"
+
+msgctxt "#30068"
+msgid "[COLOR cyan]Play/Browse Album[/COLOR]"
+msgstr "[COLOR ciano]Riproduci/Sfoglia album[/COLOR]"
+
+msgctxt "#30069"
+msgid "[COLOR cyan]Queue Album[/COLOR]"
+msgstr "[COLOR ciano]Album coda[/COLOR]"
+
+msgctxt "#30070"
+msgid "[COLOR lime]Add to Favourite Albums[/COLOR]"
+msgstr "[COLOR lime]Aggiungi agli album preferiti[/COLOR]"
+
+msgctxt "#30071 "
+msgid "[COLOR orange]Remove from Favourite Albums[/COLOR]"
+msgstr "[COLOR orange]Rimuovi dagli album preferiti[/COLOR]"
+
+msgctxt "#30072"
+msgid "[COLOR orange]Remove[/COLOR]"
+msgstr "[COLORE orange]Rimuovi[/COLORE]"
+
+msgctxt "#30073"
+msgid "[COLOR cyan]Download Song[/COLOR]"
+msgstr "[COLOR cyan]Scarica brano[/COLOR]"
+
+msgctxt "#30074"
+msgid "[COLOR cyan]Queue Song[/COLOR]"
+msgstr "[COLOR cyan]Coda canzone[/COLOR]"
+
+# Query Strings
+msgctxt "#30075"
+msgid "Instant"
+msgstr "Immediata"
+
+msgctxt "#30076"
+msgid "Clear"
+msgstr "Chiara"
+
+msgctxt "#30077"
+msgid "Top "
+msgstr "Superiore "
+
+msgctxt "#30078"
+msgid " Artists"
+msgstr " Artiste"
+
+msgctxt "#30079"
+msgid "New "
+msgstr "Nuova "
+
+msgctxt "#30080"
+msgid " Albums"
+msgstr " Album"
+
+# Compliations Menu
+msgctxt "#30081"
+msgid "Best Compilations"
+msgstr "migliori compilation"
+
+msgctxt "#30082"
+msgid "New Compilations"
+msgstr "Nuove compilation"
+
+msgctxt "#30083"
+msgid "Major Hits"
+msgstr "Grandi successi"
+
+msgctxt "#30084"
+msgid "Nightclub Hits"
+msgstr "Hit da discoteca"
+
+msgctxt "#30085"
+msgid "Chillout Hits"
+msgstr "Hit rilassanti"
+
+msgctxt "#30086"
+msgid "Tributes and Covers"
+msgstr "Tributi e copertine"
+
+msgctxt "#30087"
+msgid "Events"
+msgstr "Eventi"
+
+# Error Strings
+msgctxt "#30088"
+msgid "Error downloading!"
+msgstr "Errore durante il download!"
+
+msgctxt "#30089"
+msgid "Error getting webpage!"
+msgstr "Errore durante il recupero della pagina web!"
+
+msgctxt "#30090"
+msgid "Something wicked happened :("
+msgstr "È successo qualcosa di brutto :("
+
+#Submenu Headings
+msgctxt "#30091"
+msgid "[COLOR cyan]Play Song[/COLOR]"
+msgstr "[COLOR cyan]Riproduci brano[/COLOR]"
+
+msgctxt "#30092"
+msgid "[COLOR lime]Add to Favourite Songs[/COLOR]"
+msgstr "[COLOR lime]Aggiungi ai brani preferiti[/COLOR]"
+
+msgctxt "#30093"
+msgid "[COLOR orange]Remove from Favourite Songs[/COLOR]"
+msgstr "[COLOR orange]Rimuovi dai brani preferiti[/COLOR]"

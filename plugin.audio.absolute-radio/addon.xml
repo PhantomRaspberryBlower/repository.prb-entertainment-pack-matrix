@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.absolute-radio" name="Absolute Radio" version="1.2.2" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Absolute Radio</summary>
+    <summary lang="de_DE">Absolute Radio</summary>
+    <summary lang="es_ES">Absolute Radio</summary>
+    <summary lang="fr_FR">Absolute Radio</summary>
+    <summary lang="it_IT">Absolute Radio</summary>
+    <description lang="en_GB">Absolute Radio is one of the UK's Independent National Radio stations. The station is based in London and plays popular rock music broadcasting on medium wave and DAB across the UK (105.8 FM in London and 105.2 FM in the West Midlands). It is also available in other parts of the world via satellite, cable, and on the Internet.</description>
+    <description lang="de_DE">Absolute Radio ist einer der unabhängigen nationalen Radiosender Großbritanniens. Der Sender hat seinen Sitz in London und spielt populäre Rockmusik auf Mittelwelle und DAB in ganz Großbritannien (105,8 FM in London und 105,2 FM in den West Midlands). Es ist auch in anderen Teilen der Welt über Satellit, Kabel und im Internet verfügbar.</description>
+    <description lang="es_ES">Absolute Radio es una de las estaciones de radio nacionales independientes del Reino Unido. La estación tiene su sede en Londres y emite música rock popular en onda media y DAB en todo el Reino Unido (105.8 FM en Londres y 105.2 FM en West Midlands). También está disponible en otras partes del mundo por satélite, cable e Internet.</description>
+    <description lang="fr_FR">Absolute Radio est l'une des stations de radio nationales indépendantes du Royaume-Uni. La station est basée à Londres et diffuse de la musique rock populaire sur ondes moyennes et DAB à travers le Royaume-Uni (105,8 FM à Londres et 105,2 FM dans les West Midlands). Il est également disponible dans d'autres parties du monde par satellite, par câble et sur Internet.</description>
+    <description lang="it_IT">Absolute Radio è una delle stazioni radio nazionali indipendenti del Regno Unito. La stazione ha sede a Londra e trasmette musica rock popolare su onde medie e DAB in tutto il Regno Unito (105,8 FM a Londra e 105,2 FM nelle Midlands occidentali). È disponibile anche in altre parti del mondo via satellite, via cavo e su Internet.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] does not host or distribute any of the content provided by this addon. Does not have any affiliation with the content provider and accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] hostet oder verteilt keine der von diesem Add-On bereitgestellten Inhalte. Hat keine Verbindung zum Inhaltsanbieter und übernimmt keine Verantwortung für das enthaltene Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no aloja ni distribuye el contenido proporcionado por este complemento. No tiene ninguna afiliación con el proveedor de contenido y no acepta responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'héberge ni ne distribue aucun des contenus fournis par cet addon. N'a aucune affiliation avec le fournisseur de contenu et n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non ospita né distribuisce alcun contenuto fornito da questo componente aggiuntivo. Non ha alcuna affiliazione con il fornitore di contenuti e non si assume alcuna responsabilità per l'addon incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot000.jpg</screenshot>
+      <screenshot>resources/media/screenshot001.jpg</screenshot>
+      <screenshot>resources/media/screenshot002.jpg</screenshot>
+      <screenshot>resources/media/screenshot003.jpg</screenshot>
+      <screenshot>resources/media/screenshot004.jpg</screenshot>
+      <screenshot>resources/media/screenshot005.jpg</screenshot>
+      <screenshot>resources/media/screenshot006.jpg</screenshot>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/plugin.video.leicester-community-radio</source>
+  </extension>
+</addon>

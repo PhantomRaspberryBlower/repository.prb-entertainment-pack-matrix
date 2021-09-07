@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pil" version="1.1.7"/>
+    <import addon="script.module.mutagen" version="1.44.0"/>
+    <import addon="script.module.requests" version="2.21.0"/>
+    <import addon="script.module.future" version="0.18.2"/> 
+ </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.service" library="resources/lib/playerMP3.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Stream and Download Music</summary>
+    <summary lang="de_DE">Musik streamen und herunterladen</summary>
+    <summary lang="fr_FR">Diffuser et télécharger de la musique</summary>
+    <summary lanf="es_ES">Transmitir y descargar música</summary>
+    <summary lanf="it_IT">Streaming e download di musica</summary>
+    <description lang="en_GB">Browse the latest album releases including compilations by genre. Search or download your favourite artist, album or song. Show artist information and download icons and fanart.</description>
+    <description lang="de_DE">Durchsuchen Sie die neuesten Albumveröffentlichungen, einschließlich Zusammenstellungen nach Genre. Suchen oder laden Sie Ihren Lieblingskünstler, -album oder -song herunter. Zeigen Sie Künstlerinformationen an und laden Sie Icons und Fanart herunter.</description>
+    <description lang="fr_FR">Parcourez les dernières sorties d'albums, y compris les compilations par genre. Recherchez ou téléchargez votre artiste, album ou chanson préféré. Afficher les informations sur l'artiste et télécharger des icônes et des fanarts.</description>
+    <description lang="es_ES">Explore los últimos lanzamientos de álbumes, incluidas compilaciones por género. Busque o descargue su artista, álbum o canción favorita. Muestra información del artista y descarga iconos y fanart.</description>
+    <description lang="it_IT">Sfoglia le ultime uscite degli album, comprese le compilation per genere. Cerca o scarica il tuo artista, album o brano preferito. Mostra informazioni sull'artista e scarica icone e fanart.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] does not host or distribute any of the content provided by this addon. Does not have any affiliation with the content provider and accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] hostet oder verteilt keine der von diesem Add-On bereitgestellten Inhalte. Hat keine Verbindung zum Inhaltsanbieter und übernimmt keine Verantwortung für das enthaltene Addon.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'héberge ni ne distribue aucun des contenus fournis par cet addon. N'a aucune affiliation avec le fournisseur de contenu et n'accepte aucune responsabilité pour l'addon inclus..</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no aloja ni distribuye ningún contenido proporcionado por este complemento. No tiene ninguna afiliación con el proveedor de contenido y no acepta responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non ospita o distribuisce alcun contenuto fornito da questo componente aggiuntivo. Non ha alcuna affiliazione con il fornitore di contenuti e non si assume alcuna responsabilità per l'addon incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <banner>resources/banner.jpg</banner>
+      <screenshot>resources/media/screenshot000.jpg</screenshot>
+      <screenshot>resources/media/screenshot001.jpg</screenshot>
+      <screenshot>resources/media/screenshot002.jpg</screenshot>
+      <screenshot>resources/media/screenshot003.jpg</screenshot>
+      <screenshot>resources/media/screenshot004.jpg</screenshot>
+      <screenshot>resources/media/screenshot005.jpg</screenshot>
+      <screenshot>resources/media/screenshot006.jpg</screenshot>
+      <screenshot>resources/media/screenshot007.jpg</screenshot>
+      <screenshot>resources/media/screenshot008.jpg</screenshot>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.
+    [COLOR orange][B]Improvements:[/B][/COLOR]
+        - Album cover now saved into ID3 tags (metadata).
+    [COLOR orange][B]Bug fixes:[/B][/COLOR]
+        - Removes invalid characters from directory names.
+        - Artist and album directories not created when playing songs.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (Matrix) und Code auf Python 3.
+    [COLOR orange][B]Verbesserungen:[/B][/COLOR]
+        - Albumcover jetzt in ID3-Tags (Metadaten) gespeichert.
+    [COLOR orange][B]Fehlerbehebungen:[/B][/COLOR]
+        - Entfernt ungültige Zeichen aus Verzeichnisnamen.
+        - Künstler- und Albumverzeichnisse werden beim Abspielen von Songs nicht erstellt.</news>
+    <news lang="es_ES">Actualizado a Kodi v19 (matriz) y código a Python 3.
+    [COLOR naranja][B]Mejoras:[/B][/COLOR]
+        - La portada del álbum ahora se guarda en etiquetas ID3 (metadatos).
+    [COLOR naranja][B]Corrección de errores:[/B][/COLOR]
+        - Elimina los caracteres no válidos de los nombres de directorio.
+        - Los directorios de artistas y álbumes no se crean al reproducir canciones.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrice) et code vers Python 3.
+    [COLOR orange][B]Améliorations :[/B][/COLOR]
+        - La pochette de l'album est désormais enregistrée dans les balises ID3 (métadonnées).
+    [COLOR orange][B]Correction de bugs :[/B][/COLOR]
+        - Supprime les caractères invalides des noms de répertoire.
+        - Répertoires d'artistes et d'albums non créés lors de la lecture de chansons.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrice) e codice a Python 3.
+    [COLORE arancione][B]Miglioramenti:[/B][/COLOR]
+        - Copertina dell'album ora salvata nei tag ID3 (metadati).
+    [COLOR arancione][B]Correzioni di bug:[/B][/COLOR]
+        - Rimuove i caratteri non validi dai nomi delle directory.
+        - Directory di artisti e album non create durante la riproduzione di brani.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/plugin.audio.mp3music</source>
+  </extension>
+</addon>

@@ -1,0 +1,9 @@
+<settings>
+  <category label="30001">
+    <setting id="hide_artist_artwork" type="bool" label="30003" default="false"/>
+    <setting id="hide_artist_info" type="bool" label="30005" default="false"/>
+    <setting id="hide_fav_songs" type="bool" label="30008" default="false"/>
+    <setting id="prevent_screensaver" type="bool" label="30007" default="true"/>
+    <setting id="previous_url">7874f3694d10842f9f93bf43553e5419</setting>
+  </category>
+</settings>
