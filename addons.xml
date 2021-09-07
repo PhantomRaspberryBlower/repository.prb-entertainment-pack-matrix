@@ -133,8 +133,6 @@
   </extension>
 </addon>
 
-<!-- Addon Common -->
-
 <!-- Addon Signals -->
 <addon id="script.module.addon.signals" name="Addon Signals" version="0.0.6+matrix.1" provider-name="Rick Phillips (ruuk)">
   <requires>
@@ -209,8 +207,6 @@
   </extension>
 </addon>
 
-<!-- Beautiful Soup Module -->
-
 <!-- Beautiful Soup 4 Module -->
 <addon id="script.module.beautifulsoup4" name="BeautifulSoup4" version="4.9.3+matrix.1" provider-name="Leonard Richardson (leonardr@segfault.org)">
   <requires>
@@ -231,13 +227,68 @@
   </extension>
 </addon>
 
-<!-- BigPictures Addon -->
-
-<!-- BigPictures Modules  -->
+<!-- Bugatsinho Repo -->
+<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
+  <extension point="xbmc.addon.repository" name="Bugatsinho repository">
+    <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+    <hashes>false</hashes>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+      <hashes>false</hashes>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/python-koding/master/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Bugatsinho repository</summary>
+    <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 
 <!-- Butter Fingers Repo -->
-
-<!-- Catchup 4 Kodi -->
+<addon id="repository.butter" name="Butter Fingers Repo" version="1.9.8" provider-name="J1">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="Butter Fingers Repo">
+    <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
+    <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
+    <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
+    <hashes>false</hashes>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Butter Fingers Repo</summary>
+    <description>Butter Fingers Legit Addons. The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works....</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>     
+    </assets>
+  </extension>
+</addon>
 
 <!-- Certifi Module -->
 <addon id="script.module.certifi" name="certifi" version="2020.12.05+matrix.1" provider-name="Certifi">
@@ -275,10 +326,6 @@
     </assets>
   </extension>
 </addon>
-
-<!-- Classic British Comedy Addon -->
-
-<!-- Common Plugin Cache -->
 
 <!-- Confluence Skin -->
 <addon id="skin.confluence" version="4.7.12" name="Confluence" provider-name="Jezz_X, Team Kodi">
@@ -430,7 +477,6 @@
 </addon>
 
 <!-- Confluence OSMC Skin -->
-
 <addon id="skin.confluence-osmc" version="4.7.12" name="Confluence OSMC" provider-name="Jezz_X, Team Kodi, Modified by PRB">
   <requires>
     <import addon="xbmc.gui" version="5.15.0"/>
@@ -583,9 +629,92 @@
   </extension>
 </addon>
 
-<!-- Crypto Libraries Module -->
-
 <!-- CU LRC Lyrics -->
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="6.3.9" provider-name="Taxigps, ronie">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.8.2+matrix.1"/>
+    <import addon="script.module.chardet" version="3.0.4+matrix.1"/>
+    <import addon="script.module.mutagen" version="1.44.0+matrix.1"/>
+    <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+  </requires>
+  <extension point="xbmc.python.lyrics" library="default.py"/>
+  <extension point="xbmc.service" library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="be_BY">CU LRC Lyrics</summary>
+    <summary lang="bg_BG">CU LRC Лирики</summary>
+    <summary lang="ca_ES">CU LRC Lyrics</summary>
+    <summary lang="da_DK">CU LRC Lyrics</summary>
+    <summary lang="de_DE">CU LRC-Songtext</summary>
+    <summary lang="el_GR">Στίχοι CU LRC</summary>
+    <summary lang="en_GB">CU LRC Lyrics</summary>
+    <summary lang="en_NZ">CU LRC Lyrics</summary>
+    <summary lang="en_US">CU LRC Lyrics</summary>
+    <summary lang="es_ES">CU LRC Lyrics</summary>
+    <summary lang="fr_FR">CU LRC Lyrics</summary>
+    <summary lang="fr_CA">Paroles CU LRC</summary>
+    <summary lang="gl_ES">Letras de CU LRC</summary>
+    <summary lang="he_IL">CU LRC Lyrics</summary>
+    <summary lang="hr_HR">CU LRC tekstovi pjesama</summary>
+    <summary lang="hu_HU">CU LRC Dalszöveg</summary>
+    <summary lang="id_ID">Lirik CU LRC</summary>
+    <summary lang="it_IT">CU LRC Lyrics</summary>
+    <summary lang="ja_JP">CU LRC Lyrics</summary>
+    <summary lang="ko_KR">CU LRC Lyrics</summary>
+    <summary lang="lt_LT">CU LRC dainų žodžiai</summary>
+    <summary lang="nl_NL">CU LRC songteksten</summary>
+    <summary lang="nb_NO">CU LRC sangtekster</summary>
+    <summary lang="pl_PL">CU LRC Lyrics</summary>
+    <summary lang="pt_PT">CU LRC Lyrics</summary>
+    <summary lang="pt_BR">CU LRC Letras</summary>
+    <summary lang="ro_RO">Versuri CU LRC</summary>
+    <summary lang="sk_SK">CU LRC Lyrics</summary>
+    <summary lang="sl_SI">CU LRC Lyrics</summary>
+    <summary lang="sv_SE">CU LRC Lyrics</summary>
+    <summary lang="zh_CN">CU LRC Lyrics 歌词插件</summary>
+    <summary lang="zh_TW">CU LRC Lyrics 歌詞腳本</summary>
+    <description lang="be_BY">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronized/unsynchronized lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
+    <description lang="bg_BG">CU LRC Лирики е добавка за лирики. Поддържа обикновени текстови файлове и .lrc файлове. Може да търси за синхронизирани/несинхронизирани лирики вградени в аудиофайловете или да ги извлича от различни източници. Може да прочита .lrc и .txt файлове съхраняващи лирики, които се намират в папката на дадения аудио файл (с разширение .mp3 например) и носят неговото име.</description>
+    <description lang="ca_ES">CU LRC Lyrics es un script de lletres de cançons per a Kodi. Suporta lletres normal tan com LRC Lyrics. El script busca lletres sincronitzades o no, incrustades al fitxer d'àudio, des de un altre fitxer o per scrapers. Pot llegir fitxers .lrc/.txt guardats al mateix directori i nom de fitxer amb .mp3(o un altre tipus de música).</description>
+    <description lang="da_DK">CU LRC Lyrics er et script til sangtekster til Kodi. Det understøtter almindelige såvel som LRC sangtekster. Script'et kan søge i synkroniserede/usynkroniserede sangtekster som er inkodede i filer eller ved hjælp af scrapere. Det kan læse .lrc/.txt sangtekstfiler som er gemt i den samme mappe og med samme filnavn som mp3'en (eller andre typer af musikfiler).</description>
+    <description lang="de_DE">CU LRC-Songtext ist ein Songtextskript für Kodi, das sowohl normale als auch LRC-Songtexte unterstützt. Das Skript kann nach synchronisierten/unsynchronisierten eingebetteten Songtexten von Datei oder Scraper suchen. Es kann .lrc/.txt-Songtextdateien lesen, die im gleichen Pfad und mit dem gleichen Dateinamen mit .mp3 (oder eine anderen Musikart) gespeichert wurden.</description>
+    <description lang="el_GR">Οι Στίχοι CU LRC είναι ένα script στίχων για το Kodi. Υποστηρίζει συνηθισμένους στίχους καθώς και Στίχους LRC. Το script μπορεί να αναζητήσει συγχρονισμένους και μη στίχους, ενσωματωμένους, από αρχεία ή από scraper. Μπορεί να διαβάσει αρχεία στίχων τύπου .lrc/.txt που βρίσκονται στον ίδιο φάκελο και έχουν το ίδιο όνομα με το .mp3 (ή άλλης κατάληξης μουσική).</description>
+    <description lang="en_GB">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronized/unsynchronized lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
+    <description lang="en_NZ">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronised/unsynchronised lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
+    <description lang="en_US">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronized/unsynchronized lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
+    <description lang="es_ES">CU LRC Lyrics es un script de letras para Kodi. Es compatible tanto con letra regular como LRC Lyrics. El script puede buscar desde archivo o a través de scrapers letras incrustadas sincronizadas o no sincronizadas. Puede leer archivos .lrc/.txt guardados en la misma carpeta con el mismo nombre del archivo *.mp3 (u otro tipo de archivo de audio).</description>
+    <description lang="fr_FR">CU LRC Lyrics est un script pour gérer les paroles dans Kodi. Il supporte les formats de paroles habituels aussi bien que LRC. Le script peut chercher des paroles synchronisées/désynchronisées intégrées dans les fichier ou par collecteurs. Il peut lire les fichiers paroles .lrc/.txt stockés dans le même dossier et avec le même nom que le fichier .mp3 (ou autre type de format musical).</description>
+    <description lang="fr_CA">Paroles CU LRC est un script de paroles pour Kodi. Il prend en charge les paroles régulières et LRC. Le script peut rechercher des paroles synchronisées/désynchronisées intégrées, d'un fichier ou de récupérateurs. Il peut lire les fichiers de paroles .lrc/.txt enregistrés dans le même chemin et avec le me nom que le .mp3 (ou autres types de musique).</description>
+    <description lang="gl_ES">Letras CU LRC é un script de letras para Kodi. Soporta letras normais como as LRC. O script pode buscar letras sincronizadas/non sincronizadas incrustadas, ou buscar a partir dun ficheiro ou de scrapers. Pode ler letras de ficheiros .lrc/.txt gardados na mesma ruta do ficheiro .mp3 (ou outro tipo de música).</description>
+    <description lang="he_IL">CU LRC Lyrics הינו סקריפט מילות שירים עבור Kodi התומך בפורמט LRC והן בטקסט רגיל. הסקריפט מסוגל לחפש מילות שיר מסונכרות/לא מסונכרות המוטמעות בשיר, מקובץ מקומי או בעזרת סקרייפר. הסקריפט מסוגל לקרוא קובץ מילות שיר txt/lrc השמור באותו נתיב עם שם זהה לקובץ ה-mp3 (או סוג אחר של קובץ מוזיקה).</description>
+    <description lang="hr_HR">CU LRC tekstovi pjesama je skripta za Kodi. Podržavna redovne i LRC tekstove pjesama. Skripta može pretraživati usklađivati/uklanjati ugrađene tekstove pjesama, iz datoteke ili sakupljača. Može čitati .lrc/.txt datoteke tekstova pjesama spremljene u istu putanju s istim nazivom datoteke sa .mp3 (ili drugim vrstama glazbe).</description>
+    <description lang="hu_HU">A CU LRC Dalszöveg egy kiegészítő az Kodi-hez, ami támogatja  a hagyományos és az LRC dalszövegek keresését, megjelenítését. A dalszöveg lehet szinkronizált, vagy szinkronizálatlan, a zenefájlba beágyazott, vagy leolvasókkal letöltött, vagy akár származhat a zene könyvtárában található .lrc vagy .txt fájlokból is.</description>
+    <description lang="id_ID">Lirik CU LRC adalah script lirik untuk Kodi. Mendukung lirik regular maupun LRC. Script ini mampu mencari lirik dengan singkronisasi maupun tidak yang tercantum pada berkas atau melalui alat penyalin. Script dapat membaca berkas lirik .lrc/.txt yang disimpan di lokasi dan nama berkas yang sama dengan .mp3 (atau format musik lainnya).</description>
+    <description lang="it_IT">CU LRC Lyrics è uno script per i testi per Kodi. Supporta testi come LRC. Lo script può cercare testi incorporati sincronizzati e non, da file o tramite scapers. Legge file .lrc/.txt salvati nello stesso percorso e con lo stesso nome dell'.mp3 (o altri tipi di musica)</description>
+    <description lang="ja_JP">CU LRC LyricsはKodiのための歌詞表示スクリプトです。[CR]このスクリプトは、シンクロ歌詞、テキスト歌詞、埋め込み歌詞を、ファイルまたはWebから検索することができます。[CR]MP3（またはその他の音楽ファイル形式）と同じ場所、同じ名前で保存されたlrc / txt形式の歌詞を読み込むことができます。</description>
+    <description lang="ko_KR">CU LRC Lyrics는 Kodi를 위한 가사 수집기입니다. 일반 가사와 LRC 가사를 지원하며, 내장 가동기/비동기 가사를 검색하거나 파일 내장 가사를 찾습니다. mp3(또는 다른 형식의 음악 파일)와 같은 경로에 저장되어 있는 .lrc/.txt 형식의 가사를 읽어옵니다.</description>
+    <description lang="lt_LT">CU LRC Lyrics yra dainų žodžių atsiuntimo skriptas, skirtas Kodi. Palaikomi tiek įprasti, tiek LRC dainų žodžiai. Skriptas gali ieškoti sinchronizuotų / nesinchronizuotų dainų žodžių, integruotų failuose arba naudojant skreperius. Jis gali nuskaityti .lrc/.txt dainų žodžių failus, išsaugotus toje pačioje vietoje ir tokiu pačiu pavadinimu kaip ir .mp3 failas (ar kitokio muzikinio failo tipo).</description>
+    <description lang="nl_NL">CU LRC Lyrics is een script voor songteksten in Kodi. Het ondersteunt zowel reguliere als LRC songteksten. Het script ondersteunt gesynchroniseerde of ongesynchroniseerde songteksten die ingebed zijn in een bestand, in een los bestand staan of van een scraper. Het kan .lrc/.txt songtekst-bestanden lezen die opgeslagen zijn op hetzelfde pad en dezelfde bestandsnaam hebben als de .mp3 (of ander type bestand).</description>
+    <description lang="nb_NO">CU LRC Lyrics er et skript for å vise sangtekster i Kodi. Den støtter vanlige samt LRC sangtekster. Skriptet kan søke synkroniserte / usynkroniserte sangtekster innebygd, fra en fil eller via skrapere. Den kan lese .lrc / .txt filer som er lagret på den samme banen og med samme filnavn (.mp3 eller annen type musikk).</description>
+    <description lang="pl_PL">CU LRC Lyrics jest dodatkiem obsługującym teksty utworów dla Kodi. Obsługuje teksty utworów zarówno zwykłe jak i zsynchronizowane. Dodatek potrafi wyszukać teksty zapisane lokalnie, wbudowane w pliki utworów, a także pobierać je z Internetu. Potrafi wczytać teksty w formatach .lrc/.txt zapisane w tym samym folderze co pliku utworu .mp3 (lub innym wspierany formacie).</description>
+    <description lang="pt_PT">CU LRC Lyrics é um script de letras para o Kodi. Suporta letras normais e LRC. O script pode encontrar letras sincronizadas/dessincronizadas embutidas, ou procurar a partir de ficheiro ou de colectores. Pode ler letras de ficheiros .lrc/.txt guardados na mesma localização do ficheiro .mp3 (ou outro tipo de música).</description>
+    <description lang="pt_BR">CU LRC Lyrics é script de letras de músicas para Kodi. Ele suporta regular bem como Letras LRC. O script pode procurar por letras embutidas sincronizadas/dessincronizadas, de arquivos ou usando scrapers. Ele pode ler arquivos de letras .lrc/txt salvos no mesmo caminho com o mesmo nome do arquivo .mp3 (ou outro formato de música).</description>
+    <description lang="sk_SK">CU LRC Lyrics je doplnok poskytujúci texty skladieb pre Kodi. Podporuje bežné ako aj LRC formáty. Doplnok môže vyhľadávať synchronizované/nesynchronizované Texty skladieb vložené, v samostatnom súbore alebo cez sťahovače. Dokáže čítať .lrc/.txt súbory v rovnakom priečinku a s rovnakým názvom ako .mp3 súbor (alebo iný hudobný súbor).</description>
+    <description lang="sl_SI">CU LRC Lyrics je skripta za besedila pesmi za Kodi. Podpira redne kot tudi LRC besedila pesmi. Skripta lahko išče sinhronizirana/nesinhronizirana besedila pesmi, vgrajena, iz datoteke ali od ponudnikov. Bere lahko .lrc/.txt formate zapisa datotek iz iste mape kot je istoimenska datoteka .mp3 (ali drigi format zapisa glasbe).</description>
+    <description lang="sv_SE">CU LRC Lyrics är ett skript för Kodi. Det stödjer såväl vanliga som LRC texter. Skriptet kan söka synkroniserade/osynkroniserade texter inbäddade från fil eller från skraport. Det kan läsa .lrc/.txt filer sparade med samma sökväg och filnamn som .mp3 (eller annan typ av musik).</description>
+    <description lang="zh_CN">CU LRC Lyrics 是 Kodi 的歌词插件。它支持原 LRC Lyrics 歌词插件的功能。这个插件会搜索内嵌的、本地文件或通过刮削器获取同步/非同步歌词。它可以读取以相同文件名与歌曲文件保存在相同目录的 .lrc/.txt 歌词文件。</description>
+    <description lang="zh_TW">CU LRC Lyrics 是為 Kodi 而設的歌詞腳本。它支援一般格式的歌詞以及 LRC 格式的歌詞。此腳本能夠搜尋歌曲檔案內嵌歌詞的同步及非同步歌詞，同時也能使用刮削器在線搜尋、本地文件或通过刮削器获取同步/非同步歌词。它可以讀取放在同一個資料夾內，而又與歌曲相同命名的 .lrc/.txt 歌詞檔。</description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=147340</forum>
+    <source>https://gitlab.com/ronie/script.cu.lrclyrics/</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+    <news>- display artist name and track title in the lyrics dialog
+- add option to hide the lyrics background</news>
+  </extension>
+</addon>
 
 <!-- DateUtil Module -->
 <addon id="script.module.dateutil" name="python-dateutil" version="2.8.1+matrix.1" provider-name="Paul Ganssle, Gustavo Niemeyer">
@@ -683,9 +812,9 @@
 </addon>
 
 <!-- Exodus Video Addon -->
-<addon id="plugin.video.exodus" name="Exodus" provider-name="ExodusVPN.com" version="13.0.0a">
+<addon id="plugin.video.exodus" name="Exodus" provider-name="ExodusVPN.com" version="13.0.0b">
   <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.exodus.artwork" />
     <import addon="script.exodus.metadata" />
     <import addon="script.module.urlresolver" />
@@ -725,7 +854,7 @@
 <!-- Exodus Artwork Addon -->
 <addon id="script.exodus.artwork" version="10.0.0" name="Exodus Artwork" provider-name="Exodus">
   <requires>
-    <!--<import addon="xbmc.python" version="2.19.0"/>-->
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -738,7 +867,7 @@
 <!-- Exodus Metadata Addon -->
 <addon id="script.exodus.metadata" version="10.0.0" name="Exodus Metadata" provider-name="Exodus">
   <requires>
-    <!--<import addon="xbmc.python" version="2.19.0"/>-->
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -748,29 +877,8 @@
   </extension>
 </addon>
 
-<!-- Exodus Module -->
-<addon id="script.module.exodus" name="Exodus Module" version="3.2.4" provider-name="Exodus">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup4"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Exodus</summary>
-  </extension>
-</addon>
-
-<!-- F4mProxy Addon -->
-
-<!-- Feedparser Module -->
-
-<!-- Fido Repo -->
-
-<!-- Fido Video -->
-
 <!-- Free Live TV -->
-<addon id="plugin.video.freelivetv.tva" name="Free Live TV" provider-name="mhancoc7" version="0.6.9">
+<addon id="plugin.video.freelivetv.tva" name="Free Live TV" provider-name="mhancoc7" version="0.7.0">
   <requires>
     <import addon="script.module.m7lib" version="0.1.0" />
   </requires>
@@ -779,7 +887,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Free Live TV</summary>
-    <description>Please support the continued development of Free Live TV by becoming a Patron [COLOR lightskyblue]https://patreon.m7kodi.dev/[/COLOR]</description>
+    <description>Please support the continued development of Free Live TV by becoming a Patron [COLORlightskyblue]https://patreon.m7kodi.dev/[/COLOR]</description>
     <platform>all</platform>
     <website>https://m7kodi.dev</website>
     <assets>
@@ -809,6 +917,20 @@
 </addon>
 
 <!-- Futures Module -->
+<addon id="script.module.futures" name="futures" version="2.2.0" provider-name="Brian Quinlan">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>A futures implementation for Python</summary>
+    <description>Backport of the concurrent.futures package from Python 3.2</description>
+    <platform>all</platform>
+    <license>BSD</license>
+    <source>https://code.google.com/p/pythonfutures/source/browse</source>
+    <website>https://code.google.com/p/pythonfutures</website>
+  </extension>
+</addon>
 
 <!-- HTML5 Module -->
 <addon id="script.module.html5lib" name="html5lib-python" version="1.0.1+matrix.2" provider-name="html5lib">
@@ -832,6 +954,23 @@
 </addon>
 
 <!-- HTTPLib2 Module -->
+<addon id="script.module.httplib2" name="httplib2" provider-name="Joe Gregorio" version="0.17.0+matrix.2">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en_GB">httplib2 module</description>
+    <summary lang="en_GB">httplib2 module</summary>
+    <license>MIT</license>
+    <platform>all</platform>
+    <website>https://pypi.python.org/pypi/httplib2</website>
+    <source>https://github.com/httplib2/httplib2</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
 
 <!-- IDNA Module -->
 <addon id="script.module.idna" name="idna" version="2.10.0+matrix.1" provider-name="Kim Davies">
@@ -946,8 +1085,6 @@ Known issues:
   </extension>
 </addon>
 
-<!-- ITV Addon -->
-
 <!-- Iso8601 Addon -->
 <addon id="script.module.iso8601" name="iso8601" version="0.1.12+matrix.2" provider-name="Michael Twomey">
   <requires>
@@ -966,11 +1103,7 @@ Known issues:
   </extension>
 </addon>
 
-<!-- JenRepo Repository -->
-
-<!-- jhm Module -->
-
-<!-- js2py Module -->
+<!-- JenRepo Repo -->
 
 <!-- Kodi Bae Repo -->
 
@@ -1144,6 +1277,37 @@ Known issues:
 <!-- Mail -->
 
 <!-- Metahandler Module -->
+<addon id="script.module.metahandler" name="metahandler" version="5.0.1" provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python"/>
+    <import addon="script.module.six"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.myconnpy"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart></fanart>
+      <screenshot></screenshot>
+    </assets>
+    <news>
+[B]Version 5.0.1[/B]
+- Fixed settings.xml version preventing setting UI from showing in Kodiunder Matrix
+    </news>
+  </extension>
+</addon>
 
 <!-- MP3 Music Addon -->
 <addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.1" provider-name="Phantom Raspberry Blower">
@@ -1259,8 +1423,23 @@ Known issues:
 </addon>
 
 <!-- Mutagen Module -->
-
-<!-- Myconnpy Module -->
+<addon id="script.module.mutagen" name="Mutagen" version="1.44.0+matrix.1" provider-name="Christoph Reiter">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Library to handle audio metadata.</summary>
+    <description lang="en_GB">Mutagen is a Python module to handle audio metadata.</description>
+    <license>GPL-2.0-or-later</license>
+    <platform>all</platform>
+    <website>https://mutagen.readthedocs.io/en/latest/</website>
+    <source>https://github.com/quodlibet/mutagen</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
 
 <!-- NPR Video Addon -->
 <addon id="plugin.video.npr" name="NPR Music Videos" version="4.0.1" provider-name="t1m">
@@ -1466,8 +1645,6 @@ v5.1.2 (2020-03-21) by enen92
   </extension>
 </addon>
 
-<!-- Parsedom -->
-
 <!-- PRB AVSS -->
 
 <!-- PRB Clean Service -->
@@ -1589,6 +1766,20 @@ v5.1.2 (2020-03-21) by enen92
   </extension>
 </addon>
 
+<!-- PIL Module -->
+<addon id="script.module.pil" name="Python Image Library" version="5.1.0" provider-name="PythonWare">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <!-- PressPlay Video Addon -->
 <addon id="plugin.video.pressplay" name="PressPlay" provider-name="PressPlay" version="4.0.0a">
   <requires>
@@ -1683,14 +1874,6 @@ v5.1.2 (2020-03-21) by enen92
     <news></news>
   </extension>
 </addon>
-
-<!-- Pyjsparser Module -->
-
-<!-- Python Koding AIO Module -->
-
-<!-- script.module.python.koding.aio.alt -->
-
-<!-- Pytz Module -->
 
 <!-- RSS Feeds -->
 
@@ -1802,20 +1985,34 @@ v5.1.2 (2020-03-21) by enen92
 </addon>
 
 <!-- Rising Tides -->
+<addon id="plugin.video.Rising.Tides" name="Rising Tides" version="2.0.0" provider-name="mullafabz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="inputstream.adaptive"/>
+    <import addon="script.module.resolveurl" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch many sports and events from the world</summary>
+    <description lang="en">I don't have any affiliation with the content provider nor KODI.Content freely available on the internet.More info [COLOR lime][B]@mullafabz[/B][/COLOR] on Twitter</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
 
 <!-- Rising Tides Repository -->
 
 <!-- Rockcrusher Repository -->
 
-<!-- Routing Module -->
-
 <!-- RSS Reader Addon -->
-
-<!-- Schism Common Module -->
-
-<!-- Simple Cache Module -->
-
-<!-- Simple Downloader Module -->
 
 <!-- Simple JSON Module -->
 <addon id="script.module.simplejson" name="simplejson" version="3.17.0+matrix.2" provider-name="Bob Ippolito">
@@ -2065,14 +2262,6 @@ Version 1.0.0
     </assets>
   </extension>
 </addon>
-
-<!-- Tzlocal Module -->
-
-<!-- Unidecode Module -->
-
-<!-- Universal Scrapers Module -->
-
-<!-- Universal Scrapers Repo -->
 
 <!-- URL Resolver -->
 <addon id="script.module.urlresolver" name="URLResolver" version="6.1.03a" provider-name="tvaddons">
