@@ -1101,8 +1101,6 @@ Known issues:
   </extension>
 </addon>
 
-<!-- JenRepo Repo -->
-
 <!-- Kodi Bae Repo -->
 
 <!-- Kodi Israel Repo -->
@@ -1277,7 +1275,7 @@ Known issues:
 <!-- Metahandler Module -->
 <addon id="script.module.metahandler" name="metahandler" version="5.0.1" provider-name="Eldorado">
   <requires>
-    <import addon="xbmc.python"/>
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six"/>
     <import addon="script.module.simplejson"/>
     <import addon="script.module.myconnpy"/>

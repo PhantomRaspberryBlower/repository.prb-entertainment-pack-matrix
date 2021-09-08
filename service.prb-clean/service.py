@@ -101,7 +101,7 @@ def remove_addons_and_dependancies():
                 pass
             if not dialog.yesno('PRB Clean: Remove Obsolete Addons',
                                 text + 'To finish removal of obsolete addons a reboot is required.\nDo you want to reboot now?',
-                                '', '', 'Reboot', 'Continue'):
+                                'Reboot', 'Continue'):
                 xbmc.executebuiltin('System.Exec(reboot)')
                 # xbmc.executebuiltin('UpdateLocalAddons')
 
