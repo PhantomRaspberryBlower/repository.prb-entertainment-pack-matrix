@@ -1489,7 +1489,7 @@ Known issues:
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>false</reuselanguageinvoker>
     <summary lang="en_GB">TheOath</summary>
-    <description lang="en_GB">Multi-source add-on with native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+    <description lang="en_GB">The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum />
@@ -1829,7 +1829,7 @@ v5.1.2 (2020-03-21) by enen92
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>false</reuselanguageinvoker>
     <summary lang="en_GB">PressPlay</summary>
-    <description lang="en_GB">Multi-source and multi-scraper package add-on. A basic scraper pack is provided but also supports Playscrapers, and native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+    <description lang="en_GB">Multi-source and multi-scraper package add-on. A basic scraper pack is provided but also supports Playscrapers.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum />
@@ -2316,9 +2316,6 @@ Version 1.0.0
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.python.twitch" optional="true" />
-    <import addon="plugin.googledrive" optional="true" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.python.pluginsource" library="lib/default.py" />
