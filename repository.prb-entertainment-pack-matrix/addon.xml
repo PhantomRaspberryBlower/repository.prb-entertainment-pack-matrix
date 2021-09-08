@@ -6,8 +6,43 @@
     <datadir zip="true">https://raw.github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master</datadir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Phantom Raspberry Blower Repository (matrix)</summary>
-    <description>Phantom Raspberry Blower Entertainment Pack video plug-ins for Kodi v19 (matrix)</description>
+    <summary lang="en_GB">Phantom Raspberry Blower Repository (matrix)</summary>
+    <summary lang="de_DE">Phantom Raspberry Blower Repository (Matrix)</summary>
+    <summary lang="es_ES">Repositorio Phantom Raspberry Blower (matriz)</summary>
+    <summary lanf="fr_FR">Dépôt Phantom Raspberry Blower (matrice)</summary>
+    <summary lanf="it_IT">Repository Phantom Raspberry Blower (matrice)</summary>
+    <description lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Entertainment Pack video plug-ins for Kodi v19 (matrix).</description>
+    <description lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Entertainment Pack Video-Plug-Ins für Kodi v19 (Matrix).</description>
+    <description lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Complementos de video del paquete de entretenimiento para Kodi v19 (matriz).</description>
+    <description lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Modules vidéo Entertainment Pack pour Kodi v19 (matrice).</description>
+    <description lang="it_IT">[COLOR rosso][B]Phantom Raspberry Blower[/B][/COLOR] Plug-in video Entertainment Pack per Kodi v19 (matrice).</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] does not host or distribute any of the content provided by this addon. Does not have any affiliation with the content provider and accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] hostet oder verteilt keine der von diesem Add-On bereitgestellten Inhalte. Hat keine Verbindung zum Inhaltsanbieter und übernimmt keine Verantwortung für das enthaltene Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] no aloja ni distribuye el contenido proporcionado por este complemento. No tiene ninguna afiliación con el proveedor de contenido y no acepta responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] n'héberge ni ne distribue aucun des contenus fournis par cet addon. N'a aucune affiliation avec le fournisseur de contenu et n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] non ospita né distribuisce alcun contenuto fornito da questo componente aggiuntivo. Non ha alcuna affiliazione con il fornitore di contenuti e non si assume alcuna responsabilità per l'addon incluso.</disclaimer>
     <platform>all</platform>
+    <language>en de es fr it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <banner></banner>
+    </assets>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (Matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizado a Kodi v19 (matriz) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrice) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrice) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/repository.prb-entertainment-pack-matrix</source>
   </extension>
 </addon>
