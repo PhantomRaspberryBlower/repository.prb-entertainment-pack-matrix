@@ -1473,8 +1473,7 @@ Known issues:
 <!-- Oath Video Addon-->
 <addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.00.30">
   <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <!--<import addon="script.theoath.metadata" />-->
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.theoath.artwork" />
     <import addon="script.module.resolveurl" />
     <import addon="script.module.requests" />
@@ -1482,8 +1481,6 @@ Known issues:
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
     <import addon="script.module.simplejson" />
-    <import addon="script.module.orion" optional="true" />
-    <import addon="plugin.video.youtube" optional="true" />
   </requires>
   <extension library="theoath.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
@@ -1512,7 +1509,7 @@ Known issues:
 <!-- Oath Artwork -->
 <addon id="script.theoath.artwork" version="1.0.8" name="TheOath Artwork" provider-name="host505">
   <requires>
-    <!--<import addon="xbmc.python" version="2.19.0"/>-->
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -1525,7 +1522,7 @@ Known issues:
 <!-- Oath Scrapers -->
 <addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.00.01" provider-name="TheOath">
   <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.six" />
