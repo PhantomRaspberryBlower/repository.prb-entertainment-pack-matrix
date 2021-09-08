@@ -5,7 +5,7 @@
     <import addon="repository.prb-entertainment-pack-matrix"/>
     <import addon="plugin.audio.absolute-radio"/>
     <import addon="plugin.audio.bbc-radio"/>
-    <import addon="plugin.audio.mp3-music"/>
+    <import addon="plugin.audio.mp3music"/>
     <import addon="plugin.audio.prb-radio"/>
     <import addon="plugin.video.dumpert"/>
     <import addon="plugin.video.exodus"/>
