@@ -8,7 +8,9 @@
     <import addon="plugin.audio.mp3-music"/>
     <import addon="plugin.audio.prb-radio"/>
     <import addon="plugin.video.dumpert"/>
+    <import addon="plugin.video.exodus"/>
     <import addon="plugin.video.iplayerwww"/>
+    <import addon="plugin.video.pressplay"/>
     <import addon="plugin.video.Rising.Tides"/>
     <import addon="plugin.video.sporthdme"/>
     <import addon="plugin.video.ted.talks"/>
