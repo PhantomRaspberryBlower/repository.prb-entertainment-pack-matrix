@@ -1548,8 +1548,6 @@ Known issues:
   </extension>
 </addon>
 
-<!-- Open Scrapers Addon -->
-
 <!-- Open subtitles Addon -->
 <addon id="service.subtitles.opensubtitles" name="OpenSubtitles.org" version="5.1.2" provider-name="amet, opensubtitles, juokelis">
   <requires>
@@ -1813,7 +1811,7 @@ v5.1.2 (2020-03-21) by enen92
 <!-- PressPlay Video Addon -->
 <addon id="plugin.video.pressplay" name="PressPlay" provider-name="PressPlay" version="4.0.0a">
   <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.pressplay.artwork" />
     <import addon="script.pressplay.metadata" />
     <import addon="script.module.urlresolver" />
@@ -1823,8 +1821,6 @@ v5.1.2 (2020-03-21) by enen92
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
     <import addon="script.module.simplejson" />
-    <import addon="script.module.metahandler" optional="true" />
-    <import addon="plugin.video.youtube" optional="true" />
   </requires>
   <extension library="pressplay.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
@@ -1853,7 +1849,7 @@ v5.1.2 (2020-03-21) by enen92
 <!-- PressPlay Artwork -->
 <addon id="script.pressplay.artwork" version="1.0.0" name="PressPlay Artwork" provider-name="PressPlay">
   <requires>
-    <!--<import addon="xbmc.python" version="2.19.0"/>-->
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -1866,7 +1862,7 @@ v5.1.2 (2020-03-21) by enen92
 <!-- PressPlay Metadata -->
 <addon id="script.pressplay.metadata" version="1.0.0" name="PressPlay Metadata" provider-name="PressPlay">
   <requires>
-    <!--<import addon="xbmc.python" version="2.19.0"/>-->
+    <import addon="xbmc.python" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -1879,7 +1875,7 @@ v5.1.2 (2020-03-21) by enen92
 <!-- PressPlay Scrapers -->
 <addon id="script.module.playscrapers" name="PlayScrapers Module" version="4.0.0" provider-name="PressPlay">
   <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.six" />
