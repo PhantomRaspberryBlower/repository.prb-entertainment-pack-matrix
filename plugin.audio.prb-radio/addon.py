@@ -4,6 +4,7 @@ import xbmc
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
+import xbmcvfs
 import sys
 import os
 import re
@@ -47,11 +48,14 @@ _clear_fav_list = __language__(30115)
 _are_you_sure = __language__(30116)
 _clear_list = __language__(30117)
 _add_current_song_to_list = __language__(30118)
+_mixes = __language__(30119)
+_mixes_desc = __language__(30120)
 
 # Get addon user settings
 _hide_fav_songs = __addon__.getSetting('hide_fav_songs')
 _hide_artist_info = __addon__.getSetting('hide_artist_info')
 _hide_artist_artwork = __addon__.getSetting('hide_artist_artwork')
+_hide_mixes = __addon__.getSetting('hide_mixes')
 _prevent_screensaver = __addon__.getSetting('prevent_screensaver')
 _previous_url = __addon__.getSetting('previous_url')
 
@@ -59,7 +63,7 @@ _previous_url = __addon__.getSetting('previous_url')
 playable_url = ''
 base_url = u'http://dir.xiph.org/search?q=PRB+Radio'
 
-__resources__ = xbmc.translatePath(os.path.join('special://home/addons/'
+__resources__ = xbmcvfs.translatePath(os.path.join('special://home/addons/'
                                             'plugin.audio.prb-radio',
                                             'resources'))
 
@@ -67,7 +71,7 @@ __resources__ = xbmc.translatePath(os.path.join('special://home/addons/'
 __fav_songs_list__ = os.path.join(__resources__, 'fav_songs.list')
 
 # Define Images
-image_path = xbmc.translatePath(os.path.join('special://home/addons/',
+image_path = xbmcvfs.translatePath(os.path.join('special://home/addons/',
                                 __addon_id__ + '/resources/media/'))
 g_default_icon = os.path.join(image_path, 'prb_radio.png')
 g_default_fanart = os.path.join(image_path, 'prb_radio_fanart.jpg')
@@ -75,6 +79,8 @@ g_artist_info_icon = os.path.join(image_path, 'artist_info.png')
 g_artist_info_fanart = os.path.join(image_path, 'artist_info_fanart.jpg')
 g_fav_songs_icon = os.path.join(image_path, 'fav_songs.png')
 g_fav_songs_fanart = os.path.join(image_path, 'fav_songs_fanart.jpg')
+g_mixes_icon = os.path.join(image_path, 'mixes.png')
+g_mixes_fanart = os.path.join(image_path, 'mixes_fanart.jpg')
 g_settings_icon = os.path.join(image_path, 'settings.png')
 g_settings_fanart = os.path.join(image_path, 'settings_fanart.jpg')
 g_blues_fanart = os.path.join(image_path, 'blues_fanart.jpg')
@@ -91,6 +97,11 @@ links_info = {_prb_radio:
               {'thumbs': g_default_icon,
                'fanart': g_default_fanart,
                'desc': _prb_desc
+               },
+              _mixes:
+              {'thumbs': g_mixes_icon,
+               'fanart': g_mixes_fanart,
+               'desc': _mixes_desc
                },
               _artist_info:
               {'thumbs': g_artist_info_icon,
@@ -121,7 +132,7 @@ def get_stream_link():
     link = ''
     title = ''
     content = commontasks.get_url(base_url)
-    content = content.replace('\n', '').replace('\t', '')
+    content = content.decode('utf-8').replace('\n', '').replace('\t', '')
     name = re.compile('class="card-title">(.+?)</h5> ').findall(content)[0]
     try:
         if name == 'PRB Radio':
@@ -265,9 +276,9 @@ def show_artist_details(artistname):
     """
     artist_info = ArtistInfo(artistname)
     if artist_info.artist_id is not None:
-        home = xbmc.translatePath('special://home')
+        home = xbmcvfs.translatePath('special://home')
         if xbmc.getInfoLabel('System.ProfileName') != 'Master user':
-            you = xbmc.getInfoLabel('System.ProfileName')
+            you = xbmcvfs.getInfoLabel('System.ProfileName')
         elif (xbmc.getCondVisibility('System.Platform.Windows') is True or
               xbmc.getCondVisibility('System.Platform.OSX') is True):
             if 'Users\\' in home:
