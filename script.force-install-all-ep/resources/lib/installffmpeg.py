@@ -7,40 +7,63 @@ import os
 # Date: 01-10-2018
 # Description: Script for installing FFmpeg
 
-def install_ffmpeg():
-    results = []
-    if is_tool_installed('ffmpeg') is False:
-        if is_user_root:
-            install_tool('ffmpeg')
+class InstallFFmpeg():
+
+    @property
+    def is_user_root(self):
+        # Is current user root
+        if os.geteuid() == 0:
+            return True
         else:
-            return results
-    command = 'ffmpeg -version'
-    output = Popen(command.split(), stdout=PIPE).communicate()[0]
-    for line in output.split('\n'):
-        for item in desc:
-            if line[0:len(item)] == item:
-                results.append(line[len(item):].strip())
-    return results
-
-# Check tool is installed
-def is_tool_installed(name):
-    try:
-        devnull = open(os.devnull)
-        Popen([name],
-              stdout=devnull,
-              stderr=devnull).communicate()
-    except OSError as e:
-        if e.errno == os.errno.ENOENT:
             return False
-    return True
 
-# Install FFmpeg
-def install_tool(name):
-    # Install tool and suppress output
-    devnull = open(os.devnull, 'w')
-    check_call(["sudo",
-                "apt-get",
-                "install",
-                "-y",
-                "-qq",
-                name], stdout=devnull, stderr=devnull)
+
+    def get_ffmpeg(self):
+        results = ''
+        version = ''
+        if self.is_tool_installed('ffmpeg') is False:
+            self.install_tool('ffmpeg')
+            if self.is_user_root:
+                self.install_tool('ffmpeg')
+            else:
+                return results
+        command = 'ffmpeg -version'
+        output = Popen(command.split(), stdout=PIPE).communicate()[0]
+        results = str(output)
+        if 'Copyright' in results:
+            version = results[results.index('ffmpeg ')+7:results.index(' Copyright')]
+        return version
+
+
+    # Check tool is installed
+    def is_tool_installed(self, name):
+        try:
+            devnull = open(os.devnull)
+            Popen([name],
+                  stdout=devnull,
+                  stderr=devnull).communicate()
+        except OSError as e:
+            if e.errno == os.errno.ENOENT:
+                return False
+        return True
+
+    # Install FFmpeg
+    def install_tool(self, name):
+        # Install tool and suppress output
+        devnull = open(os.devnull, 'w')
+        check_call(["sudo",
+                    "apt-get",
+                    "install",
+                    "-y",
+                    "-qq",
+                    name], stdout=devnull, stderr=devnull)
+
+# Check if running stand-alone or imported
+if __name__ == u'__main__':
+    if platform.system() != u'Windows':
+        import installffmpeg
+        si = InstallFFmpeg()
+        info = si.get_ffmpeg()
+        print(info)
+    else:
+        print(u'This script does not work with a Windows operating system. :( - Yet!')

@@ -225,8 +225,9 @@ if __name__ == '__main__':
             if params['action'] == 'send_web_form':
                 send_web_form()
             if params['action'] == 'install_ffmpeg':
-                resp = installffmpeg.install_ffmpeg()
+                si = installffmpeg.InstallFFmpeg()
+                resp = si.get_ffmpeg()
                 commontasks.message(resp, "FFmpeg")
-            if params['action'] == 'remove_ffmpeg':
-                resp = installffmpeg.remove_ffmpeg()
-                commontasks.message(resp, "FFmpeg")
+#            if params['action'] == 'remove_ffmpeg':
+#                resp = installffmpeg.remove_ffmpeg()
+#                commontasks.message(resp, "FFmpeg")

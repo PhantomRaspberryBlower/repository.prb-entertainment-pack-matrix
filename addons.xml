@@ -2,14 +2,13 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1d" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1e" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
     <import addon="plugin.audio.absolute-radio"/>
     <import addon="plugin.audio.mp3music"/>
     <import addon="plugin.audio.prb-radio"/>
-    <import addon="plugin.video.exodus"/>
     <import addon="plugin.video.iplayerwww"/>
     <import addon="plugin.video.pressplay"/>
     <import addon="plugin.video.Rising.Tides"/>
@@ -35,7 +34,7 @@
     <summary lang="es_ES">.</summary>
     <summary lang="fr_FR">.</summary>
     <summary lang="it_IT">.</summary>
-    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Exodus, Fido Video, Exodus, MP3 Music, PressPlay, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, TED Talks, The Oath, UKTV Play, Websters Wildshots, World News Live, Yoda, YouTube[CR]</description>
+    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Exodus, Exodus, MP3 Music, PressPlay, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, The Oath, World News Live, YouTube[CR]</description>
     <description lang="de_DE">.</description>
     <description lang="es_ES">.</description>
     <description lang="fr_FR">.</description>
