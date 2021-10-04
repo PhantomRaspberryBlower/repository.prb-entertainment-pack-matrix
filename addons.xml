@@ -3,7 +3,7 @@
 
 <!-- PRB Install Everything Addon -->
 <addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1d" provider-name="Phantom Raspberry Blower">
-  <requires>d
+  <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
     <import addon="plugin.audio.absolute-radio"/>
