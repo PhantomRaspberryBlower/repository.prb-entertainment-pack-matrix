@@ -3,7 +3,8 @@
     <setting id="hide_artist_artwork" type="bool" label="30003" default="false"/>
     <setting id="hide_artist_info" type="bool" label="30005" default="false"/>
     <setting id="hide_fav_songs" type="bool" label="30008" default="false"/>
+    <setting id="hide_mixes" type="bool" label="30121" default="false"/>
     <setting id="prevent_screensaver" type="bool" label="30007" default="true"/>
-    <setting id="previous_url">7874f3694d10842f9f93bf43553e5419</setting>
+    <setting id="previous_url">aHR0cDovL3d3dy5idWxpcy5jby51azo4MDAwL3JhcGkubXAz</setting>
   </category>
 </settings>

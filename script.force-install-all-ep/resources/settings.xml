@@ -32,6 +32,8 @@
         <setting type="lsep" label="    - Colours from addon names so listings are sorted alphabetically."/>
         <setting type="lsep" label="    - Multi-purpose addons from music addons list."/>
         <setting type="sep"/>
+        <setting label="Install FFmpeg" default="" action="RunScript($ID,?action=install_ffmpeg)" id="install_ffmpeg" type="action"/>
+        <setting type="sep"/>
         <setting label="Send Web Form to PRB" default="" action="RunScript($ID,?action=send_web_form)" id="send_web_form" type="action"/>        
         <setting type="lsep" label="Used to notify PRB of your current system settings helping PRB when trying"/>
         <setting type="lsep" label="to diagnose any issues. The following information is sent:"/>

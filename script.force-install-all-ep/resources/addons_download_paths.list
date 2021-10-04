@@ -8,6 +8,12 @@ MP3Music<>plugin.audio.mp3music<>music_dir<>music_download_path<>Music
 Placenta<>plugin.video.placenta<>downloads<>true<>Boolean
 Placenta<>plugin.video.placenta<>movie.download.path<>movies_download_path<>Movies
 Placenta<>plugin.video.placenta<>tv.download.path<>tv_shows_download_path<>TV Shows
+PressPlay<>plugin.video.pressplay<>downloads<>true<>Boolean
+PressPlay<>plugin.video.pressplay<>movie.download.path<>movies_download_path<>Movies
+PressPlay<>plugin.video.pressplay<>movie.download.path<>movies_download_path<>TV Shows
+TheOath<>plugin.video.theoath<>downloads<>true<>Boolean
+TheOath<>plugin.video.theoath<>movie.download.path<>movies_download_path<>Movies
+TheOath<>plugin.video.theoath<>movie.download.path<>movies_download_path<>TV Shows
 yoda<>plugin.video.yoda<>downloads<>true<>Boolean
 yoda<>plugin.video.yoda<>movie.download.path<>movies_download_path<>Movies
 yoda<>plugin.video.yoda<>tv.download.path<>tv_shows_download_path<>TV Shows

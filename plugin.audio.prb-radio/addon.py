@@ -125,7 +125,9 @@ def get_stream_link():
     """
     Return list of live links.
     """
+    global _previous_url
     if _previous_url is not None or _previous_url != "":
+        _previous_url = commontasks.decode(_previous_url).decode('utf-8')
         response = os.system("ping -c 1 " + _previous_url.replace('http://', '').replace('/rapi.mp3', ''))
         if response  == 0:
             return _previous_url
@@ -144,34 +146,42 @@ def get_stream_link():
     except:
         pass
     if title == 'PRB Radio':
-        __addon__.setSetting('previous_url', link)
+        encoded_link = commontasks.encode(link).decode('utf-8')
+        __addon__.setSetting('previous_url', encoded_link)
         return link
     return 0
 
 
-def addDir(name, url, mode, icon, fanart, desc, isFolder=False):
+def addDir(name, url, mode, icon, fanart, desc=None, category=None, genre=None, duration=None, isFolder=False):
     """
     Display a list of links
     """
-    u = (sys.argv[0] + '?url=' + commontasks.quote_plus(url) + '&mode=' + str(mode))
+    u = (sys.argv[0] + '?url=' + commontasks.quote_plus(url) + '&mode=' + str(mode) + '&icon=' + str(icon) + '&name=' + str(name) + '&category=' + str(category) + '&genre=' + str(genre))
     ok = True
     liz = xbmcgui.ListItem(name)
     # Set fanart and thumb images for the list item.
     if not fanart:
-        # Set fanrt to default image
+        # Set fanart to default image
         fanart = __fanart__
     if not icon:
         # Set icon to default image
         icon = __icon__
 
+    if genre is None:
+        genre = 'Blues, Gospel, Jazz, Soul, Reggae, Funk, Hip-Hop'
+
+    artist = 'Various Artists'
+    year = '2019'
+
     liz.setArt({'fanart': fanart, 'thumb': icon})
     # Set additional info for the list item.
     liz.setInfo(type='music',
                 infoLabels={'title': name,
-                            'artist': name,
+                            'artist': artist,
+                            'duration': duration,
                             'comment': desc,
-                            'genre': 'Blues, Gospel, Jazz, Soul, Reggae, Funk, Hip-Hop',
-                            'year': 2019,
+                            'genre': genre,
+                            'year': year,
                             'mediatype': 'album'})
 
     ok = xbmcplugin.addDirectoryItem(handle=__handle__,
@@ -190,48 +200,57 @@ def main_menu():
         commontasks.message(_prb_radio_not_broadcasting, _prb_radio_off_air)
         return 0
     # Live stream link
-    addDir(_prb_radio,
-           playable_url,
-           1,
-           links_info[_prb_radio]['thumbs'],
-           links_info[_prb_radio]['fanart'],
-           links_info[_prb_radio]['desc'])
+    addDir(name=_prb_radio,
+           url=playable_url,
+           mode=1,
+           icon=links_info[_prb_radio]['thumbs'],
+           fanart=links_info[_prb_radio]['fanart'],
+           desc=links_info[_prb_radio]['desc'])
+    if _hide_mixes != 'true':
+        # Mixes link
+        addDir(name=_mixes,
+               url=playable_url,
+               mode=8,
+               icon=links_info[_mixes]['thumbs'],
+               fanart=links_info[_mixes]['fanart'],
+               desc=links_info[_mixes]['desc'],
+               isFolder=True)
     if _hide_artist_info != 'true':
         # Artist information link
-        addDir(_artist_info,
-               playable_url,
-               2,
-               links_info[_artist_info]['thumbs'],
-               links_info[_artist_info]['fanart'],
-               links_info[_artist_info]['desc'])
+        addDir(name=_artist_info,
+               url=playable_url,
+               mode=2,
+               icon=links_info[_artist_info]['thumbs'],
+               fanart=links_info[_artist_info]['fanart'],
+               desc=links_info[_artist_info]['desc'])
     if _hide_fav_songs != 'true':
         # Favorite Songs link
-        addDir(_fav_songs,
-               playable_url,
-               3,
-               links_info[_fav_songs]['thumbs'],
-               links_info[_fav_songs]['fanart'],
-               links_info[_fav_songs]['desc'],
+        addDir(name=_fav_songs,
+               url=playable_url,
+               mode=3,
+               icon=links_info[_fav_songs]['thumbs'],
+               fanart=links_info[_fav_songs]['fanart'],
+               desc=links_info[_fav_songs]['desc'],
                isFolder=True)
     # Settings link
-    addDir(_settings,
-           playable_url,
-           4,
-           links_info[_settings]['thumbs'],
-           links_info[_settings]['fanart'],
-           links_info[_settings]['desc'])
+    addDir(name=_settings,
+           url=playable_url,
+           mode=4,
+           icon=links_info[_settings]['thumbs'],
+           fanart=links_info[_settings]['fanart'],
+           desc=links_info[_settings]['desc'])
     xbmcplugin.endOfDirectory(__handle__)
 
 
-def play_audio(url):
+def play_audio(url, icon=__icon__, name='PRB Radio'):
     """
     Start playing the audio stream.
     """
     if xbmc.Player().isPlayingAudio:
         xbmc.Player().stop()
-    liz = xbmcgui.ListItem('PRB Radio')
+    liz = xbmcgui.ListItem(name)
     # Set fanart image for the list item.
-    liz.setArt({'fanart': __fanart__, 'thumb': __icon__})
+    liz.setArt({'fanart': __fanart__, 'thumb': icon})
     xbmc.Player().play(url, liz, False)
     while not xbmc.Player().isPlayingAudio():
         xbmc.sleep(1)
@@ -398,6 +417,154 @@ def get_current_artist_image():
     return g_default_fanart
 
 
+def get_categories():
+    global base_url
+    pu = commontasks.decode(_previous_url).decode('utf-8')
+    base_url = pu.replace(':8000/rapi.mp3', '')
+    url = base_url + '/?page_id=2359'
+    raw_categories = []
+    response = commontasks.get_url(url)
+    matches = re.compile('<h2>(.+?)</h2>').findall(str(response))
+    return matches
+
+
+def get_category(category):
+    global base_url
+    mixes = []
+    pu = commontasks.decode(_previous_url).decode('utf-8')
+    base_url = pu.replace(':8000/rapi.mp3', '')
+    url = base_url + '/?page_id=2359'
+    raw_categories = []
+    response = commontasks.get_url(url)
+    cat_mixes = re.compile('<!-- Mix Category Start -->(.+?)<!-- Mix Category End -->').findall(str(response))
+    for cats in cat_mixes:
+        if str(cats).find(str(category)) > -1:
+            cat = str(cats)
+            mixes = re.compile('<!-- Mix Start -->(.+?)<!-- Mix End -->').findall(str(cat))
+    return mixes
+
+
+def show_mix_categories():
+    categories = get_categories()
+    for category in categories:
+        addDir(name=category,
+               url=url,
+               mode=9,
+               icon=g_mixes_icon,
+               fanart=g_mixes_fanart,
+               category=category,
+               isFolder=True)
+    xbmcplugin.endOfDirectory(__handle__)
+
+
+def show_mix_genres(category):
+    raw_genres = []
+    mix_gens = ''
+    mixes = get_category(category)
+    for mix in mixes:
+        regex = '<h6 style="padding-left: 40px;">Genre: (.+?)<br'
+        if mix != None:
+            mix_genres = re.compile(regex).findall(str(mix))
+            mix_gens = mix_gens + mix_genres[0] + ', '
+
+
+    for gen in mix_gens.split(', '):
+        try:
+            if str(gen) not in raw_genres and str(gen) != '':
+                raw_genres.append(gen)
+        except:
+            pass
+    raw_genres.sort()
+    for raw_gen in raw_genres:
+        addDir(name=raw_gen,
+               url=url,
+               mode=10,
+               icon=g_mixes_icon,
+               fanart=g_mixes_fanart,
+               category=category,
+               genre=raw_gen,
+               isFolder=True)
+    xbmcplugin.endOfDirectory(__handle__)
+
+
+def duration_seconds(duration):
+    try:
+        if ' hour' in duration:
+            hours = duration[:duration.index(' hour')]
+            minutes = commontasks.regex_from_to(duration, 'hour', ' minutes').replace('s ', '')
+        else:
+            hours = 0
+            minutes = duration[:duration.index(' minutes')]
+        seconds = commontasks.regex_from_to(duration, 'minutes ', ' seconds')
+        duration_seconds = (int(hours)*60*60) + (int(minutes)*60) + int(seconds)
+    except:
+        return None
+    return duration_seconds
+
+
+def show_mixes(category, genre):
+    matches = get_category(category)
+    for items in matches:
+        regex = '<h3 style="padding-left: 40px;">(.+?)</h3>(.+?)src="(.+?)"(.+?)<a href="(.+?).mp3">(.+?)<h6 style="padding-left: 40px;">Genre: (.+?)<b(.+?)Duration: (.+?)</h6>'
+        item_matches = re.compile(regex).findall(str(items))
+        if len(item_matches) > 0:
+            for title, junk1, img_src, junk2, link, junk3, gen, junk4, dur in item_matches:
+                if genre in gen:
+                    title = title.replace('&#8211;', '-')
+                    link = commontasks.requote_uri(link)
+                    new_link = base_url + link.replace('../', '/') + '.mp3'
+                    try:
+                        new_cue = commontasks.regex_from_to(junk3, '<a href="', '">cue file')
+                        new_cue = commontasks.requote_uri(new_cue)
+                        new_cue = base_url + new_cue.replace('../', '/')
+                    except:
+                        new_cue = None
+                    regex = '<li>(.+?)</li>'
+                    item_matches = re.compile(regex).findall(str(items))
+                    tracks = ''
+                    for track in item_matches:
+                        tracks = tracks + '%s; ' % track.replace('&#8211;', '-').replace('strong>', '').replace('<', '').replace('\n', '').replace('/', '')
+                    addDir(name=title,
+                           url=new_link,
+                           mode=11,
+                           icon=img_src,
+                           fanart=__fanart__,
+                           desc=tracks,
+                           category=category,
+                           genre=gen,
+                           duration=duration_seconds(dur))
+        else:
+            regex = '<p style="padding-left: 40px;"><a href="(.+?).mp3">(.+?)</a(.+?)">Genre: (.+?)<b(.+?)Duration: (.+?)</h6>'
+            item_matches = re.compile(regex).findall(str(items))
+            for link, title, junk1, gen, junk2, dur in item_matches:
+                if genre in gen:
+                    title = title.replace('&#8211;', '-')
+                    link = commontasks.requote_uri(link)
+                    new_link = base_url + link.replace('../', '/') + '.mp3'
+                    try:
+                        new_cue = commontasks.regex_from_to(junk1, '<a href="', '">cue file')
+                        new_cue = commontasks.requote_uri(link)
+                        new_cue = base_url + new_cue.replace('../', '/')
+                    except:
+                        new_cue = None
+                    regex = '<li>(.+?)</li>'
+                    item_matches = re.compile(regex).findall(str(items))
+                    tracks = ''
+                    for track in item_matches:
+                        tracks = tracks + '%s; ' % track.replace('&#8211;', '-').replace('strong>', '').replace('</', '').replace('\n', '')
+                    addDir(name=title,
+                           url=new_link,
+                           mode=11,
+                           icon=g_mixes_icon,
+                           fanart=g_mixes_fanart,
+                           desc=tracks,
+                           category=category,
+                           genre=gen,
+                           duration=duration_seconds(dur))
+
+    xbmcplugin.endOfDirectory(__handle__)
+
+
 def clear_fav_songs():
     dialog = xbmcgui.Dialog()
     resp = dialog.yesno(_clear_fav_list, _are_you_sure)
@@ -418,19 +585,18 @@ def show_fav_songs():
                   os.path.join(image_path, 'fav_songs.png'),
                   os.path.join(image_path, 'fav_songs_fanart.jpg'))]
     for title, url, mode, iconimage, fanartimage in menuitems:
-        addDir(title, url, mode, iconimage, fanartimage, '')
+        addDir(name=title, url=url, mode=mode, icon=iconimage, fanart=fanartimage)
     if not os.path.isfile(__fav_songs_list__):
         commontasks.create_file(__resources__, 'fav_songs.list')
     s = commontasks.read_from_file(__fav_songs_list__)
     search_list = s.split('\n')
     for list in search_list:
         if list != '':
-            addDir(list,
-                   list,
-                   7,
-                   os.path.join(image_path, 'fav_songs.png'),
-                   os.path.join(image_path, 'fav_songs_fanart.jpg'),
-                   '')
+            addDir(name=list,
+                   url=list,
+                   mode=7,
+                   icon=os.path.join(image_path, 'fav_songs.png'),
+                   fanart=os.path.join(image_path, 'fav_songs_fanart.jpg'))
     xbmcplugin.endOfDirectory(__handle__)
 
 
@@ -469,6 +635,10 @@ def get_params():
 params = get_params()
 url = None
 mode = None
+icon = None
+name = None
+category = None
+genre = None
 
 # Parse the url & mode parameters
 try:
@@ -479,6 +649,25 @@ try:
     mode = int(params['mode'])
 except:
     pass
+try:
+    icon = commontasks.unquote_plus(params['icon'])
+except:
+    pass
+try:
+    name = commontasks.unquote_plus(params['name'])
+except:
+    pass
+try:
+    category = commontasks.unquote_plus(params['category'])
+except:
+    pass
+try:
+    genre = commontasks.unquote_plus(params['genre'])
+except:
+    pass
+
+# For testing purposes
+#commontasks.message('Url: %s\nName: %s\nCategory: %s\nGenre: %s' % (str(url), str(name), str(category), str(genre)), 'Mode: %s' % str(mode))
 
 # Route the request based upon the mode number
 if mode is None or url is None or len(url) < 1: # Show main menu
@@ -500,3 +689,11 @@ elif mode == 6: # Add current song to favorite song list
     add_fav_song()
 elif mode == 7: # Display artist information from favorite song list
     show_artist_details(get_artist_name(url))
+elif mode == 8: # Display mix categories
+    show_mix_categories()
+elif mode == 9: # Display mix genres
+    show_mix_genres(category)
+elif mode == 10: # Display mixes
+    show_mixes(category, genre)
+elif mode == 11: # Play mix
+    play_audio(url, icon, name)

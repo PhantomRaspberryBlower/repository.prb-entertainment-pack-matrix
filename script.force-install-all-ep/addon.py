@@ -7,6 +7,7 @@ import xbmcvfs
 import os
 import xml.etree.ElementTree as et   # Module used to access xml files
 from resources.lib import commontasks
+from resources.lib import installffmpeg
 #from resources.lib.SetDownloadPaths import SetDownloadPaths
 
 # PRB Install Everything EP (Entertainment Pack)
@@ -223,3 +224,6 @@ if __name__ == '__main__':
                 commontasks.install_addon('service.prb-clean')
             if params['action'] == 'send_web_form':
                 send_web_form()
+            if params['action'] == 'install_ffmpeg':
+                resp = installffmpeg.install_ffmpeg()
+                commontasks.message(resp, "FFmpeg")

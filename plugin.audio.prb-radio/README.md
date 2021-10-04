@@ -1,4 +1,4 @@
-![PRB Radio logo](https://github.com/PhantomRaspberryBlower/plugin.audio.prb-radio/blob/master/resources/icon.png)
+![PRB Radio logo](https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/plugin.audio.prb-radio/blob/master/resources/icon.png)
 
 plugin.audio.prb-radio
 ======================

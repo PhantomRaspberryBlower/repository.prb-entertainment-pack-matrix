@@ -4,6 +4,8 @@ import os
 import re
 import xbmc
 import xbmcgui
+import base64
+import requests.utils
 
 try:
     # Python3
@@ -20,6 +22,19 @@ Description: Common Tasks for Addons
 '''
 
 INVALID_FILENAME_CHARS = u'\/:*?"<>|'
+
+
+def decode(code):
+    return base64.b64decode(code)
+
+
+def encode(plaintext):
+    return base64.b64encode(plaintext)
+
+
+def requote_uri(text):
+    resp = requests.utils.requote_uri(text)
+    return resp
 
 
 def quote_plus(text):
