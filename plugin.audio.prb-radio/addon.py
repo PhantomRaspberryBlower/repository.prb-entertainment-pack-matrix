@@ -135,8 +135,8 @@ def get_stream_link():
     title = ''
     content = commontasks.get_url(base_url)
     content = content.decode('utf-8').replace('\n', '').replace('\t', '')
-    name = re.compile('class="card-title">(.+?)</h5> ').findall(content)[0]
     try:
+        name = re.compile('class="card-title">(.+?)</h5> ').findall(content)[0]
         if name == 'PRB Radio':
             stream = re.compile('class="card-title">(.+?)</h5>(.+?)class' \
                                  '="d-inline-block float-right">(.+?)<a href' \
@@ -523,7 +523,16 @@ def show_mixes(category, genre):
                     item_matches = re.compile(regex).findall(str(items))
                     tracks = ''
                     for track in item_matches:
-                        tracks = tracks + '%s; ' % track.replace('&#8211;', '-').replace('strong>', '').replace('<', '').replace('\n', '').replace('/', '')
+                        trk = '%s; ' % (track.replace('\n', '')
+                                             .replace('&#8211;', '-')
+                                             .replace('</strong>', '')
+                                             .replace('<strong>', '')
+                                             .replace('&amp;', '&')
+                                             .replace('/', '')
+                                             .replace('<br >', '')
+                                             .replace('&#8216;', "'")
+                                             .replace('&#8217;', "'"))
+                        tracks += '[COLOR orange]%s[/COLOR]%s' % (trk[:trk.index('-')], trk[trk.index('-'):])
                     addDir(name=title,
                            url=new_link,
                            mode=11,
@@ -551,7 +560,16 @@ def show_mixes(category, genre):
                     item_matches = re.compile(regex).findall(str(items))
                     tracks = ''
                     for track in item_matches:
-                        tracks = tracks + '%s; ' % track.replace('&#8211;', '-').replace('strong>', '').replace('</', '').replace('\n', '')
+                        trk = '%s; ' % (track.replace('\n', '')
+                                              .replace('&#8211;', '-')
+                                              .replace('</strong>', '')
+                                              .replace('<strong>', '')
+                                              .replace('&amp;', '&')
+                                              .replace('/', '')
+                                              .replace('<br >', '')
+                                              .replace('&#8216;', "'")
+                                              .replace('&#8217;', "'"))
+                        tracks += '[COLOR orange]%s[/COLOR]%s' % (trk[:trk.index('-')], trk[trk.index('-'):])
                     addDir(name=title,
                            url=new_link,
                            mode=11,

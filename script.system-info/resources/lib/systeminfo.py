@@ -1,6 +1,7 @@
 #!/bin/python
  
-from urllib2 import urlopen
+#from urllib2 import urlopen
+from urllib.request import urlopen
 from collections import namedtuple
 from subprocess import check_call, Popen, PIPE
 import socket
@@ -153,7 +154,7 @@ class SystemInfo():
         # Return CPU temperature as a character string
         try:
             output = Popen(['vcgencmd', 'measure_temp'], stdout=PIPE).communicate()[0]
-            return str(output[5:len(output)-3])
+            return output.decode('utf-8')[5:len(output)-3]
         except:
             return 'Unable to get CPU temperature! :('
 
@@ -164,7 +165,7 @@ class SystemInfo():
     def ram_info(self):
         _ntuple_RAMinfo = namedtuple('RAM', 'total used free')
         output = Popen(['free'], stdout=PIPE).communicate()[0]
-        for line in output.split('\n'):
+        for line in output.decode('utf-8').split('\n'):
             if 'Mem:' in line:
                 total = line.split()[1]
                 used = line.split()[2]
@@ -208,7 +209,7 @@ class SystemInfo():
         import re
         devices = []
         s = Popen(["arp"], stdout=PIPE).communicate()[0]
-        for item in s.split('\n'):
+        for item in s.decode('utf-8').split('\n'):
             devices.append("%s" % item.strip())
         return devices
 
@@ -242,6 +243,7 @@ class SystemInfo():
     # Get CPU items
     def _get_cpu_item(self, item, ini_value):
         temp = ini_value
+        item_value = ''
         try:
             f = open('/proc/cpuinfo', 'r')
             for line in f:
@@ -330,7 +332,8 @@ class SystemInfo():
             return socket.inet_ntoa(fcntl.ioctl(
                                     s.fileno(),
                                     0x8915, # SIOCGIFADDR
-                                    struct.pack('256s', ifname[:15])
+                                    struct.pack('256s',
+                                    bytes(ifname[:15], 'utf-8'))
                                     )[20:24])
         except:
             return 'Unable to get LAN IP address! :('
@@ -344,9 +347,9 @@ class SystemInfo():
             else:
                 return results
         desc = ['netname:', 'descr:', 'country:', 'role:']
-        command = 'whois ' + ip
+        command = 'whois ' + ip.decode('utf-8')
         output = Popen(command.split(), stdout=PIPE).communicate()[0]
-        for line in output.split('\n'):
+        for line in output.decode('utf-8').split('\n'):
             for item in desc:
                 if line[0:len(item)] == item:
                     results.append(line[len(item):].strip())
@@ -377,125 +380,120 @@ class SystemInfo():
 
     # Get complete system information
     def get_system_info(self):
-        try:
-            arp_info = self.arp_info
-            disk_info = self.disk_info
-            ram_info = self.ram_info
-            networks_info = self.get_networks_info()
-            whois_info = self.get_whois(self.wan_ip_addr)
-            disk_info_txt = '\nStorage:'
-            networks_info_txt = ''
-            arp_info_txt = '\nNetwork Devices:\n'
-            if self.is_user_root:
-                networks_info_txt = '\nPrevious Networks:\n'
-                for network in networks_info:
-                    networks_info_txt = networks_info_txt + '\
-                    %s' % (network)
+        arp_info = self.arp_info
+        disk_info = self.disk_info
+        ram_info = self.ram_info
+        networks_info = self.get_networks_info()
+        whois_info = self.get_whois(self.wan_ip_addr)
+        disk_info_txt = '\nStorage:'
+        networks_info_txt = ''
+        arp_info_txt = '\nNetwork Devices:\n'
+        if self.is_user_root:
+            networks_info_txt = '\nPrevious Networks:\n'
+            for network in networks_info:
+                networks_info_txt = networks_info_txt + '\
+                %s' % (network)
 
-            addons_info = self.get_installed_addons('/home/osmc/.kodi/addons')
-            addons_info_txt = '\nAddons Installed:'
-            for addon in addons_info:
-                if (not addon == 'packages' and not addon == 'temp' 
-                    and not 'resource.language.' in addon):
-                    addons_info_txt = addons_info_txt + '\n \
-                    %s' % (addon)
+        addons_info = self.get_installed_addons('/home/osmc/.kodi/addons')
+        addons_info_txt = '\nAddons Installed:'
+        for addon in addons_info:
+            if (not addon == 'packages' and not addon == 'temp' 
+                and not 'resource.language.' in addon):
+                addons_info_txt = addons_info_txt + '\n \
+                %s' % (addon)
 
-            addons_info_txt += '\n'
-            (os_platform,
-             distname,
-             dist_version,
-             id,
-             system,
-             node,
-             release,
-             version,
-             machine,
-             processor) = self.get_platform_info()
-            for item in disk_info:
-                disk_info_txt = disk_info_txt + u'\n \
-                    Path:\t\t\t%s\n \
-                    Total:\t\t\t%sGB\n \
-                    Used:\t\t\t%sGB\n \
-                    Free:\t\t\t%sGB\n' % (
-                    item.path,
-                    item.total / (1024**3),
-                    item.used / (1024**3),
-                    item.free / (1024**3))
-
-            for device in arp_info:
-                arp_info_txt = arp_info_txt + '\t\t%s\n' % device
-
-            return u'\nSoftware:\n \
-                    Username:\t\t\t%s\n \
-                    Hostname:\t\t\t%s\n \
-                    Platform:\t\t\t%s\n \
-                    Distribution:\t\t%s\n \
-                    Dist. Version:\t\t%s\n \
-                    System:\t\t\t%s\n \
-                    Node:\t\t\t%s\n \
-                    Release:\t\t\t%s\n \
-                    Version:\t\t\t%s\n \
-                    Machine:\t\t\t%s\n \
-                    Processor:\t\t\t%s\n \
-                    \nCPU:\n \
-                    Model:\t\t\t%s\n \
-                    Cores:\t\t\t%s\n \
-                    Temp:\t\t\t%s\n \
-                    Hardware:\t\t\t%s\n \
-                    Revision:\t\t\t%s\n \
-                    Serial number:\t\t%s\n \
-                    \nMemory:\n \
-                    Total:\t\t\t%sMB\n \
-                    Used:\t\t\t%sMB\n \
-                    Free:\t\t\t%sMB\n \
-                    %s \
-                    \nNetwork:\n \
-                    LAN IP Address:\n \
-                    \teth0:\t\t\t%s\n \
-                    \twlan0:\t\t\t%s\n \
-                    Gateway IP Address:\t%s\n \
-                    WAN IP Address:\t\t%s\n \
-                    Whois:\n \
-                    \tnetname:\t\t%s\n \
-                    \trole:\t\t\t%s\n \
-                    \tdescr:\t\t\t%s\n \
-                    \tcountry:\t\t%s\n \
-                    %s \
-                    %s \
-                    %s' % (self.username,
-                           self.hostname,
-                           self.os_platform,
-                           distname,
-                           dist_version,
-                           system,
-                           node,
-                           release,
-                           version,
-                           machine,
-                           processor,
-                           self.cpu_model,
-                           self.cpu_cores,
-                           self.cpu_temp,
-                           self.cpu_hardware,
-                           self.cpu_revision,
-                           self.cpu_serial,
-                           int(ram_info.total) / 1024,
-                           int(ram_info.used) / 1024,
-                           int(ram_info.free) / 1024,
-                           disk_info_txt,
-                           self.get_lan_ip_addr('eth0'),
-                           self.get_lan_ip_addr('wlan0'),
-                           self.default_gateway,
-                           self.wan_ip_addr,
-                           whois_info[0],
-                           whois_info[3],
-                           whois_info[1],
-                           whois_info[2],
-                           networks_info_txt,
-                           arp_info_txt,
-                           addons_info_txt)
-        except: 
-            return 'Error! Unable to get system informtaion! :('
+        addons_info_txt += '\n'
+        (os_platform,
+         distname,
+         dist_version,
+         id,
+         system,
+         node,
+         release,
+         version,
+         machine,
+         processor) = self.get_platform_info()
+        for item in disk_info:
+            disk_info_txt = disk_info_txt + u'\n \
+                Path:\t\t\t%s\n \
+                Total:\t\t\t%sGB\n \
+                Used:\t\t\t%sGB\n \
+                Free:\t\t\t%sGB\n' % (
+                item.path,
+                round(item.total / (1024**3),2),
+                round(item.used / (1024**3),2),
+                round(item.free / (1024**3), 2))
+        for device in arp_info:
+            arp_info_txt = arp_info_txt + '\t\t%s\n' % device
+        return u'\nSoftware:\n \
+                Username:\t\t\t%s\n \
+                Hostname:\t\t\t%s\n \
+                Platform:\t\t\t%s\n \
+                Distribution:\t\t%s\n \
+                Dist. Version:\t\t%s\n \
+                System:\t\t\t%s\n \
+                Node:\t\t\t%s\n \
+                Release:\t\t\t%s\n \
+                Version:\t\t\t%s\n \
+                Machine:\t\t\t%s\n \
+                Processor:\t\t\t%s\n \
+                \nCPU:\n \
+                Model:\t\t\t%s\n \
+                Cores:\t\t\t%s\n \
+                Temp:\t\t\t%s\n \
+                Hardware:\t\t\t%s\n \
+                Revision:\t\t\t%s\n \
+                Serial number:\t\t%s\n \
+                \nMemory:\n \
+                Total:\t\t\t%sMB\n \
+                Used:\t\t\t%sMB\n \
+                Free:\t\t\t%sMB\n \
+                %s \
+                \nNetwork:\n \
+                LAN IP Address:\n \
+                \teth0:\t\t\t%s\n \
+                \twlan0:\t\t\t%s\n \
+                Gateway IP Address:\t%s\n \
+                WAN IP Address:\t\t%s\n \
+                Whois:\n \
+                \tnetname:\t\t%s\n \
+                \trole:\t\t\t%s\n \
+                \tdescr:\t\t\t%s\n \
+                \tcountry:\t\t%s\n \
+                %s \
+                %s \
+                %s' % (self.username,
+                       self.hostname,
+                       self.os_platform,
+                       distname,
+                       dist_version,
+                       system,
+                       node,
+                       release,
+                       version,
+                       machine,
+                       processor,
+                       self.cpu_model,
+                       self.cpu_cores,
+                       self.cpu_temp,
+                       self.cpu_hardware,
+                       self.cpu_revision,
+                       self.cpu_serial,
+                       int(float(ram_info.total) / 1024),
+                       int(float(ram_info.used) / 1024),
+                       int(float(ram_info.free) / 1024),
+                       disk_info_txt,
+                       self.get_lan_ip_addr('eth0'),
+                       self.get_lan_ip_addr('wlan0'),
+                       self.default_gateway,
+                       self.wan_ip_addr.decode('utf-8'),
+                       whois_info[0],
+                       whois_info[3],
+                       whois_info[1],
+                       whois_info[2],
+                       networks_info_txt,
+                       arp_info_txt,
+                       addons_info_txt)
 
 # Check if running stand-alone or imported
 if __name__ == u'__main__':

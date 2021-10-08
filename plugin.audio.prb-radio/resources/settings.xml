@@ -5,6 +5,6 @@
     <setting id="hide_fav_songs" type="bool" label="30008" default="false"/>
     <setting id="hide_mixes" type="bool" label="30121" default="false"/>
     <setting id="prevent_screensaver" type="bool" label="30007" default="true"/>
-    <setting id="previous_url">aHR0cDovL3d3dy5idWxpcy5jby51azo4MDAwL3JhcGkubXAz</setting>
+    <setting id="previous_url" default="aHR0cDovL3d3dy5idWxpcy5jby51azo4MDAwL3JhcGkubXAz"/>
   </category>
 </settings>

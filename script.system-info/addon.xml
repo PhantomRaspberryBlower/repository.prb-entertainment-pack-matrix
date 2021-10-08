@@ -43,11 +43,7 @@
       <screenshot>resources/media/screenshot002.jpg</screenshot>
       <screenshot>resources/media/screenshot003.jpg</screenshot>
     </assets>
-    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
-    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
-    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
-    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
-    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <news>Updated to Kodi v19 (matrix) and code to Python 3.</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.system-info</source>
   </extension>
 </addon>
