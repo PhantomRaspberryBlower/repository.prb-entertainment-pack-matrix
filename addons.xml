@@ -2,14 +2,19 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.1e" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.2" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
+    <import addon="plugin.image.dumpert"/>
     <import addon="plugin.audio.absolute-radio"/>
     <import addon="plugin.audio.mp3music"/>
     <import addon="plugin.audio.prb-radio"/>
+    <import addon="plugin.video.dumpert"/>
+    <import addon="plugin.video.exodus"/>
+    <import addon="plugin.video.freelivetv.tva"/>
     <import addon="plugin.video.iplayerwww"/>
+    <import addon="plugin.video.npr"/>
     <import addon="plugin.video.pressplay"/>
     <import addon="plugin.video.Rising.Tides"/>
     <import addon="plugin.video.sporthdme"/>
@@ -34,7 +39,7 @@
     <summary lang="es_ES">.</summary>
     <summary lang="fr_FR">.</summary>
     <summary lang="it_IT">.</summary>
-    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Exodus, Exodus, MP3 Music, PressPlay, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, The Oath, World News Live, YouTube[CR]</description>
+    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Dumpert, Exodus, Free Live TV, MP3 Music, NPR, OpenWeatherMap, PressPlay, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, The Oath, YouTube[CR]</description>
     <description lang="de_DE">.</description>
     <description lang="es_ES">.</description>
     <description lang="fr_FR">.</description>
@@ -1486,7 +1491,7 @@ Known issues:
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>false</reuselanguageinvoker>
     <summary lang="en_GB">TheOath</summary>
-    <description lang="en_GB">The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+    <description lang="en_GB">Multi-source add-on with native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum />
@@ -2206,7 +2211,7 @@ v5.2.14 (2017-01-23)
     <summary lang="en">SportHD by Bugatsinho</summary>
     <description lang="en">Sport Streams from SportHD.me</description>
     <disclaimer lang="en">All the streams on this add-on are hosted on the third party site and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
-    <language>EN</language>
+	  <language>EN</language>
     <license>GNU GPL, version 2</license>
     <twitter>https://twitter.com/Bugatsinho</twitter>
     <news>-compatible with Kodi18.x - 19.x version</news>
@@ -2264,11 +2269,7 @@ v5.2.14 (2017-01-23)
       <screenshot>resources/media/screenshot002.jpg</screenshot>
       <screenshot>resources/media/screenshot003.jpg</screenshot>
     </assets>
-    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
-    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
-    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
-    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
-    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <news>Updated to Kodi v19 (matrix) and code to Python 3.</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.system-info</source>
   </extension>
 </addon>
@@ -2311,6 +2312,9 @@ v5.2.14 (2017-01-23)
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <!-- There are subtitles on TED in many languages,
+    and this plugin is (partially) internationalized in several,
+    but it seems better to claim the one we are sure of for now. -->
     <language>en</language>
     <summary lang="en_GB">Watch talks from TED.com, a site dedicated to 'Ideas Worth Spreading'</summary>
     <summary lang="hu_HU">Beszédek megtekintése a TED.com-ról</summary>
