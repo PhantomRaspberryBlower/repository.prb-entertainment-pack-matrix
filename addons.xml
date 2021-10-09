@@ -2,7 +2,7 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.2" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.3" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
@@ -23,11 +23,12 @@
     <import addon="plugin.video.youtube"/>
     <import addon="script.globalsearch"/>
     <import addon="script.module.youtube.dl"/>
-    <import addon="script.openweathermap.maps"/>
     <import addon="script.rss.editor"/>
     <import addon="script.rss-reader"/>
     <import addon="script.system-info"/>
     <import addon="service.subtitles.opensubtitles_by_opensubtitles"/>
+    <import addon="script.speedtester"/>
+    <import addon="weather.multi"/>
     <import addon="service.prb-clean"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
