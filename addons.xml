@@ -741,11 +741,11 @@
 <!-- Dumpert Image -->
 <addon id="plugin.image.dumpert" name="Dumpert" version="1.0.4+matrix.1" provider-name="Skipmode A1">
   <requires>
-    <import addon="xbmc.python"                     version="3.0.0"/>
-    <import addon="script.module.beautifulsoup4"    version="4.3.2"/>
-    <import addon="script.module.requests"          version="2.4.3"/>
-    <import addon="script.module.future"            version="0.0.1"/>
-    <import addon="script.module.html5lib"          version="0.999.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.requests" version="2.4.3"/>
+    <import addon="script.module.future" version="0.0.1"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" 	library="addon.py">
     <provides>image</provides>
@@ -778,12 +778,12 @@
 <!-- Dumpert Video -->
 <addon id="plugin.video.dumpert" name="Dumpert" version="1.1.10+matrix.1" provider-name="Skipmode A1">
   <requires>
-    <import addon="xbmc.python"                     version="3.0.0"/>
-    <import addon="script.module.beautifulsoup4"    version="4.3.2"/>
-    <import addon="script.module.requests"          version="2.4.3"/>
-    <import addon="script.module.future"            version="0.0.1"/>
-    <import addon="script.module.html5lib"          version="0.999.0"/>
-    <import addon="plugin.video.youtube"            version="5.1.7"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.requests" version="2.4.3"/>
+    <import addon="script.module.future" version="0.0.1"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
+    <import addon="plugin.video.youtube" version="5.1.7"/>
   </requires>
   <extension point="xbmc.python.pluginsource" 	library="addon.py">
     <provides>video</provides>
@@ -884,7 +884,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Free Live TV</summary>
-    <description>Please support the continued development of Free Live TV by becoming a Patron [COLORlightskyblue]https://patreon.m7kodi.dev/[/COLOR]</description>
+    <description>Please support the continued development of Free Live TV by becoming a Patron [COLOR lightskyblue]https://patreon.m7kodi.dev/[/COLOR]</description>
     <platform>all</platform>
     <website>https://m7kodi.dev</website>
     <assets>
@@ -1446,7 +1446,7 @@ Known issues:
     <import addon="plugin.video.youtube" optional="true" version="5.4.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-  <provides>video</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">NPR Music Video Addon</summary>
@@ -1878,40 +1878,42 @@ v5.2.14 (2017-01-23)
 
 <!-- PressPlay Video Addon -->
 <addon id="plugin.video.pressplay" name="PressPlay" provider-name="PressPlay" version="4.0.0a">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.pressplay.artwork" />
-    <import addon="script.pressplay.metadata" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.playscrapers" />
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.simplejson" />
-  </requires>
-  <extension library="pressplay.py" point="xbmc.python.pluginsource">
-    <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>false</reuselanguageinvoker>
-    <summary lang="en_GB">PressPlay</summary>
-    <description lang="en_GB">Multi-source and multi-scraper package add-on. A basic scraper pack is provided but also supports Playscrapers.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum />
-    <website />
-    <source />
-    <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <news>
+    <requires>
+        <!--<import addon="xbmc.python" version="2.20.0" />-->
+        <import addon="script.pressplay.artwork" />
+        <import addon="script.pressplay.metadata" />
+        <import addon="script.module.urlresolver" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.playscrapers" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.metahandler" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension library="pressplay.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">PressPlay</summary>
+        <description lang="en_GB">Multi-source and multi-scraper package add-on. A basic scraper pack is provided but also supports Playscrapers, and native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
 - See Changelog on Tools menu
-    </news>
-  </extension>
+        </news>
+    </extension>
 </addon>
 
 <!-- PressPlay Artwork -->
