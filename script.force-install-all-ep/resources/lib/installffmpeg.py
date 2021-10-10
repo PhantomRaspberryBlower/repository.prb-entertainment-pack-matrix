@@ -20,14 +20,10 @@ class InstallFFmpeg():
 
 
     def get_ffmpeg(self):
-        results = ''
         version = ''
         if self.is_tool_installed('ffmpeg') is False:
-            self.install_tool('ffmpeg')
             if self.is_user_root:
                 self.install_tool('ffmpeg')
-            else:
-                return results
         command = 'ffmpeg -version'
         output = Popen(command.split(), stdout=PIPE).communicate()[0]
         results = str(output)
