@@ -1830,7 +1830,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- PRB AVSS -->
-<addon id="plugin.video.prb-avss" name="AVSS" version="1.0.1" provider-name="Phantom Raspberry Blower">
+<addon id="plugin.video.prb-avss" name="PRB AVSS" version="1.0.1" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -1839,7 +1839,7 @@ v5.2.14 (2017-01-23)
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Audio Video Streaming Service</summary>
-    <description>Turns a Raspberry Pi into a audio video streaming service that can either live stream to Facebook or broadcast using UDP. This addon is used to test the stream via UDP before going live.</description>
+    <description>Turn a Raspberry Pi into a audio video streaming service that can either live stream to Facebook or broadcast using UDP. This addon is used to test the stream via UDP before going live.</description>
     <disclaimer>[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] does not host or distribute any of the content provided by this addon. Does not have any affiliation with the content provider and accepts no responsibility for the included addon.</disclaimer>
     <platform>all</platform>
     <language></language>
