@@ -510,7 +510,7 @@ def show_mixes(category, genre):
         if len(item_matches) > 0:
             for title, junk1, img_src, junk2, link, junk3, gen, junk4, dur in item_matches:
                 if genre in gen:
-                    title = title.replace('&#8211;', '-').replace('&#8243;', '"')
+                    title = title.replace('&#8211;', '-')
                     link = commontasks.requote_uri(link)
                     new_link = base_url + link.replace('../', '/') + '.mp3'
                     try:
@@ -530,6 +530,7 @@ def show_mixes(category, genre):
                                              .replace('&amp;', '&')
                                              .replace('/', '')
                                              .replace('<br >', '')
+                                             .replace('&#8243;', '"')
                                              .replace('&#8216;', "'")
                                              .replace('&#8217;', "'"))
                         tracks += '[COLOR orange]%s[/COLOR]%s' % (trk[:trk.index('-')], trk[trk.index('-'):])
@@ -567,6 +568,7 @@ def show_mixes(category, genre):
                                               .replace('&amp;', '&')
                                               .replace('/', '')
                                               .replace('<br >', '')
+                                              .replace('&#8243;', '"')
                                               .replace('&#8216;', "'")
                                               .replace('&#8217;', "'"))
                         tracks += '[COLOR orange]%s[/COLOR]%s' % (trk[:trk.index('-')], trk[trk.index('-'):])
