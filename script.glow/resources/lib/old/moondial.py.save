@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+# Moondial
+# At sunset the red led will light and change colours
+# throughout the day until blue representing sunset
+
+# Date: 07 March 2016
+# Written By: Phantom Raspberry Blower
+
+from sunrise import Sun
+from datetime import datetime, date
+
+sunrise = ''
+sunset = ''
+duration = ''
+
+class Moondial():
+
+  # Initialize
+  def __init__(self):
+    self.sunrise = Sun().sunrise()
+    self.sunset = Sun().sunset()
+    self.duration = datetime.combine(date.today(), sunset) - datetime.combine(date.today(), sunrise)
+    print self.duration
+

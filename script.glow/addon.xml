@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.imap-glow" name="PRB Imap Glow" version="1.0.0" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Imap Glow</summary>
+    <summary lang="de_DE">Imap Glow</summary>
+    <summary lang="es_ES">Imap Glow</summary>
+    <summary lang="fr_FR">Imap Glow</summary>
+    <summary lang="it_IT">Imap Glow</summary>
+    <description lang="en_GB">Monitors inbox for specific emails and alerts the user by illuminating the Imap Glow candle to one of seven colours.[CR]Can be setup as a security camera that sends an image via email when motion is detected.[CR]Sundial / Moondial that changes different colours from sunrise to sunset or vice versa.[CR]Displays messages in Morse code.[CR]Night Lamp that can be set to any of seven colours.[CR]Displays the temperature represented by seven colours.</description>
+    <description lang="de_DE">Überwacht den Posteingang auf bestimmte E-Mails und warnt den Benutzer, indem die Imap Glow-Kerze in einer von sieben Farben beleuchtet wird.[CR]Kann als Überwachungskamera eingerichtet werden, die ein Bild per E-Mail sendet, wenn eine Bewegung erkannt wird.[CR]Sonnenuhr / Monduhr, die sich ändert verschiedene Farben von Sonnenaufgang bis Sonnenuntergang oder umgekehrt.[CR]Zeigt Nachrichten in Morsecode an.[CR]Nachtlampe, die auf eine von sieben Farben eingestellt werden kann.[CR]Zeigt die Temperatur in sieben Farben an.</description>
+    <description lang="es_ES">Supervisa la bandeja de entrada para correos electrónicos específicos y alerta al usuario iluminando la vela Imap Glow a uno de siete colores. [CR] Se puede configurar como una cámara de seguridad que envía una imagen por correo electrónico cuando se detecta movimiento. [CR] Reloj de sol / Moondial que cambia diferentes colores desde el amanecer hasta el atardecer o viceversa. [CR] Muestra mensajes en código Morse. [CR] Lámpara nocturna que se puede configurar en cualquiera de los siete colores. [CR] Muestra la temperatura representada por siete colores.</description>
+    <description lang="fr_FR">Surveille la boîte de réception pour des e-mails spécifiques et alerte l'utilisateur en illuminant la bougie Imap Glow à l'une des sept couleurs.[CR]Peut être configuré comme une caméra de sécurité qui envoie une image par e-mail lorsqu'un mouvement est détecté.[CR]Sundial / Moondial qui change différentes couleurs du lever au coucher du soleil ou vice versa.[CR]Affiche les messages en code Morse.[CR]Lampe de nuit qui peut être réglée sur l'une des sept couleurs.[CR]Affiche la température représentée par sept couleurs.</description>
+    <description lang="it_IT">Monitora la posta in arrivo per e-mail specifiche e avvisa l'utente illuminando la candela Imap Glow con uno dei sette colori.[CR]Può essere configurato come una telecamera di sicurezza che invia un'immagine via e-mail quando viene rilevato un movimento.[CR]Mudiale / Orologio lunare che cambia colori diversi dall'alba al tramonto o viceversa.[CR]Visualizza i messaggi in codice Morse.[CR]Lampada notturna impostabile su uno dei sette colori.[CR]Visualizza la temperatura rappresentata da sette colori.</description>
+    <disclaimer lang="en_GB">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] This addon is for testing purposes only and accepts no responsibility for the included addon.</disclaimer>
+    <disclaimer lang="de_DE">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Dieses Addon dient nur zu Testzwecken und übernimmt keine Verantwortung für das mitgelieferte Addon.</disclaimer>
+    <disclaimer lang="es_ES">[COLOR red][B] Phantom Raspberry Blower[/ B][/ COLOR] Este complemento es solo para fines de prueba y no acepta ninguna responsabilidad por el complemento incluido.</disclaimer>
+    <disclaimer lang="fr_FR">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Cet addon est uniquement à des fins de test et n'accepte aucune responsabilité pour l'addon inclus.</disclaimer>
+    <disclaimer lang="it_IT">[COLOR red][B]Phantom Raspberry Blower[/B][/COLOR] Questo componente aggiuntivo è solo a scopo di test e non si assume alcuna responsabilità per il componente aggiuntivo incluso.</disclaimer>
+    <platform>all</platform>
+    <language>en de fr es it</language>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <website></website>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <broken></broken>
+    <email></email>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <banner/>
+      <screenshot/>
+    </assets>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
+    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
+    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/plugin.video.prb-radio</source>
+  </extension>
+</addon>

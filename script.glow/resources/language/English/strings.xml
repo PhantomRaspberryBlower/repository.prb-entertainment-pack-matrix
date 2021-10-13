@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="true"?>
+<strings>
+	<!-- General Settings -->
+      <string id="10000">General</string>
+      <string id="10001">Enable Imap Glow</string>
+      <string id="10002">Start Imap Glow</string>
+      <string id="10003">Stop Imap Glow</string>
+      <!-- Timer Settings -->
+      <string id="20000">Timer</string>
+      <string id="20001">Enable Timer</string>
+      <string id="20002">Start Time</string>
+      <string id="20003">End Time</string>
+      <!-- Moondial Settings -->
+      <string id="30000">Moondial</string>
+      <string id="30001">Location</string>
+      <string id="30002">Latitude</string>
+      <string id="30003">Longitude</string>
+	<!-- Email Settings -->
+      <string id="40000">Email</string>
+      <string id="40001">Account</string>
+      <string id="40002">Username</string>
+      <string id="40003">Password</string>
+      <string id="40004">IMAP Settings</string>
+      <string id="40005">IMAP Server</string>
+      <string id="40006">IMAP Port</string>
+      <string id="40007">IMAP Enable SSL</string>
+      <string id="40008">Poll Interval</string>
+      <string id="40009">Red Category</string>
+      <string id="40010">Green Category</string>
+      <string id="40011">Blue Category</string>
+      <string id="40012">Yellow Category</string>
+      <string id="40013">Pink Category</string>
+      <string id="40014">Sky Category</string>
+      <string id="40015">White Category</string>
+      <string id="40016">From email(s)</string>
+      <string id="40017">With subject(s)</string>
+      <string id="40018">any</string>
+      <string id="40019">Description</string>
+      <!-- Sundial Settings -->
+      <string id="50000">Sundial</string>
+      <string id="50001">Location</string>
+      <string id="50002">Latitude</string>
+      <string id="50003">Longitude</string>
+      <!-- Security Settings -->
+      <string id="60000">Security</string>
+      <string id="60001">Enable Security</string>
+      <string id="60002">Image Quality</string>
+      <string id="60003">Image Resolution</string>
+      <string id="60004">Enable Log</string>
+      <string id="60005">Enable Email</string>
+      <string id="60006">Email To</string>
+      <string id="60007">Email From</string>
+      <string id="60008">SMTP Server</string>
+      <string id="60009">SMTP Port</string>
+      <string id="60010">SMTP Enable SSL</string>
+      <string id="60011">Username</string>
+      <string id="60012">Password</string>
+      <string id="60013">1920x1080</string>
+      <string id="60014">1280x800</string>
+      <string id="60015">1280x720</string>
+      <string id="60016">800x600</string>
+      <string id="60017">640x480</string>
+      <string id="60018">Output Path</string>
+      <string id="60019">Enable Text Overlay</string>
+      <string id="60020">Timer</string>
+      <string id="60021">Start Time</string>
+      <string id="60022">End Time</string>
+      <!-- Temperature Settings -->
+      <string id="70000">Temperature</string>
+      <string id="70001">Centigrade</string>
+      <string id="70002">Fahrenheit</string>
+      <string id="70003">48/9</string>
+      <string id="70004">54/12</string>
+      <string id="70005">59/15</string>
+      <string id="70006">64/18</string>
+      <string id="70007">70/21</string>
+      <string id="70008">74/24</string>
+      <string id="70009">81/27</string>
+</strings>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <!-- IMAP Settings -->
+    <category label="10000">
+        <setting id="imap_glow_start" type="action" label="10002" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m start)"/>
+        <setting id="imap_glow_stop" type="action" label="10003" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m stop)"/>
+        <setting id="imap_glow_poweroff" type="action" label="Poweroff" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m poweroff)"/>
+        <setting id="imap_password" type="action" label="Encrypt Password" option="hidden" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m account:password:Bul15.)"/>
+        <setting label="10001" default="false" id="imap_glow_enabled" type="bool"/>
+        <setting id="imap_glow_enabled" type="action" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m !eq(-1,))"/>
+        <!-- <setting id="imap_glow_enabled" type="action" label="Enable IMAP Glow" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m general:enable_imap_glow:true)"/> -->
+    </category>
+    <category label="20000">
+        <setting id="enable_timer" type="action" label="20001" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m start)"/>
+    </category>
+    <category label="40000">
+        <setting type="lsep" label="40004"/>
+        <setting label="40001" default="" id="imap_account" type="text"/>
+        <setting label="40002" default="" id="imap_username" type="text" />
+        <setting label="40003" default="" id="imap_password" option="hidden" type="text"/>
+        <setting label="Apply Password" default="" id="imap_password_set" option="hidden" type="action" action="RunScript(special://home/addons/script.imap-glow/resources/lib/commands.py, -m account:password:Bul15.)"/>
+        <setting label="40005" default="" id="imap_server" type="text"/>
+        <setting label="40006" default="993" id="imap_port" type="text"/>
+        <setting label="40007" default="true" id="imap_enable_ssl" type="bool"/>
+        <setting label="40008" default="" id="email_poll_interval" type="slider"/>
+        <setting type="lsep" label="40009"/>
+        <setting label="40019" default="" id="red_email_desc" type="text"/>
+        <setting label="40016" default="" id="red_email_from" type="text"/>
+        <setting label="40017" default="40018" id="red_email_subject" type="text"/>
+        <setting type="lsep" label="40010"/>
+        <setting label="40019" default="" id="green_email_desc" type="text"/>
+        <setting label="40016" default="" id="green_email_from" type="text"/>
+        <setting label="40017" default="40018" id="green_email_subject" type="text"/>
+        <setting type="lsep" label="40011"/>
+        <setting label="40019" default="" id="blue_email_desc" type="text"/>
+        <setting label="40016" default="" id="blue_email_from" type="text"/>
+        <setting label="40017" default="40018" id="blue_email_subject" type="text"/>
+        <setting type="lsep" label="40012"/>
+        <setting label="40019" default="" id="yellow_email_desc" type="text"/>
+        <setting label="40016" default="" id="yellow_email_from" type="text"/>
+        <setting label="40017" default="40018" id="yellow_email_subject" type="text"/>
+        <setting type="lsep" label="40013"/>
+        <setting label="40019" default="" id="pink_email_desc" type="text"/>
+        <setting label="40016" default="" id="pink_email_from" type="text"/>
+        <setting label="40017" default="40018" id="pink_email_subject" type="text"/>
+        <setting type="lsep" label="40014"/>
+        <setting label="40019" default="" id="sky_email_desc" type="text"/>
+        <setting label="40016" default="" id="sky_email_from" type="text"/>
+        <setting label="40017" default="40018" id="sky_email_subject" type="text"/>
+        <setting type="lsep" label="40015"/>
+        <setting label="40019" default="" id="white_email_desc" type="text"/>
+        <setting label="40016" default="" id="white_email_from" type="text"/>
+        <setting label="40017" default="40018" id="white_email_subject" type="text"/>
+    </category>
+</settings>
