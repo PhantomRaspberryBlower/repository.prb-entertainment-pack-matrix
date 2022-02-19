@@ -186,7 +186,7 @@
 </addon>
 
 <!-- BBC Podcasts -->
-<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.1" provider-name="Heckie">
+<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.2" provider-name="Heckie">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.25.1" />
@@ -210,6 +210,9 @@
     <website>https://github.com/Heckie75/kodi-addon-bbc-podcasts</website>
     <source>https://github.com/Heckie75/kodi-addon-bbc-podcasts/tree/main/plugin.audio.bbcpodcasts</source>
     <news>
+v2.0.2 (2022-01-31)
+- Changed parser after changes on website
+
 v2.0.1 (2021-09-12)
 - Fixed exception so that 'all podcasts' menu didn't work caused by NoneType
 
@@ -228,7 +231,7 @@ v1.0.0 (2021-05-24)
       <screenshot>resources/assets/screenshot_1.png</screenshot>
       <screenshot>resources/assets/screenshot_2.png</screenshot>
       <screenshot>resources/assets/screenshot_3.png</screenshot>
-    </assets>
+      </assets>
   </extension>
 </addon>
 
@@ -818,10 +821,10 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- DateUtil Module -->
-<addon id="script.module.dateutil" name="python-dateutil" version="2.8.1+matrix.1" provider-name="Paul Ganssle, Gustavo Niemeyer">
+<addon id="script.module.dateutil" name="python-dateutil" version="2.8.2" provider-name="Paul Ganssle, Gustavo Niemeyer, Tomi Pieviläinen, Yaron de Leeuw">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.six" version="1.14.0+matrix.1"/>
+    <import addon="script.module.six" version="1.15.0+matrix.1"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -1147,11 +1150,12 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.0" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.1" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
     <import addon="inputstream.adaptive" version="2.6.0"/>
+    <import addon="resource.images.iplayerwww" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>audio video</provides>
@@ -1169,19 +1173,37 @@ v1.0.0 (2021-05-24)
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.0
-Initial release for Matrix.
-New dependency inputstream.adaptive.
-HLS streams have been removed. As a consequence, bitrate settings have been removed. Bitrate needs to be configured in inputstream.adaptive.
-Switched to PC mediaselector.
-New mediaselector also adds the following new features:
-- Access to new CDN Cloudfront (Amazon)
-- Access to new subtitle sources. If you experience issues with subtitles, first try the new "Subtitle source" setting in the add-on settings before reporting issues.
-- Radio Categories now uses the Categories of BBC Sounds.
+v4.0.1
+Moved icons to separate add-on resource.images.iplayerwwww which becomes a new requirement.
+Changed settings to new format.
 
 Known issues:
-- BBC2 live and all live Radio is broken, most likely due to a bug in inputstream.adaptive
 - No Red Button
+    </news>
+  </extension>
+</addon>
+
+<!-- iPlayer Images -->
+<addon id="resource.images.iplayerwww" name="iPlayer WWW logos and artwork" version="1.0.0" provider-name="CaptainT, primaeval">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.images" compile="false"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Logos and artwork for the iPlayer WWW add-on</summary>
+    <description lang="en_GB">This add-on contains logs and other artwork used in the iPlayer WWW add-on for Kodi.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=353349</forum>
+    <source>https://github.com/CaptainTK/resource.images.iplayerwww</source>
+    <disclaimer lang="en_GB">This add-on is not an official BBC product. All content was created by the providers or otherwise mentioned individuals.</disclaimer>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+    <news>
+v1.0.0
+Initial release.
     </news>
   </extension>
 </addon>
@@ -1498,7 +1520,7 @@ Known issues:
 </addon>
 
 <!-- Multi Weather Addon -->
-<addon id="weather.multi" name="Multi Weather" version="0.0.6" provider-name="ronie">
+<addon id="weather.multi" name="Multi Weather" version="0.0.9" provider-name="ronie">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.openweathermap.maps" version="1.0.4"/>
@@ -1517,7 +1539,7 @@ Known issues:
       <icon>resources/icon.png</icon>
       <fanart>resources/fanart.jpg</fanart>
     </assets>
-    <news>- fix yahoo weather</news>
+    <news>- fix yahoo weather again</news>
   </extension>
 </addon>
 
@@ -1572,9 +1594,10 @@ Known issues:
 </addon>
 
 <!-- Oath Video Addon-->
-<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.00.30">
+<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.10.08">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <!--<import addon="script.theoath.metadata" />-->
     <import addon="script.theoath.artwork" />
     <import addon="script.module.resolveurl" />
     <import addon="script.module.requests" />
@@ -1582,6 +1605,7 @@ Known issues:
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
     <import addon="script.module.simplejson" />
+    <import addon="plugin.video.youtube" optional="true" />
   </requires>
   <extension library="theoath.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
@@ -1590,7 +1614,7 @@ Known issues:
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>false</reuselanguageinvoker>
     <summary lang="en_GB">TheOath</summary>
-    <description lang="en_GB">Multi-source add-on with native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+    <description lang="en_GB">Multi-source add-on</description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum />
@@ -1608,9 +1632,9 @@ Known issues:
 </addon>
 
 <!-- Oath Artwork -->
-<addon id="script.theoath.artwork" version="1.0.8" name="TheOath Artwork" provider-name="host505">
+<addon id="script.theoath.artwork" version="1.1.0" name="TheOath Artwork" provider-name="host505">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <!--<import addon="xbmc.python" version="2.19.0"/>-->
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -1621,14 +1645,15 @@ Known issues:
 </addon>
 
 <!-- Oath Scrapers -->
-<addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.00.01" provider-name="TheOath">
+<addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.02.04" provider-name="TheOath">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
     <import addon="script.module.simplejson" />
+    <import addon="script.module.orion" optional="true" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.python.pluginsource" library="lib/default.py">
@@ -2220,11 +2245,12 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.36" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.60" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
+    <import addon="script.module.certifi" />
     <import addon="plugin.video.youtube" optional="true" />
     <import addon="script.module.python.twitch" optional="true" />
     <import addon="plugin.googledrive" optional="true" />
@@ -2380,7 +2406,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.11" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.15" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />

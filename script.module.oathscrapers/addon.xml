@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.00.01" provider-name="TheOath">
+<addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.02.04" provider-name="TheOath">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
+        <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
+        <import addon="script.module.orion" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py">
