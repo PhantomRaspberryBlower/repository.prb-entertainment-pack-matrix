@@ -1431,7 +1431,7 @@ Initial release.
 </addon>
 
 <!-- MP3 Music Addon -->
-<addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.1" provider-name="Phantom Raspberry Blower">
+<addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.2" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pil" version="1.1.7"/>
