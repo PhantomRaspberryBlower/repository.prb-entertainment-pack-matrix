@@ -1150,7 +1150,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.1" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.2" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1173,9 +1173,8 @@ v1.0.0 (2021-05-24)
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.1
-Moved icons to separate add-on resource.images.iplayerwwww which becomes a new requirement.
-Changed settings to new format.
+v4.0.2
+Fixed typo in settings.xml which broke subtitles on new installations.
 
 Known issues:
 - No Red Button
@@ -1397,6 +1396,35 @@ Initial release.
 
 <!-- Mail -->
 
+<!-- Magic Dragon -->
+<addon id="plugin.video.magicdragon" name="Magic Dragon" provider-name="tomb raider" version="3.0.8">
+  <requires>
+    <import addon="script.module.six" version="0.0.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.resolveurl"/>
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <reuselanguageinvoker>false</reuselanguageinvoker>
+      <summary lang="en">Magic Dragon</summary>
+      <description lang="en">All Content Is Freely Available On The Internet. Not Owned Or Stored In Any Way By MD</description>
+      <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+      <forum />
+      <website />
+      <source />
+      <disclaimer lang="en">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <news>
+      </news>
+  </extension>
+</addon>
+
 <!-- Metahandler Module -->
 <addon id="script.module.metahandler" name="metahandler" version="5.0.1" provider-name="Eldorado">
   <requires>
@@ -1594,7 +1622,7 @@ Initial release.
 </addon>
 
 <!-- Oath Video Addon-->
-<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.10.08">
+<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.11.05">
   <requires>
     <!--<import addon="xbmc.python" version="2.20.0" />-->
     <!--<import addon="script.theoath.metadata" />-->
@@ -2245,7 +2273,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.60" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.61" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2406,7 +2434,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.15" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.16" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
