@@ -1622,7 +1622,7 @@ Initial release.
 </addon>
 
 <!-- Oath Video Addon-->
-<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.11.08">
+<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.11.09">
   <requires>
     <!--<import addon="xbmc.python" version="2.20.0" />-->
     <!--<import addon="script.theoath.metadata" />-->
@@ -2273,12 +2273,11 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.62" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.65" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
-    <import addon="script.module.certifi" />
     <import addon="plugin.video.youtube" optional="true" />
     <import addon="script.module.python.twitch" optional="true" />
     <import addon="plugin.googledrive" optional="true" />
@@ -2434,7 +2433,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.16" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.17" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
