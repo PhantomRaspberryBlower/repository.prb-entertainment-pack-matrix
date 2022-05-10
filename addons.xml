@@ -2273,7 +2273,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.65" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.67" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2433,7 +2433,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.17" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.20" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
