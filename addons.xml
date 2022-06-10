@@ -186,7 +186,7 @@
 </addon>
 
 <!-- BBC Podcasts -->
-<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.2" provider-name="Heckie">
+<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.3" provider-name="Heckie">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.25.1" />
@@ -210,6 +210,10 @@
     <website>https://github.com/Heckie75/kodi-addon-bbc-podcasts</website>
     <source>https://github.com/Heckie75/kodi-addon-bbc-podcasts/tree/main/plugin.audio.bbcpodcasts</source>
     <news>
+v2.0.3 (2022-06-02)
+- Changed parser after changes on website, i.e. fix paging of all podcasts
+- Improved performance when loading rss feed with episodes
+            
 v2.0.2 (2022-01-31)
 - Changed parser after changes on website
 
@@ -231,7 +235,7 @@ v1.0.0 (2021-05-24)
       <screenshot>resources/assets/screenshot_1.png</screenshot>
       <screenshot>resources/assets/screenshot_2.png</screenshot>
       <screenshot>resources/assets/screenshot_3.png</screenshot>
-      </assets>
+    </assets>
   </extension>
 </addon>
 
@@ -981,6 +985,39 @@ v1.0.0 (2021-05-24)
   </extension>
 </addon>
 
+<!-- Fido K19 Video Addon -->
+<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.0.5" provider-name="Fido">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing"/>
+    <import addon="script.module.unidecode" />
+    <import addon="script.module.inputstreamhelper" />
+    <import addon="script.module.resolveurl"/>
+    <import addon="script.module.microjenscrapers" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">All In One. Thanks to help of GKoBu, slamious for the awesome scrapper and ELLIE for amazing new logo</summary>
+     <description lang="en">Dedicated to Fido</description>
+     <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <website>http://fantazyrepo.uk/repo/</website>
+    <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/screenshot001.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot002.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot003.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
 <!-- Free Live TV -->
 <addon id="plugin.video.freelivetv.tva" name="Free Live TV" provider-name="mhancoc7" version="0.7.0">
   <requires>
@@ -1150,7 +1187,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.3" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.4" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1173,8 +1210,8 @@ v1.0.0 (2021-05-24)
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.3
-Added BBC Three live.
+v4.0.4
+Removed http streams for video. Now only https streams will be available.
 
 Known issues:
 - No Red Button
@@ -1458,6 +1495,34 @@ Initial release.
   </extension>
 </addon>
 
+<!-- MicroJen Scrapper Module -->
+<addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.3a" provider-name="MicroJen Community">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib/default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">MicroJen Scrapers Module</summary>
+    <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR]Massive thanks and respect to Crucial Minds for permission to use the Base Code and to The Jen Crew for their valuable contributions in bringing this project together.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news></news>
+  </extension>
+</addon>
+
 <!-- MP3 Music Addon -->
 <addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.2" provider-name="Phantom Raspberry Blower">
   <requires>
@@ -1587,6 +1652,71 @@ Initial release.
     <assets>
       <icon>icon.png</icon>
     </assets>
+  </extension>
+</addon>
+
+<!-- Nightwing Video Addon -->
+<addon id="plugin.video.nightwing" name="[COLORblue]Nightwing[/COLOR]" provider-name="Magnetic" version="1.1.7a">
+  <requires>
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.nightwingscrapers" />
+    <import addon="script.module.six" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.metahandler" optional="true" />
+    <import addon="plugin.video.youtube" optional="true" />
+  </requires>
+  <extension library="nightwing.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+    <summary lang="en_GB">Nightwing</summary>
+    <description lang="en_GB"></description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum />
+    <website></website>
+    <source />
+    <disclaimer lang="en_GB">A small but packed with goodies! A huge shoutout to the Way Of Kodi Learning Team, for their teaching. The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>
+    </news>
+  </extension>
+</addon>
+
+<!-- Nightwing Scrappers -->
+<addon id="script.module.nightwingscrapers" name="nightwingscrapers Module" version="1.0.4a" provider-name="Nightwing">
+  <requires>
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib/default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">nightwingscrapers Module</summary>
+    <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart></fanart>
+    </assets>
+    <news></news>
   </extension>
 </addon>
 
@@ -2273,7 +2403,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.68" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.69" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2766,6 +2896,31 @@ v0.9.7
     <source>https://github.com/martinblech/xmltodict</source>
     <assets>
       <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Xtasy D Video Addon -->
+<addon id="plugin.video.xtasy19" name="XTASY D" version="1.0.7" provider-name="Xtasy Dreamer">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Channels and playlists organised by categories using YouTube only.</summary>
+    <description lang="en">Xtasy D is a mix bag of one click playlists for all!</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <website></website>
+    <source></source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon>
