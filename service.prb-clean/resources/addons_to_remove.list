@@ -12,6 +12,7 @@ plugin.video.crackler<>Crackler
 plugin.video.crackle<>Crackle
 plugin.video.ds<>DeathStar
 plugin.video.elysium<>Elysium
+plugin.video.exodus<>Exodus
 plugin.video.f1-replay<>F1 Replay
 plugin.video.F.T.V<>FilmOn.TV
 plugin.video.football.today<>Football Today
@@ -28,6 +29,7 @@ plugin.video.nba-replay<>NBA Replay
 plugin.video.nfl-replay<>NFL Replay
 plugin.video.one242415<>One242415
 plugin.video.phstreams<>Phoenix
+plugin.video.pressplay<>Press Play
 plugin.video.quest<>Quest
 plugin.video.ufc-finest<>Planet MMA
 plugin.video.ufc-replay<>NBA Replay
