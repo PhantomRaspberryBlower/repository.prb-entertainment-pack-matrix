@@ -378,7 +378,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Certifi Module -->
-<addon id="script.module.certifi" name="certifi" version="2020.12.05+matrix.1" provider-name="Certifi">
+<addon id="script.module.certifi" name="certifi" version="2022.5.18+matrix.1" provider-name="Certifi">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -387,7 +387,7 @@ v1.0.0 (2021-05-24)
     <summary lang="en_GB">Python package for providing Mozilla's CA Bundle.</summary>
     <description lang="en_GB">Certifi is a carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. It has been extracted from the Requests project.</description>
     <license>MPL-2.0</license>
-    <website>https://certifi.io</website>
+    <website>https://github.com/certifi/python-certifi</website>
     <source>https://github.com/certifi/python-certifi</source>
     <assets>
       <icon>resources/icon.png</icon>
@@ -1075,7 +1075,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- HTML5 Module -->
-<addon id="script.module.html5lib" name="html5lib-python" version="1.0.1+matrix.2" provider-name="html5lib">
+<addon id="script.module.html5lib" name="html5lib-python" version="1.1.0+matrix.1" provider-name="html5lib">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six" version="1.14.0+matrix.1" optional="false"/>
@@ -1115,7 +1115,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- IDNA Module -->
-<addon id="script.module.idna" name="idna" version="2.10.0+matrix.1" provider-name="Kim Davies">
+<addon id="script.module.idna" name="idna" version="3.3.0+matrix.1" provider-name="Kim Davies">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -2381,13 +2381,13 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Requests Module -->
-<addon id="script.module.requests" name="requests" version="2.25.1+matrix.1" provider-name="Python Software Foundation">
+<addon id="script.module.requests" name="requests" version="2.27.1+matrix.1" provider-name="Python Software Foundation">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.certifi" version="2020.12.05+matrix.1"/>
+    <import addon="script.module.certifi" version="2022.5.18+matrix.1"/>
     <import addon="script.module.chardet" version="4.0.0+matrix.1"/>
-    <import addon="script.module.idna" version="2.10.0+matrix.1"/>
-    <import addon="script.module.urllib3" version="1.26.4+matrix.1"/>
+    <import addon="script.module.idna" version="3.3.0+matrix.1"/>
+    <import addon="script.module.urllib3" version="1.26.9+matrix.1"/>
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -2404,7 +2404,7 @@ v5.2.14 (2017-01-23)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.69" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.70" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2564,7 +2564,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.20" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.21" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -2776,7 +2776,7 @@ Version 1.0.0
 </addon>
 
 <!-- Urllib3 Module -->
-<addon id="script.module.urllib3" name="urllib3" version="1.26.4+matrix.1" provider-name="urllib3">
+<addon id="script.module.urllib3" name="urllib3" version="1.26.9+matrix.1" provider-name="urllib3">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
