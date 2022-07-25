@@ -987,7 +987,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Fido K19 Video Addon -->
-<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.0.8b" provider-name="Fido">
+<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.0.8c" provider-name="Fido">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -1002,7 +1002,7 @@ v1.0.0 (2021-05-24)
     <provides>audio video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">All In One. Thanks to help of GKoBu, slamious for the awesome scrapper and coding addon along with PeeJay and ELLIE for amazing new logo</summary>
+    <summary lang="en_GB">All In One. Thanks to help of GKoBu, slamious for the awesome scrapper and coding addon along with PeeJay, JetJet for opendirectories and also ELLIE for amazing new logo</summary>
     <description lang="en">Dedicated to Fido</description>
     <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
     <website>http://fantazyrepo.uk/repo/</website>
@@ -1189,7 +1189,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.4" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.5" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1212,12 +1212,12 @@ v1.0.0 (2021-05-24)
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.4
-Removed http streams for video. Now only https streams will be available.
+v4.0.5
+Adapted to new mediaselector URL.
 
 Known issues:
 - No Red Button
-   </news>
+    </news>
   </extension>
 </addon>
 
@@ -2408,7 +2408,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.71" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.72" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2568,7 +2568,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.22" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.24" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
