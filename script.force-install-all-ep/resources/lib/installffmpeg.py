@@ -44,6 +44,7 @@ class InstallFFmpeg():
                 return False
         return True
 
+
     # Install FFmpeg
     def install_tool(self, name):
         # Install tool and suppress output
@@ -54,6 +55,7 @@ class InstallFFmpeg():
                     "-y",
                     "-qq",
                     name], stdout=devnull, stderr=devnull)
+
 
 # Check if running stand-alone or imported
 if __name__ == u'__main__':

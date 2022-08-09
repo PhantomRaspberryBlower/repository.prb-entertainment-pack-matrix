@@ -5,7 +5,8 @@ import json
 # Date: 21-02-2017
 # Description: Module for downloading information about music artists
 
-FANART_URL = 'http://www.theaudiodb.com/api/v1/json/1/search.php?s='
+#FANART_URL = 'http://www.theaudiodb.com/api/v1/json/1/search.php?s='
+FANART_URL = 'https://www.theaudiodb.com/api/v1/json/2/search.php?s='
 
 
 class ArtistInfo:

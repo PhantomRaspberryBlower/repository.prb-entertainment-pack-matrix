@@ -1526,7 +1526,7 @@ Initial release.
 </addon>
 
 <!-- MP3 Music Addon -->
-<addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.2" provider-name="Phantom Raspberry Blower">
+<addon id="plugin.audio.mp3music" name="MP3 Music" version="1.0.3" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.pil" version="1.1.7"/>
@@ -1580,36 +1580,21 @@ Initial release.
       <screenshot>resources/media/screenshot007.jpg</screenshot>
       <screenshot>resources/media/screenshot008.jpg</screenshot>
     </assets>
-    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.
-    [COLOR orange][B]Improvements:[/B][/COLOR]
-        - Album cover now saved into ID3 tags (metadata).
+    <news lang="en_GB">Updated AudioDB API
     [COLOR orange][B]Bug fixes:[/B][/COLOR]
-        - Removes invalid characters from directory names.
-        - Artist and album directories not created when playing songs.</news>
-    <news lang="de_DE">Aktualisiert auf Kodi v19 (Matrix) und Code auf Python 3.
-    [COLOR orange][B]Verbesserungen:[/B][/COLOR]
-        - Albumcover jetzt in ID3-Tags (Metadaten) gespeichert.
+        - Artist Info.
+    <news lang="de_DE">Aktualisierte AudioDB-API.
     [COLOR orange][B]Fehlerbehebungen:[/B][/COLOR]
-        - Entfernt ungültige Zeichen aus Verzeichnisnamen.
-        - Künstler- und Albumverzeichnisse werden beim Abspielen von Songs nicht erstellt.</news>
-    <news lang="es_ES">Actualizado a Kodi v19 (matriz) y código a Python 3.
-    [COLOR naranja][B]Mejoras:[/B][/COLOR]
-        - La portada del álbum ahora se guarda en etiquetas ID3 (metadatos).
+        - Künstlerinfo.
+    <news lang="es_ES">API AudioDB actualizada.
     [COLOR naranja][B]Corrección de errores:[/B][/COLOR]
-        - Elimina los caracteres no válidos de los nombres de directorio.
-        - Los directorios de artistas y álbumes no se crean al reproducir canciones.</news>
-    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrice) et code vers Python 3.
-    [COLOR orange][B]Améliorations :[/B][/COLOR]
-        - La pochette de l'album est désormais enregistrée dans les balises ID3 (métadonnées).
+        - Información del artista.</news>
+    <news lang="fr_FR">API AudioDB mise à jour
     [COLOR orange][B]Correction de bugs :[/B][/COLOR]
-        - Supprime les caractères invalides des noms de répertoire.
-        - Répertoires d'artistes et d'albums non créés lors de la lecture de chansons.</news>
-    <news lang="it_IT">Aggiornato a Kodi v19 (matrice) e codice a Python 3.
-    [COLORE arancione][B]Miglioramenti:[/B][/COLOR]
-        - Copertina dell'album ora salvata nei tag ID3 (metadati).
+        - Infos sur l'artiste.
+    <news lang="it_IT">API AudioDB aggiornata
     [COLOR arancione][B]Correzioni di bug:[/B][/COLOR]
-        - Rimuove i caratteri non validi dai nomi delle directory.
-        - Directory di artisti e album non create durante la riproduzione di brani.</news>
+        - Informazioni sull'artista</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/plugin.audio.mp3music</source>
   </extension>
 </addon>
@@ -2140,7 +2125,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- PRB Radio Addon -->
-<addon id="plugin.audio.prb-radio" name="PRB Radio" version="1.0.3" provider-name="Phantom Raspberry Blower">
+<addon id="plugin.audio.prb-radio" name="PRB Radio" version="1.0.4" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -2188,11 +2173,11 @@ v5.3.2 (2020-09-30)
       <screenshot>resources/media/screenshot006.jpg</screenshot>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
-    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
-    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
-    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
-    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <news lang="en_GB">Updated AudioDB API</news>
+    <news lang="de_DE">Aktualisierte AudioDB-API</news>
+    <news lang="es_ES">API AudioDB actualizada</news>
+    <news lang="fr_FR">API AudioDB mise à jour</news>
+    <news lang="it_IT">API AudioDB aggiornata</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/plugin.video.prb-radio</source>
   </extension>
 </addon>

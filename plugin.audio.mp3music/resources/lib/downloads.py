@@ -129,9 +129,10 @@ def get_url(url):
         header_dict['Connection'] = 'keep-alive'
     net.set_cookies(cookie_jar)
     try:
-        link = net.http_GET(url, headers=header_dict).content.encode("utf-8").rstrip()
+        #link = net.http_GET(url, headers=header_dict).content.encode("utf-8").rstrip()
+        link = requests.get(url, header_dict).text
         net.save_cookies(cookie_jar)
-        link = link.decode('utf-8')
+        #link = link.decode('utf-8')
     except:
         msg = "Error getting cookie"
         commontasks.notification(msg, _something_wicked_happened,iconart, 5000)
