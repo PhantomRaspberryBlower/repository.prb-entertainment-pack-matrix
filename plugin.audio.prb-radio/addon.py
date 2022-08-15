@@ -129,7 +129,7 @@ def get_stream_link():
     if _previous_url is not None or _previous_url != "":
         _previous_url = commontasks.decode(_previous_url).decode('utf-8')
         response = os.system("ping -c 1 " + _previous_url.replace('http://', '').replace('/rapi.mp3', ''))
-        if response  == 0:
+        if response  == 0 or response == 1:
             return _previous_url
     link = ''
     title = ''
