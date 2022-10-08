@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.prb-commontasks" name="PRB Common Tasks" version="0.0.1" provider-name="Phantom Raspberry Blower">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Offers common tasks used by PRB addons.</summary>
+    <description lang="en_GB">Offers a number of different functions common to many PRB addons.</description>
+    <license>Apache-2.0</license>
+    <platform>all</platform>
+    <website></website>
+    <source></source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
