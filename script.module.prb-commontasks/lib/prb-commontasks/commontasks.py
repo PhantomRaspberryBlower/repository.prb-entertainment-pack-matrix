@@ -27,6 +27,7 @@ Description: Common Tasks for Addons
 '''
 
 INVALID_FILENAME_CHARS = u'\/:*?"<>|'
+INVALID_FILEPATH_CHARS = u':*?"<>|'
 
 def decode(code):
     return base64.b64decode(code)
@@ -209,6 +210,11 @@ def validate_filename(filename):
     file_name = filename.decode('ascii', errors='ignore')
     return file_name.translate(valid_filename)
 
+
+def validate_filepathname(filepathname):
+    # Remove invalid characters from file name
+    valid_filepathname = dict((ord(char), None) for char in INVALID_FILEPATH_CHARS)
+    return filepathname.translate(valid_filepathname)
 
 def getLibrarySources(db_type):
     # Returns the paths of library sources both music and videos
