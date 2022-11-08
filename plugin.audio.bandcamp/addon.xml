@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.bandcamp" name="Bandcamp" version="0.0.1" provider-name="Phantom Raspberry Blower">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.mutagen" version="1.44.0"/>
+        <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+        <import addon="script.module.future" version="0.18.2+matrix.1"/>
+        <import addon="script.common.plugin.cache" version="2.6.1.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">https://bandcamp.com</summary>
+        <summary lang="de_DE">https://bandcamp.com</summary>
+        <summary lang="es_ES">https://bandcamp.com</summary>
+        <summary lang="fr_FR">https://bandcamp.com</summary>
+        <summary lang="it_IT">https://bandcamp.com</summary>
+        <license>MIT</license>
+        <description lang="en_GB">Discover new artists and browse your collection</description>
+	<description lang="de_DE">Entdecke neue Künstler und durchstöbere deine Sammlung</description>
+	<description lang="es_ES">Descubre nuevos artistas y navega por tu colección.</description>
+        <description lang="fr_FR">Découvrez de nouveaux artistes et parcourez votre collection</description>
+        <description lang="it_IT">Scopri nuovi artisti e sfoglia la tua collezione</description>	
+        <platform>all</platform>
+        <news>Added download option.
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+            <screenshot>screenshot/collection.png</screenshot>
+            <screenshot>screenshot/discover.png</screenshot>
+            <screenshot>screenshot/genre.png</screenshot>
+        </assets>
+    </extension>
+</addon>

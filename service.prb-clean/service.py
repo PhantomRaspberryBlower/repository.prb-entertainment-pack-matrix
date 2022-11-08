@@ -249,7 +249,7 @@ else:
     else:
         # Remove PRB Clean from Phantom Raspberry Blower's RPi
         dialog = xbmcgui.Dialog()
-        if not dialog.yesno('PRB Clean: Remove Obsolete Addons',
+        if dialog.yesno('PRB Clean: Remove Obsolete Addons',
                             'Do you want to remove addons and dependancies?',
                             'No', 'Remove Addons'):
             remove_addons_and_dependancies()

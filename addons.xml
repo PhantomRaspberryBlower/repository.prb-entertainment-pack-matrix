@@ -2,14 +2,14 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.5" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.6" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
     <import addon="plugin.image.dumpert"/>
     <import addon="plugin.audio.absolute-radio"/>
     <import addon="plugin.audio.bbcpodcasts"/>
-    <import addon="plugin.audio.kxmxpxtx.bandcamp"/>
+    <import addon="plugin.audio.bandcamp"/>
     <import addon="plugin.audio.mp3music"/>
     <import addon="plugin.audio.prb-radio"/>
     <import addon="plugin.video.dumpert"/>
@@ -158,32 +158,41 @@
 </addon>
 
 <!-- Bandcamp Addon -->
-<addon id="plugin.audio.kxmxpxtx.bandcamp" name="Bandcamp" version="0.4.1+matrix.1" provider-name="kxmxpxtx">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.22.0+matrix.1"/>
-    <import addon="script.module.future" version="0.18.2+matrix.1"/>
-    <import addon="script.common.plugin.cache" version="2.6.1.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">https://bandcamp.com</summary>
-    <license>MIT</license>
-    <description lang="en_GB">Discover new artists and browse your collection</description>
-    <platform>all</platform>
-    <news>v0.4.1+matrix.1 (2021-02-05)
-        - Fix dependencies for Kodi 19 rc 1
-    </news>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.png</fanart>
-      <screenshot>screenshot/collection.png</screenshot>
-      <screenshot>screenshot/discover.png</screenshot>
-      <screenshot>screenshot/genre.png</screenshot>
-    </assets>
-  </extension>
+<addon id="plugin.audio.bandcamp" name="Bandcamp" version="0.0.1" provider-name="Phantom Raspberry Blower">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.mutagen" version="1.44.0"/>
+        <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+        <import addon="script.module.future" version="0.18.2+matrix.1"/>
+        <import addon="script.common.plugin.cache" version="2.6.1.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">https://bandcamp.com</summary>
+        <summary lang="de_DE">https://bandcamp.com</summary>
+        <summary lang="es_ES">https://bandcamp.com</summary>
+        <summary lang="fr_FR">https://bandcamp.com</summary>
+        <summary lang="it_IT">https://bandcamp.com</summary>
+        <license>MIT</license>
+        <description lang="en_GB">Discover new artists and browse your collection</description>
+	<description lang="de_DE">Entdecke neue Künstler und durchstöbere deine Sammlung</description>
+	<description lang="es_ES">Descubre nuevos artistas y navega por tu colección.</description>
+        <description lang="fr_FR">Découvrez de nouveaux artistes et parcourez votre collection</description>
+        <description lang="it_IT">Scopri nuovi artisti e sfoglia la tua collezione</description>	
+        <platform>all</platform>
+        <news>Added download option.
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+            <screenshot>screenshot/collection.png</screenshot>
+            <screenshot>screenshot/discover.png</screenshot>
+            <screenshot>screenshot/genre.png</screenshot>
+        </assets>
+    </extension>
 </addon>
 
 <!-- BBC Podcasts -->
@@ -2030,7 +2039,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- PRB Clean Service -->
-<addon id="service.prb-clean" name="PRB Clean" version="1.0.1" provider-name="Phantom Raspberry Blower">
+<addon id="service.prb-clean" name="PRB Clean" version="1.0.2" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
