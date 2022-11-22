@@ -1,11 +1,10 @@
 # https://docs.python.org/2.7/
 import sys
-
+import random
 from future.standard_library import install_aliases
 
 install_aliases()
 from future.utils import (PY3)
-
 if PY3:
     from urllib.parse import parse_qs
 else:
@@ -15,8 +14,8 @@ import xbmcvfs
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
-import random
 import xbmc
+
 from resources.lib.bandcamp_api import bandcamp
 from resources.lib.bandcamp_api.bandcamp import Band, Album, Track, Label
 from resources.lib.kodi.ListItems import ListItems
@@ -26,7 +25,7 @@ try:
     import StorageServer
 except:
     from resources.lib.cache import storageserverdummy as StorageServer
-cache = StorageServer.StorageServer("plugin.audio.bandcamp", 24)  # (Your plugin name, Cache time in hours)
+cache = StorageServer.StorageServer("plugin.audio.bandcamp", 24)  # (plugin name, Cache time in hours)
 
 
 def build_main_menu():
@@ -91,7 +90,8 @@ def build_search_result_list(items):
 def build_featured_list(bands):
     for band in bands:
         for album in bands[band]:
-            track_list = list_items.get_track_items(band=band, album=album, tracks=bands[band][album], to_album=True, to_band=True)
+            track_list = list_items.get_track_items(band=band, album=album, tracks=bands[band][album],
+                                                    to_album=True, to_band=True)
             xbmcplugin.addDirectoryItems(addon_handle, track_list, len(track_list))
     xbmcplugin.setContent(addon_handle, 'songs')
     xbmcplugin.endOfDirectory(addon_handle)
@@ -116,7 +116,8 @@ def download_album(album_id, item_type, band_id=1):
 
 def download_song(track_file, title, album_artist, album_name, rel_year, genre,
                   track_number, publisher=None, comment=None, image_file=None):
-    Downloads(addon).download_song(track_file, title, album_artist, album_name, rel_year, genre, track_number, publisher, comment, image_file)
+    Downloads(addon).download_song(track_file, title, album_artist, album_name,rel_year,
+                                   genre, track_number, publisher, comment, image_file)
 
 
 def main():

@@ -284,7 +284,6 @@ class Bandcamp:
                 items.append(item)
         return items
 
-
     @staticmethod
     def _get_token():
         return str(int(time.time())) + "::FOO::"

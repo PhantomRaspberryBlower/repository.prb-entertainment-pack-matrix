@@ -52,6 +52,7 @@ class Downloads:
                     xbmc.executebuiltin('UpdateLibrary(music, %s)' % str(filepath))
         except Exception as e:
             pDialog.close()
+            
             xbmc.log("ERROR %s in download_all_albums" % str(e), level=xbmc.LOGWARNING)
 
     def download_album(self, album_id, item_type, band_id=1, update_library=False):

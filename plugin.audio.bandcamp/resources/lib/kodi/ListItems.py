@@ -76,14 +76,20 @@ class ListItems:
 
     def get_subgenre_items(self, genre, subgenres):
         items = []
-        _all = self.ad.getLocalizedString(30201)
+        _all = self.addon.getLocalizedString(30201)
         li = xbmcgui.ListItem(label=_all + " " + genre)
         url = self._build_url({'mode': 'list_subgenre_songs', 'category': genre, 'subcategory': 'all'})
         items.append((url, li, True))
-        for subgenre in subgenres[genre]:
-            li = xbmcgui.ListItem(label=subgenre['name'])
-            url = self._build_url({'mode': 'list_subgenre_songs', 'category': genre, 'subcategory': subgenre['value']})
-            items.append((url, li, True))
+        try:
+            for subgenre in subgenres[genre]:
+                li = xbmcgui.ListItem(label=subgenre['name'])
+                url = self._build_url({'mode': 'list_subgenre_songs', 'category': genre, 'subcategory': subgenre['value']})
+                items.append((url, li, True))
+        except KeyError:
+            if KeyError == "audiobook":
+                li = xbmcgui.ListItem(label=_all)
+                url = self._build_url({'mode': 'list_subgenre_songs', 'category': 'audiobook', 'subcategory': 'all'})
+                items.append((url, li, True))
         return sorted(items)
 
     def get_track_items(self, band, album, tracks, to_album=False, to_band=False):
