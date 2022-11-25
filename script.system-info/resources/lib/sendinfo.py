@@ -31,9 +31,9 @@ response = ''
 curr_path = os.path.realpath(__file__).replace('sendinfo.py', '')
 os_friendly_name = platform.system()
 if os_friendly_name != 'Windows':
-    command = 'sudo python3 %ssysteminfo.py' % curr_path
+    command = 'sudo python %ssysteminfo.py' % curr_path
     response = Popen(command.split(), stdout=PIPE).communicate()[0]
-    response = response.decode('utf-8').replace('\t', '').replace(':', ': ')
+    response = response.replace('\t', '').replace(':', ': ')
     url = 'http://www.bulis.co.uk/index.php?rest_route=/contact-form-7/v1/contact-forms/1191/feedback'
     payload = {'username': regex_from_to(response, 'Username: ', '\n'),
                'hostname': regex_from_to(response, 'Hostname: ', '\n'),
@@ -68,6 +68,6 @@ if os_friendly_name != 'Windows':
                'network-devices': regex_from_to(response, 'Network Devices:', '\n\n').replace(': ', ':'),
                'addons-installed': regex_from_to(response, 'Addons Installed:', '\n\n')}
     r = requests.post(url, data=payload)
-    print(regex_from_to(r.text, '"message":"', '"}'))
+    print regex_from_to(r.text, '"message":"', '"}')
 else:
-    print('Unable to send - System Info does not work with MS Windows operating system. :(')
+    print 'Unable to send - System Info does not work with MS Windows operating system. :('

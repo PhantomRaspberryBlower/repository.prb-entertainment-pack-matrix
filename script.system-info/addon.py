@@ -97,24 +97,24 @@ if __name__ == '__main__':
         if params:
             if params['action'] == 'send':
                 # Submit information
-                cmdCommand = 'sudo python3 %ssendinfo.py' % _addon_resources_lib_path_
+                cmdCommand = 'sudo python %ssendinfo.py' % _addon_resources_lib_path_
                 response = shell_cmd_output(cmdCommand)
                 notification(response, "[COLOR orange]%s[/COLOR]" % _form_sent, __icon__, 5000)
         else:
             # Display information
-            cmdCommand = 'sudo python3 %ssysteminfo.py' % _addon_resources_lib_path_
+            cmdCommand = 'sudo python %ssysteminfo.py' % _addon_resources_lib_path_
             response = shell_cmd_output(cmdCommand).decode('utf-8').replace('\t', '').replace(':', ': ')
             # Change heading colour
             headings_dict = {'Software': _software,
                              'CPU': _cpu,
                              'Memory': _memory,
                              'Storage': _storage,
-                             'Network Devices': _network_devices,
                              'Network': _network,
                              'Previous Networks': _previous_networks,
+                             'Network Devices': _network_devices,
                              'Addons Installed': _addons_installed}
             for key, value in headings_dict.items():
-                response = response.replace('\n%s' % key, '[COLOR orange]\n%s[/COLOR]' % value) 
+                response = response.replace('\n%s' % key, '[COLOR orange]\n%s:[/COLOR]' % value) 
 
             showText(_system_information, response)
     else:

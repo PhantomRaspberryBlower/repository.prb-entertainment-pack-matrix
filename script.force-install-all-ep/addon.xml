@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.6" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.7" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
@@ -71,11 +71,11 @@
       <screenshot>resources/media/screenshot003.jpg</screenshot>
     </assets>
     <reuselanguageinvoker>true</reuselanguageinvoker>
-    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
-    <news lang="de_DE">Aktualisiert auf Kodi v19 (matrix) und Code auf Python 3.</news>
-    <news lang="es_ES">Actualizada a Kodi v19 (matrix) y código a Python 3.</news>
-    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrix) et code vers Python 3.</news>
-    <news lang="it_IT">Aggiornato a Kodi v19 (matrix) e codice a Python 3.</news>
+    <news lang="en_GB">Fixed bug in send info.</news>
+    <news lang="de_DE">Fehler in Sendeinfo behoben.</news>
+    <news lang="es_ES">Corregido error en enviar información.</news>
+    <news lang="fr_FR">Correction d'un bug dans l'envoi d'informations.</news>
+    <news lang="it_IT">Risolto bug nelle informazioni di invio.</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.force-install-all-ep</source>
   </extension>
 </addon>

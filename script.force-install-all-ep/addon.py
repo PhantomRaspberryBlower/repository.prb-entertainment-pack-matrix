@@ -195,7 +195,7 @@ def get_params():
 
 def send_web_form(recursive=True):
     # Send the system info results to web form
-    systeminfo_path = xbmcvfsc.translatePath(os.path.join('special://home/addons/'
+    systeminfo_path = xbmcvfs.translatePath(os.path.join('special://home/addons/'
                                                              'script.system-info/',
                                                              'resources/lib'))
     sendinfo = xbmcvfs.translatePath(os.path.join(systeminfo_path, 'sendinfo.py'))

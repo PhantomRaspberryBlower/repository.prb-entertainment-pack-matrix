@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.system-info" name="System Info" version="1.0.1" provider-name="Phantom Raspberry Blower">
+<addon id="script.system-info" name="System Info" version="1.0.2" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.21.0"/>
@@ -43,7 +43,7 @@
       <screenshot>resources/media/screenshot002.jpg</screenshot>
       <screenshot>resources/media/screenshot003.jpg</screenshot>
     </assets>
-    <news>Updated to Kodi v19 (matrix) and code to Python 3.</news>
+    <news>Fixed bug in system-info module</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.system-info</source>
   </extension>
 </addon>
