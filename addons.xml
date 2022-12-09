@@ -2404,7 +2404,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.84" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.85" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2927,7 +2927,7 @@ v0.9.7
 </addon>
 
 <!-- YouTube Addon -->
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.20+matrix.1a" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.22+matrix.1a" provider-name="anxdpanic, bromix">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six" version="1.11.0"/>
@@ -2941,11 +2941,15 @@ v0.9.7
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
     <news>
-[fix] /uri2addon/ endpoint for playback of youtube.com urls
-[fix] Don't assume addon is installed in home directory |contrib: jfly|
-[fix] Subtitle language names
+[chg] Icons and Fanart updated |contrib: papercore-dev|
+[add] Add setting General - Hide short videos (1 minute or less)
+[add] Add support for /shorts/video_id format links |contrib: jmbreuer|
+[add] Add Fanart to Subscriptions
+[add] Access to Saved Playlists
+[fix] Display of channel fanart
+[fix] Misc missing fanart
 [lang] translation updates from Weblate
-    </news>
+        </news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
