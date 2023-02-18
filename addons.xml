@@ -196,7 +196,7 @@
 </addon>
 
 <!-- BBC Podcasts -->
-<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.3" provider-name="Heckie">
+<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.4" provider-name="Heckie">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.25.1" />
@@ -220,6 +220,9 @@
     <website>https://github.com/Heckie75/kodi-addon-bbc-podcasts</website>
     <source>https://github.com/Heckie75/kodi-addon-bbc-podcasts/tree/main/plugin.audio.bbcpodcasts</source>
     <news>
+v2.0.4 (2023-02-02)
+- Improved thumbnail if item is added to favourites
+
 v2.0.3 (2022-06-02)
 - Changed parser after changes on website, i.e. fix paging of all podcasts
 - Improved performance when loading rss feed with episodes
@@ -860,34 +863,33 @@ v1.0.0 (2021-05-24)
 <!-- Dropbox Addon -->
 
 <!-- Dumpert Image -->
-<addon id="plugin.image.dumpert" name="Dumpert" version="1.0.4+matrix.1" provider-name="Skipmode A1">
+<addon id="plugin.video.dumpert" name="Dumpert" version="1.1.11+matrix.1" provider-name="Skipmode A1">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-    <import addon="script.module.requests" version="2.4.3"/>
-    <import addon="script.module.future" version="0.0.1"/>
-    <import addon="script.module.html5lib" version="0.999.0"/>
+    <import addon="xbmc.python"                     version="3.0.0"/>
+    <import addon="script.module.beautifulsoup4"    version="4.3.2"/>
+    <import addon="script.module.requests"          version="2.4.3"/>
+    <import addon="script.module.future"            version="0.0.1"/>
+    <import addon="script.module.html5lib"          version="0.999.0"/>
+    <import addon="plugin.video.youtube"            version="5.1.7"/>
   </requires>
   <extension point="xbmc.python.pluginsource" 	library="addon.py">
-    <provides>image</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Watch funny pictures from Dumpert.nl (dutch)</summary>
-    <description lang="en_GB">Watch funny pictures from Dumpert.nl (dutch)</description>
+    <summary lang="en_GB">Watch funny videos from Dumpert.nl (dutch)</summary>
+    <description lang="en_GB">Watch funny videos from Dumpert.nl (dutch)</description>
     <disclaimer lang="en_GB">For bugs, requests or general questions visit the Dumpert.nl thread on the Kodi forum.</disclaimer>
-    <summary lang="nl_NL">Bekijk grappige plaatjes van Dumpert.nl (dutch)</summary>
-    <description lang="nl_NL">Bekijk grappige plaatjes van Dumpert.nl (dutch)</description>
+    <summary lang="nl_NL">Bekijk grappige filmpjes van Dumpert.nl (dutch)</summary>
+    <description lang="nl_NL">Bekijk grappige filmpjes van Dumpert.nl (dutch)</description>
     <disclaimer lang="nl_NL">Bugs of andere feedback op deze plugin kan geplaatst worden in de Dumpert.nl thread op het Kodi forum.</disclaimer>
     <language>nl</language>
     <platform>all</platform>
-    <license>GNU General Public License v3.0 only</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=315439</forum>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=162635</forum>
     <website>https://dumpert.nl</website>
-    <source>https://github.com/skipmodea1/plugin.image.dumpert</source>
-    <news>v1.0.4 (2019-09-21)
-    - MAJOR changes in the addon due to redesigned website
-    - moved to Krypton
-    - updated logos
+    <source>https://github.com/skipmodea1/plugin.video.dumpert.python3</source>
+    <news>v1.1.11 (2022-12-27)
+    - Not using xbmc.translatePath anymore as that method has been removed in Kodi 20 and up.
     </news>
     <assets>
       <icon>resources/icon.png</icon>
@@ -999,7 +1001,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Fido K19 Video Addon -->
-<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.0.8d" provider-name="Fido">
+<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.0.8e" provider-name="Fido">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -1201,7 +1203,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.5" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.6" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1209,7 +1211,7 @@ v1.0.0 (2021-05-24)
     <import addon="resource.images.iplayerwww" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio video</provides>
+        <provides>audio video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">TV and Radio from BBC iPlayer</summary>
@@ -1220,16 +1222,16 @@ v1.0.0 (2021-05-24)
     <source>https://github.com/vonH/plugin.video.iplayerwww</source>
     <disclaimer lang="en_GB">This add-on is a front end to the BBC iPlayer website. It is not an official BBC product. A UK TV Licence is required to watch the live, catch-up, or on-demand TV content.</disclaimer>
     <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.5
-Adapted to new mediaselector URL.
+v4.0.6
+Optimized subtitle support.
 
 Known issues:
 - No Red Button
-    </news>
+   </news>
   </extension>
 </addon>
 
@@ -2437,7 +2439,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Rising Tides -->
-<addon id="plugin.video.Rising.Tides" name="Rising Tides" version="2.0.0" provider-name="mullafabz">
+<addon id="plugin.video.Rising.Tides" name="Rising Tides" version="3.0.0" provider-name="[COLOR turquoise][B]mullafabz[/B][/COLOR]">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.beautifulsoup4"/>
@@ -2445,6 +2447,13 @@ v5.3.2 (2020-09-30)
     <import addon="script.module.httplib2"/>
     <import addon="inputstream.adaptive"/>
     <import addon="script.module.resolveurl" optional="false"/>
+    <!--
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="script.module.simple.downloader" optional="false"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.liveresolver" version="0.1.50"/>-->
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -2567,7 +2576,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.30" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.31" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -2583,7 +2592,7 @@ v1.0.1 (2019-08-06)
     <language>EN</language>
     <license>GNU GPL, version 2</license>
     <twitter>https://twitter.com/Bugatsinho</twitter>
-    <news>-compatible with Kodi18.x - 19.x version</news>
+    <news>-compatible with Kodi18.x - 19.x - 20.x version</news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
@@ -2930,7 +2939,7 @@ v0.9.7
 </addon>
 
 <!-- YouTube Addon -->
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.22+matrix.1a" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.24+matrix.1a" provider-name="anxdpanic, bromix">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six" version="1.11.0"/>
@@ -2944,14 +2953,10 @@ v0.9.7
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
     <news>
-[chg] Icons and Fanart updated |contrib: papercore-dev|
-[add] Add setting General - Hide short videos (1 minute or less)
-[add] Add support for /shorts/video_id format links |contrib: jmbreuer|
-[add] Add Fanart to Subscriptions
-[add] Access to Saved Playlists
-[fix] Display of channel fanart
-[fix] Misc missing fanart
-[lang] translation updates from Weblate
+[fixup] resolve playback history not being updated
+[add] add opus audio support
+[upd] use more descript reasons for failed playback
+[upd] Translations updated from Kodi Weblate
         </news>
     <assets>
       <icon>icon.png</icon>
@@ -2976,6 +2981,7 @@ v0.9.7
     <summary lang="he_IL">תוסף עבור YouTube</summary>
     <summary lang="hr_HR">Dodatak za YouTube</summary>
     <summary lang="hu_HU">YouTube kiegészítő</summary>
+    <summary lang="id_ID">Pengaya untuk YouTube</summary>
     <summary lang="it_IT">Plugin per YouTube</summary>
     <summary lang="ko_KR">유튜브 플러그인</summary>
     <summary lang="nb_NO">Tillegg for YouTube</summary>
@@ -3000,6 +3006,7 @@ v0.9.7
     <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
     <description lang="hr_HR">YouTube je jedna od najvećih stranica za dijeljenje video sadržaja na svijetu.</description>
     <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+    <description lang="id_ID">YouTube adalah salah satu situs web berbagi video terbesar di dunia.</description>
     <description lang="it_IT">YouTube è uno dei più grandi siti web di condivisione video del mondo.</description>
     <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
     <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
@@ -3021,6 +3028,7 @@ v0.9.7
     <disclaimer lang="fi_FI">Google ei tue tätä lisäosaa</disclaimer>
     <disclaimer lang="fr_FR">Ce module n'est pas validé par Google</disclaimer>
     <disclaimer lang="hr_HR">Ovaj dodatak nije podržan od strane Googlea</disclaimer>
+    <disclaimer lang="id_ID">Plugin ini tidak didukung oleh Google</disclaimer>
     <disclaimer lang="it_IT">Questo plugin non è approvato da Google</disclaimer>
     <disclaimer lang="ko_KR">이 플러그인은 Google의 허가를 받지 않았습니다</disclaimer>
     <disclaimer lang="nl_NL">Deze plug-in wordt niet door Google ondersteund</disclaimer>
