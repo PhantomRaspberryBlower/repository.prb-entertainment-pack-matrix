@@ -2409,7 +2409,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.92" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.93" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2679,7 +2679,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- TED Talks Addon -->
-<addon id="plugin.video.ted.talks" name="TED Talks" version="5.0.0" provider-name="moreginger, rwparris2">
+<addon id="plugin.video.ted.talks" name="TED Talks" version="5.0.1" provider-name="moreginger, rwparris2, kevwag, kodaksmith">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.22.0"/>
@@ -2703,8 +2703,12 @@ v1.0.1 (2019-08-06)
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <news>
-v5.0.0
-- Requires Kodi version 19 (Matrix)
+v5.0.1
+- Scraper fixes (kevwag, kodaksmith)
+- Fix issue determining active language (issue#79)
+
+v.5.0.0
+- Requires Kodi 19+ (Matrix, Nexus, ...)
 - Playback uses m3u8, which respects the global bandwidth setting
     </news>
     <forum>https://forum.kodi.tv/showthread.php?tid=36866</forum>
@@ -2939,7 +2943,7 @@ v0.9.7
 </addon>
 
 <!-- YouTube Addon -->
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.24+matrix.1a" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.25+matrix.1a" provider-name="anxdpanic, bromix">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six" version="1.11.0"/>
