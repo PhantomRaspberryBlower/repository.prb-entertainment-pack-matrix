@@ -2,7 +2,6 @@
 
 PRB Entertainment Pack
 ======================
-
 Phantom Raspberry Blower Entertainment Pack
 
 Downloads and installs addons.
@@ -20,6 +19,7 @@ Addons installed by this addon:
   - iPlayer (Live and Catch-Up TV)
   - MP3 Music (Music Albums & Songs)
   - NPR Music (Music Videos)
+  - Nightwing (Movies & TV Shows)
   - PRB Clean (Removes obsolete addons)
   - PRB Radio (Stream music)
   - PRB Install Everything EP (Forces installation of most addons)
