@@ -2409,7 +2409,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.93" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.94" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2603,7 +2603,7 @@ v1.0.1 (2019-08-06)
 <!-- Streamlink Base module -->
 
 <!-- System Info Addon -->
-<addon id="script.system-info" name="System Info" version="1.0.2" provider-name="Phantom Raspberry Blower">
+<addon id="script.system-info" name="System Info" version="1.0.3" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.21.0"/>
