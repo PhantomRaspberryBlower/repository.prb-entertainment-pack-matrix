@@ -1203,7 +1203,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.10" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.12" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1211,7 +1211,7 @@ v1.0.0 (2021-05-24)
     <import addon="resource.images.iplayerwww" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
+      <provides>audio video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">TV and Radio from BBC iPlayer</summary>
@@ -1222,12 +1222,12 @@ v1.0.0 (2021-05-24)
     <source>https://github.com/vonH/plugin.video.iplayerwww</source>
     <disclaimer lang="en_GB">This add-on is a front end to the BBC iPlayer website. It is not an official BBC product. A UK TV Licence is required to watch the live, catch-up, or on-demand TV content.</disclaimer>
     <assets>
-        <icon>resources/icon.png</icon>
-        <fanart>resources/fanart.jpg</fanart>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.10
-Fix for next round of JSON changes.
+v4.0.12
+Fix for new A-Z format.
 
 Known issues:
 - No Red Button
@@ -2603,7 +2603,7 @@ v1.0.1 (2019-08-06)
 <!-- Streamlink Base module -->
 
 <!-- System Info Addon -->
-<addon id="script.system-info" name="System Info" version="1.0.3" provider-name="Phantom Raspberry Blower">
+<addon id="script.system-info" name="System Info" version="1.0.4" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.21.0"/>
@@ -2647,7 +2647,7 @@ v1.0.1 (2019-08-06)
       <screenshot>resources/media/screenshot002.jpg</screenshot>
       <screenshot>resources/media/screenshot003.jpg</screenshot>
     </assets>
-    <news>Fixed bug in system-info module</news>
+    <news>Replaced os.errno with import errno in system-info module</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.system-info</source>
   </extension>
 </addon>
