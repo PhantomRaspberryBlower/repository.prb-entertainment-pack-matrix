@@ -2,7 +2,7 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.7" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.8" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
@@ -14,7 +14,7 @@
     <import addon="plugin.audio.prb-radio"/>
     <import addon="plugin.video.dumpert"/>
     <import addon="plugin.video.freelivetv.tva"/>
-    <import addon="plugin.video.fidoK19"/>
+    <import addon="plugin.video.homelander"/>
     <import addon="plugin.video.iplayerwww"/>
     <import addon="plugin.video.npr"/>
     <import addon="plugin.video.nightwing"/>
@@ -43,7 +43,7 @@
     <summary lang="es_ES">.</summary>
     <summary lang="fr_FR">.</summary>
     <summary lang="it_IT">.</summary>
-    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Dumpert, FidoK19, Free Live TV, MP3 Music, Nightwing, NPR, OpenWeatherMap, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, The Oath, XtasyD, YouTube[CR]</description>
+    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Dumpert, Free Live TV, Homelander, MP3 Music, Nightwing, NPR, OpenWeatherMap, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, The Oath, XtasyD, YouTube[CR]</description>
     <description lang="de_DE">.</description>
     <description lang="es_ES">.</description>
     <description lang="fr_FR">.</description>
@@ -1129,6 +1129,92 @@ v1.0.0 (2021-05-24)
   </extension>
 </addon>
 
+<!-- Homeland Addon -->
+<addon id="plugin.video.homelander" name="[COLOR red]Homelander[/COLOR]" provider-name="Homelander" version="1.0.9">
+  <requires>
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <!--<import addon="script.homelander.metadata" />-->
+    <import addon="script.homelander.artwork" />
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.homelanderscrapers" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.simplejson" />
+    <import addon="plugin.video.youtube" optional="true" />
+  </requires>
+  <extension library="homelander.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+    <summary lang="en_GB">Homelander All In One</summary>
+    <description lang="en_GB">[COLOR red]The Crew Team[/COLOR]</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum />
+    <website />
+    <source />
+    <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>screenshot.jpg</screenshot>
+    </assets>
+    <news>
+    See Changelog on Tools menu
+    </news>
+  </extension>
+</addon>
+
+<!-- Homeland Artwork -->
+<addon id="script.homelander.artwork" version="1.0.4" name="[COLOR red]Homelander [/COLOR]Artwork" provider-name="Homelander">
+  <requires>
+    <!--<import addon="xbmc.python" version="2.19.0"/>-->
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Homelander Artwork</summary>
+    <description>Homelander Artwork</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Homeland Scappers -->
+<addon id="script.module.homelanderscrapers" name="[COLOR red]Homelander [/COLOR]Scrapers" version="1.1.9" provider-name="Homelander">
+  <requires>
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.orion" optional="true" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib/default.py">
+    <provides>executable</provides>
+  </extension>
+    <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Homelander Scrapers Module</summary>
+    <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+  </extension>
+</addon>
+
 <!-- IDNA Module -->
 <addon id="script.module.idna" name="idna" version="3.3.0+matrix.1" provider-name="Kim Davies">
   <requires>
@@ -1203,7 +1289,7 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.12" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.14" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1211,7 +1297,7 @@ v1.0.0 (2021-05-24)
     <import addon="resource.images.iplayerwww" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>audio video</provides>
+    <provides>audio video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">TV and Radio from BBC iPlayer</summary>
@@ -1226,8 +1312,8 @@ v1.0.0 (2021-05-24)
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.12
-Fix for new A-Z format.
+v4.0.14
+Fix for further changes to JSON format.
 
 Known issues:
 - No Red Button
@@ -2409,7 +2495,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.95" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.98" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />

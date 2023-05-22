@@ -16,6 +16,7 @@ Addons installed by this addon:
   - Dumpert (Short Videos)
   - Exodus (Movies & TV Shows)
   - Free Live TV (Live TV)
+  - Homelander (Movies & TV Shows)
   - iPlayer (Live and Catch-Up TV)
   - MP3 Music (Music Albums & Songs)
   - NPR Music (Music Videos)
