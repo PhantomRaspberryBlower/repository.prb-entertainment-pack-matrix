@@ -2154,11 +2154,13 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- PRB Entertainment Repository Matrix-->
-<addon id="repository.prb-entertainment-pack-matrix" name="PRB Entertainment Repository (matrix)" version="1.0.1" provider-name="Phantom Raspberry Blower">
+<addon id="repository.prb-entertainment-pack-matrix" name="PRB Entertainment Repository (matrix)" version="1.0.2" provider-name="Phantom Raspberry Blower">
   <extension point="xbmc.addon.repository" name="PRB Entertainment Repository (matrix)">
-    <info compressed="false">https://raw.github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master/addons.xml</info>
-    <checksum>https://raw.github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master</datadir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/master</datadir>
+    </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Phantom Raspberry Blower Repository (matrix)</summary>
@@ -2181,11 +2183,11 @@ v5.3.2 (2020-09-30)
     <license>GPL-2.0-or-later</license>
     <forum></forum>
     <website></website>
-    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v19 (matrix)</lifecyclestate>
-    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v19 (matrix)</lifecyclestate>
-    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v19 (matrix)</lifecyclestate>
-    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v19 (matrix)</lifecyclestate>
-    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v19 (matrix)</lifecyclestate>
+    <lifecyclestate type="normal" lang="en_GB">Works with Kodi v20 (Nexus)</lifecyclestate>
+    <lifecyclestate type="normal" lang="de_DE">Funktioniert mit Kodi v20 (Nexus)</lifecyclestate>
+    <lifecyclestate type="normal" lang="es_ES">Funciona con Kodi v20 (Nexus)</lifecyclestate>
+    <lifecyclestate type="normal" lang="fr_FR">Fonctionne avec Kodi v20 (Nexus)</lifecyclestate>
+    <lifecyclestate type="normal" lang="it_IT">Funziona con Kodi v20 (Nexus)</lifecyclestate>
     <broken></broken>
     <email></email>
     <assets>
@@ -2193,11 +2195,11 @@ v5.3.2 (2020-09-30)
       <fanart>resources/fanart.jpg</fanart>
       <banner></banner>
     </assets>
-    <news lang="en_GB">Updated to Kodi v19 (matrix) and code to Python 3.</news>
-    <news lang="de_DE">Aktualisiert auf Kodi v19 (Matrix) und Code auf Python 3.</news>
-    <news lang="es_ES">Actualizado a Kodi v19 (matriz) y código a Python 3.</news>
-    <news lang="fr_FR">Mise à jour vers Kodi v19 (matrice) et code vers Python 3.</news>
-    <news lang="it_IT">Aggiornato a Kodi v19 (matrice) e codice a Python 3.</news>
+    <news lang="en_GB">Updated to Kodi v20 (Nexus).</news>
+    <news lang="de_DE">Aktualisiert auf Kodi v20 (Nexus).</news>
+    <news lang="es_ES">Actualizado a Kodi v20 (Nexus).</news>
+    <news lang="fr_FR">Mise à jour vers Kodi v20 (Nexus).</news>
+    <news lang="it_IT">Aggiornato a Kodi v20 (Nexus).</news>
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/repository.prb-entertainment-pack-matrix</source>
   </extension>
 </addon>
