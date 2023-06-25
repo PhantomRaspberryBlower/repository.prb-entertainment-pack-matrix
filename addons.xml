@@ -328,12 +328,14 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Bugatsinho Repo -->
-<addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
+<addon id="repository.bugatsinho" name="Bugatsinho repository" version="2.5a" provider-name="Bugatsinho">
   <extension point="xbmc.addon.repository" name="Bugatsinho repository">
-    <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
-    <hashes>false</hashes>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+      <hashes>false</hashes>
+    </dir>
     <dir>
       <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
       <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
@@ -369,15 +371,14 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Butter Fingers Repo -->
-<addon id="repository.butter" name="Butter Fingers Repo" version="1.9.8" provider-name="J1">
-  <requires>
-    <import addon="xbmc.addon" version="12.0.0"/>
-  </requires>
+<addon id="repository.butter" name="Butter Fingers Repo" version="1.9.8a" provider-name="J1">
   <extension point="xbmc.addon.repository" name="Butter Fingers Repo">
-    <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
-    <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
-    <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
-    <hashes>false</hashes>
+    <dir>
+      <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
+      <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
+      <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
+      <hashes>false</hashes>
+    </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Butter Fingers Repo</summary>
@@ -385,7 +386,7 @@ v1.0.0 (2021-05-24)
     <platform>all</platform>
     <assets>
       <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>     
+      <fanart>fanart.jpg</fanart>			
     </assets>
   </extension>
 </addon>
