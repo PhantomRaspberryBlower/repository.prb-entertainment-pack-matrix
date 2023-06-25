@@ -2,9 +2,9 @@
 <addon id="repository.butter" name="Butter Fingers Repo" version="1.9.8a" provider-name="J1">
   <extension point="xbmc.addon.repository" name="Butter Fingers Repo">
     <dir>
-      <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
-      <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
-      <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
+      <info compressed="false">https://j1wizard.net/butter-addons/_repo/addons.xml</info>
+      <checksum>https://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://j1wizard.net/butter-addons/_repo/</datadir>
       <hashes>false</hashes>
     </dir>
   </extension>
