@@ -2,7 +2,7 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.8" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.9" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
@@ -371,12 +371,12 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Butter Fingers Repo -->
-<addon id="repository.butter" name="Butter Fingers Repo" version="1.9.8a" provider-name="J1">
+<addon id="repository.butter" name="Butter Fingers Repo" version="2.1.9" provider-name="J1">
   <extension point="xbmc.addon.repository" name="Butter Fingers Repo">
-    <dir>
-      <info compressed="false">https://j1wizard.net/butter-addons/_repo/addons.xml</info>
-      <checksum>https://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
-      <datadir zip="true">https://j1wizard.net/butter-addons/_repo/</datadir>
+    <dir> 
+      <info compressed="false">http://j1wizard.net/butter-addons/_repo/addons.xml</info>
+      <checksum>http://j1wizard.net/butter-addons/_repo/addons.xml.md5</checksum>
+      <datadir zip="true">http://j1wizard.net/butter-addons/_repo/</datadir>
       <hashes>false</hashes>
     </dir>
   </extension>
@@ -428,17 +428,58 @@ v1.0.0 (2021-05-24)
   </extension>
 </addon>
 
-<!-- Common Plugin Cache -->
-<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="anxdpanic, TheCollective" version="2.6.3+matrix.1">
+<!-- Cloud Drive -->
+<addon id="script.module.clouddrive.common" name="Cloud Drive Common Module" version="1.4.0" provider-name="Carlos Guzman (cguZZman)">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.pyqrcode"/>
+  </requires>
+  <extension point="xbmc.python.module" library="/" />
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Cloud Drive Common Module</summary>
+    <description lang="en_GB">Common Services and Classes for all the cloud drive addons.</description>
+    <summary lang="he_IL">מודול משותף לכונן בענן</summary>
+    <description lang="he_IL">שירותים ושירותים משותפים לכל התוספים של כונן הענן.</description>		
+    <license>GPL-3.0-or-later</license>
+    <source>https://github.com/cguZZman/script.module.clouddrive.common</source>
+    <forum>https://github.com/cguZZman/script.module.clouddrive.common/issues</forum>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+v1.4.0 released Jan 20, 2023:
+- Kodi 20 fix
+    </news>
+    <disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability whatsoever.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server. 
+    </disclaimer>
+  </extension>
+</addon>
+
+<!-- Common Plugin Cache -->
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="anxdpanic, TheCollective" version="3.0.0">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
   </requires>
   <extension point="xbmc.service" library="resources/lib/entry_point.py"/>
   <extension point="xbmc.python.module" library="resources/lib/storage_server/"/>
   <extension point="xbmc.addon.metadata">
     <news>
 [fix] use xbmcvfs.translatePath when available, xbmc.translatePath deprecated(Matrix) and removed(Nexus) |contrib: Gujal00|
-        </news>
+    </news>
     <assets>
       <icon>icon.png</icon>
     </assets>
@@ -860,38 +901,65 @@ v1.0.0 (2021-05-24)
 
 <!-- Demon FM -->
 
-<!-- Diamond Wizard Repo -->
+<!-- Dobbelina Repo -->
+<addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.4" provider-name="dobbelina">
+  <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Unofficial Addons for Kodi</summary>
+    <description>For Cumination Updates
+Please visit
+https://github.com/dobbelina/repository.dobbelina/issues
+for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+    <forum>https://github.com/dobbelina/repository.dobbelina/issues</forum>
+    <platform>all</platform>
+  </extension>
+</addon>
 
 <!-- Dropbox Addon -->
 
 <!-- Dumpert Image -->
-<addon id="plugin.video.dumpert" name="Dumpert" version="1.1.11+matrix.1" provider-name="Skipmode A1">
+<addon id="plugin.image.dumpert" name="Dumpert" version="1.0.4+matrix.1" provider-name="Skipmode A1">
   <requires>
     <import addon="xbmc.python"                     version="3.0.0"/>
     <import addon="script.module.beautifulsoup4"    version="4.3.2"/>
     <import addon="script.module.requests"          version="2.4.3"/>
     <import addon="script.module.future"            version="0.0.1"/>
     <import addon="script.module.html5lib"          version="0.999.0"/>
-    <import addon="plugin.video.youtube"            version="5.1.7"/>
   </requires>
   <extension point="xbmc.python.pluginsource" 	library="addon.py">
-    <provides>video</provides>
+    <provides>image</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Watch funny videos from Dumpert.nl (dutch)</summary>
-    <description lang="en_GB">Watch funny videos from Dumpert.nl (dutch)</description>
+    <summary lang="en_GB">Watch funny pictures from Dumpert.nl (dutch)</summary>
+    <description lang="en_GB">Watch funny pictures from Dumpert.nl (dutch)</description>
     <disclaimer lang="en_GB">For bugs, requests or general questions visit the Dumpert.nl thread on the Kodi forum.</disclaimer>
-    <summary lang="nl_NL">Bekijk grappige filmpjes van Dumpert.nl (dutch)</summary>
-    <description lang="nl_NL">Bekijk grappige filmpjes van Dumpert.nl (dutch)</description>
+    <summary lang="nl_NL">Bekijk grappige plaatjes van Dumpert.nl (dutch)</summary>
+    <description lang="nl_NL">Bekijk grappige plaatjes van Dumpert.nl (dutch)</description>
     <disclaimer lang="nl_NL">Bugs of andere feedback op deze plugin kan geplaatst worden in de Dumpert.nl thread op het Kodi forum.</disclaimer>
     <language>nl</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=162635</forum>
+    <license>GNU General Public License v3.0 only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=315439</forum>
     <website>https://dumpert.nl</website>
-    <source>https://github.com/skipmodea1/plugin.video.dumpert.python3</source>
-    <news>v1.1.11 (2022-12-27)
-    - Not using xbmc.translatePath anymore as that method has been removed in Kodi 20 and up.
+    <source>https://github.com/skipmodea1/plugin.image.dumpert</source>
+    <news>v1.0.4 (2019-09-21)
+    - MAJOR changes in the addon due to redesigned website
+    - moved to Krypton
+    - updated logos
     </news>
     <assets>
       <icon>resources/icon.png</icon>
@@ -1091,6 +1159,149 @@ v1.0.0 (2021-05-24)
   </extension>
 </addon>
 
+<!-- Global Search -->
+<addon id="script.globalsearch" name="Global Search" version="9.0.7" provider-name="ronie">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="bg_BG">Търси в библиотеката Ви.</summary>
+    <summary lang="ca_ES">Cerca a la teva biblioteca.</summary>
+    <summary lang="cs_CZ">Hledej v knihovně</summary>
+    <summary lang="de_DE">Durchsuchen Sie Ihre Bibliothek.</summary>
+    <summary lang="el_GR">Αναζήτηση στη Συλλογή σας.</summary>
+    <summary lang="en_GB">Search your library.</summary>
+    <summary lang="en_NZ">Search your library.</summary>
+    <summary lang="en_US">Search your library.</summary>
+    <summary lang="es_ES">Busca en tu biblioteca.</summary>
+    <summary lang="fr_FR">Chercher dans la médiathèque.</summary>
+    <summary lang="fr_CA">Chercher dans votre bibliothèque</summary>
+    <summary lang="gl_ES">Buscar a súa biblioteca.</summary>
+    <summary lang="he_IL">חיפוש בספריית המדיה.</summary>
+    <summary lang="hr_HR">Pretražite svoju zbirku.</summary>
+    <summary lang="hu_HU">Keresés a médiatárban</summary>
+    <summary lang="id_ID">Cari pustaka Anda.</summary>
+    <summary lang="it_IT">Ricerca nella la tua libreria.</summary>
+    <summary lang="ko_KR">라이브러리 찾기</summary>
+    <summary lang="lt_LT">Ieškoti bibliotekoje.</summary>
+    <summary lang="nl_NL">Zoek in je bibliotheek.</summary>
+    <summary lang="nb_NO">Søk i biblioteket ditt</summary>
+    <summary lang="pl_PL">Przeszukaj swoją bibliotekę</summary>
+    <summary lang="pt_PT">Faça buscas na sua biblioteca.</summary>
+    <summary lang="pt_BR">Pesquise sua coleção.</summary>
+    <summary lang="ro_RO">Căutați în mediateca dumneavoastră.</summary>
+    <summary lang="ru_RU">Поиск в вашей медиатеке.</summary>
+    <summary lang="sl_SI">Iščite v svoji knjižnici.</summary>
+    <summary lang="sv_SE">Sök i ditt bibliotek.</summary>
+    <summary lang="tr_TR">Kitaplığını ara</summary>
+    <summary lang="zh_CN">资料库搜索</summary>
+    <description lang="bg_BG">Добавката може да намери всеки елемент във вашата видео и музикална библиотека.</description>
+    <description lang="ca_ES">Aquest complement pot trobat qualsevol article en la teva biblioteca de vídeo i música</description>
+    <description lang="cs_CZ">Tento dopněk dokáže najít libovolnou položku ve vaší audio a video knihovně.</description>
+    <description lang="de_DE">Dieses Add-on kann jeden Eintrag in Ihrer Video- und Musikbibliothek finden.</description>
+    <description lang="el_GR">Αυτό το πρόσθετο μπορεί να βρει κάθε αντικείμενο στις συλλογές σας.</description>
+    <description lang="en_GB">This addon can find any item in your video and music library.</description>
+    <description lang="en_NZ">This addon can find any item in your video and music library.</description>
+    <description lang="en_US">This addon can find any item in your video and music library.</description>
+    <description lang="es_ES">Este complemento puede encontrar cualquier elemento en tu biblioteca de vídeo y música.</description>
+    <description lang="fr_FR">Cette extension peut trouver tout élément dans la vidéothèque et l'audiothèque.</description>
+    <description lang="fr_CA">Cet addiciel peut trouver tout élément dans votre vidéothèque et dans votre audiothèque.</description>
+    <description lang="gl_ES">Este complemento pode atopar calquera elemento na súa biblioteca de medios.</description>
+    <description lang="he_IL">הרחבה זו יכולה למצוא כל פריט בספריות הווידאו והמוזיקה.</description>
+    <description lang="hr_HR">Ovaj dodatak može pronaći svaku stavku u vašoj videoteci ili fonoteci.</description>
+    <description lang="hu_HU">Ez a kiegészítő bármely elemet megtalálja a videó és audió médiatárban.</description>
+    <description lang="id_ID">Addon ini dapat mencari item apa saja di pustaka video dan musik Anda.</description>
+    <description lang="it_IT">Questo addon può trovare ogni elemento nella tua libreria video ed in quella musicale.</description>
+    <description lang="ko_KR">비디오와 음악 라이브러리의 모든 항목을 검색합니다.</description>
+    <description lang="lt_LT">Šis priedas gali rasti bet kokį elementą jūsų vaizdo ir garso bibliotekoje.</description>
+    <description lang="nl_NL">Deze addon kan elk item in je video- en muziekbibliotheken vinden.</description>
+    <description lang="nb_NO">Dette tillegget kan finne hva som helst i ditt film eller musikk bibliotek.</description>
+    <description lang="pl_PL">Ten plugin może odnaleźć dowolną pozycję w twojej bibliotece wideo oraz muzycznej.</description>
+    <description lang="pt_PT">Este addon pode encontrar qualquer item na sua biblioteca de vídeos e de músicas.</description>
+    <description lang="pt_BR">Este addon pode encontrar qualquer item na sua coleção de vídeos e música.</description>
+    <description lang="ro_RO">Acest supliment poate găsi orice element în mediateca dumneavoastră video și audio.</description>
+    <description lang="ru_RU">Это дополнение поможет найти любую запись в вашей медиатеке.</description>
+    <description lang="sl_SI">Ta dodatek lahko poišče katerokoli podatek v vaši knjižnici filmov in glasbe.</description>
+    <description lang="sv_SE">Detta tillägg kan hitta vilket objekt som helst i ditt video och musikbibliotek.</description>
+    <description lang="tr_TR">Bu eklenti video ve müzik kitaplığınızdaki herhangi bir öğeyi bulabilir.</description>
+    <description lang="zh_CN">此插件搜索你的视频和音乐资料库项目。</description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=109301</forum>
+    <source>https://gitlab.com/ronie/script.globalsearch/</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+    <news>- add support for searching musicvideos by artist name
+- add support for originaltitle search
+- add support for tv show actors
+- add videoresolution flag</news>
+  </extension>
+</addon>
+
+<!-- Google Drive -->
+<addon id="plugin.googledrive" name="Google Drive" version="1.5.0" provider-name="Carlos Guzman (cguZZman)">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.clouddrive.common" version="1.4.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="entrypoint.py">
+    <provides>image audio video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Google Drive for KODI</summary>
+    <description lang="en_GB">
+Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
+ - Unlimited number of accounts.
+ - Team Drives support
+ - Google Photos support
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use Google Drive as a source. **(Not currently working due to changes in the Google Drive API)
+ - This program is not affiliated with or sponsored by Google.
+    </description>
+    <summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
+    <description lang="he_IL">
+הפעל את כל המדיה שלך מ- Google Drive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - תוכנית זו אינה קשורה או ממומנת על ידי Google.
+    </description>
+    <license>GPL-3.0-or-later</license>
+    <source>https://github.com/cguZZman/plugin.googledrive</source>
+    <forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
+    <website>https://addons.kodi.tv/show/plugin.googledrive</website>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>
+v1.5.0 released Jan 21, 2023:
+- Kodi 20 fix
+    </news>
+    <disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server. 
+    </disclaimer>
+  </extension>
+</addon>
+
 <!-- HTML5 Module -->
 <addon id="script.module.html5lib" name="html5lib-python" version="1.1.0+matrix.1" provider-name="html5lib">
   <requires>
@@ -1132,46 +1343,46 @@ v1.0.0 (2021-05-24)
 </addon>
 
 <!-- Homelander Addon -->
-<addon id="plugin.video.homelander" name="[COLOR red]Homelander[/COLOR]" provider-name="Homelander" version="1.0.9">
+<addon id="plugin.video.homelander" name="[COLOR red]Homelander[/COLOR]" provider-name="Homelander" version="1.2.0">
   <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <!--<import addon="script.homelander.metadata" />-->
-    <import addon="script.homelander.artwork" />
-    <import addon="script.module.resolveurl" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.homelanderscrapers" />
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.simplejson" />
-    <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension library="homelander.py" point="xbmc.python.pluginsource">
-      <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-      <reuselanguageinvoker>false</reuselanguageinvoker>
-      <summary lang="en_GB">Homelander All In One</summary>
-      <description lang="en_GB">[COLOR red]The Crew Team[/COLOR]</description>
-      <platform>all</platform>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-      <forum />
-      <website />
-      <source />
-      <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-      <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>screenshot.jpg</screenshot>
-      </assets>
-      <news>
-      See Changelog on Tools menu
-      </news>
+      <!--<import addon="xbmc.python" version="2.20.0" />-->
+      <!--<import addon="script.homelander.metadata" />-->
+      <import addon="script.homelander.artwork" />
+      <import addon="script.module.resolveurl" />
+      <import addon="script.module.requests" />
+      <import addon="script.module.homelanderscrapers" />
+      <import addon="script.module.six" />
+      <import addon="script.module.kodi-six" />
+      <import addon="script.module.simplejson" />
+      <import addon="plugin.video.youtube" optional="true" />
+  </requires>
+  <extension library="homelander.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+    <summary lang="en_GB">Homelander All In One</summary>
+    <description lang="en_GB">[COLOR red]The Crew Team[/COLOR]</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum />
+    <website />
+    <source />
+    <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>screenshot.jpg</screenshot>
+    </assets>
+    <news>
+    See Changelog on Tools menu
+    </news>
   </extension>
 </addon>
 
 <!-- Homelander Scrappers -->
-<addon id="script.module.homelanderscrapers" name="[COLOR red]Homelander [/COLOR]Scrapers" version="1.1.9" provider-name="Homelander">
+<addon id="script.module.homelanderscrapers" name="[COLOR red]Homelander [/COLOR]Scrapers" version="1.2.4" provider-name="Homelander">
   <requires>
     <!--<import addon="xbmc.python" version="2.20.0" />-->
     <import addon="script.module.beautifulsoup4" />
@@ -1335,6 +1546,20 @@ Known issues:
     <license>MIT</license>
     <website>https://pypi.org/project/iso8601/</website>
     <source>https://bitbucket.org/micktwomey/pyiso8601</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<!-- J1 Artwork -->
+<addon id="script.j1.artwork" name="J1 Artwork" provider-name="J1" version="2.4.6">
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <description lan="en">J1 Artwork, Helper Modules</description>
+    <summary lang="en">J1 Artwork, Common Functions.</summary>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
     <assets>
       <icon>icon.png</icon>
     </assets>
@@ -1721,6 +1946,22 @@ Known issues:
   </extension>
 </addon>
 
+<!-- MySQL Connector -->
+<addon id="script.module.myconnpy" name="MySQL Connector/Python" version="8.0.18+matrix.1" provider-name="MySQL">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">MySQL Connector/Python</summary>
+    <description lang="en_GB">MySQL Connector/Python is implementing the MySQL Client/Server protocol completely in Python. This means you don't have to compile anything or MySQL (client library) doesn't even have to be installed on the machine.</description>
+    <license>GPLv2</license>
+    <platform>all</platform>
+    <website>http://dev.mysql.com/doc/connector-python/en/index.html</website>
+    <source>http://dev.mysql.com/downloads/connector/python/</source>
+  </extension>
+</addon>
+
 <!-- Nightwing Video Addon -->
 <addon id="plugin.video.nightwing" name="[COLORblue]Nightwing[/COLOR]" provider-name="Magnetic" version="1.1.7a">
   <requires>
@@ -1895,73 +2136,6 @@ Known issues:
       <fanart></fanart>
     </assets>
     <news></news>
-  </extension>
-</addon>
-
-<!-- Open subtitles Addon -->
-<addon id="service.subtitles.opensubtitles" name="OpenSubtitles.org" version="5.1.2" provider-name="amet, opensubtitles, juokelis">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.subtitle.module" library="service.py" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">OpenSubtitles</summary>
-    <description lang="en_GB">Search and download subtitles for movies and TV-Series from OpenSubtitles.org. Search in 75 languages, 4.000.000+ subtitles, daily updates.</description>
-    <description lang="ast_ES">Pelis and Subtítulos TV en munches llingües, milenta de subtítulos traducíos y xubíos caldía. Descarga llibre dende la fonte, sofitu API, millones d'usuarios.</description>
-    <description lang="br_FR">Istitloù Filmoù ha TV e meur a yezh, miliadoù a istitloù troet hag uskarget bemdez. Pellgargadenn digoust diouzh ar vammenn, skoazell an API, millionoù a implijerien.</description>
-    <description lang="ca_ES">Subtítols de films i televisió en múltiples idiomes, milers de subtítols traduïts carregats diàriament. Descàrrega gratuïta des de la font, suport de l'API, amb milions d'usuaris.</description>
-    <description lang="cs_CZ">Titulky k filmům a seriálům v mnoha jazycích, denně tisíce nahraných přeložených titulků. Stažení zadarmo přímo od zdroje, podpora API, milióny uživatelů.</description>
-    <description lang="de_DE">Film- und TV-Untertitel in vielen Sprachen, täglicher Upload von tausenden übersetzten Untertiteln. Freier Download von der Quelle, API-Unterstützung, Millionen Nutzer</description>
-    <description lang="el_GR">Ταινίες και Σειρές σε όλες τις γλώσσες, χιλιάδες μεταφρασμένοι υπότιτλοι ανεβαίνουν καθημερινά, κατεβάστε δωρεάν , υποστήριξη API από εκατομμύρια χρήστες</description>
-    <description lang="eo_EO">Filmaj kaj Televidaj subtekstoj en multaj lingvoj, miloj da tradukitaj subtekstoj ĉiutage alŝutataj. Senpaga elŝuto de fonto, API-subteno, miloj da uzantoj.</description>
-    <description lang="es_ES">Películas y Subtítulos en diversos idiomas, miles de subtítulos traducidos subidos diariamente. Descarge gratis, soporte API, millones de usuarios.</description>
-    <description lang="et_EE">Sadu Filmi ja TV Serjaalide subtiitrid erinevates keeltes laetakse üles igapäev. tasuta allalaadimine ja abi, rohkem kui miljon kasutajat.</description>
-    <description lang="eu_ES">Film eta Telebista azpitituluak hizkuntza anitzetan, milaka azpititulu itzuliak igotzen dira egunero. Doan jaitsi iturburutik, API sostengua, milioika erabiltzaile.</description>
-    <description lang="fi_FI">Tekstityksiä useilla kielillä elokuviin ja TV-Sarjoihin, tuhansia uusia tekstityksiä päivittäin, ilmainen lataus, API tuki, miljoonia käyttäjiä.</description>
-    <description lang="fr_FR">Les sous-titres de film et téléfilm en plusieurs langues, des milliers de sous-titres traduits tous les jours. Bénéficiez de téléchargements gratuits depuis la source, du support API, une d'une communauté de millions d'utilisateurs.</description>
-    <description lang="hi_IN">मूवी और टीवी उपशीर्षक कई भाषाओं में अनुवाद उपशीर्षक के हजारों दैनिक अपलोड की गई। मुफ्त डाउनलोड स्रोत से , एपीआई समर्थन, उपयोगकर्ताओं के लाखों लोगों की ।</description>
-    <description lang="hr_HR">Titlovi za filmove i TV na mnogim jezicima, tisuće prijevoda postavljenih svaki dan. Besplatno preuzimanje s izvora, podrška za API, milijuni korisnika.</description>
-    <description lang="hu_HU">Film és TV feliratok több nyelven, naponta több ezer lefordított felirat feltöltés. Ingyenes letöltés a forrástól, API támogatás, több millió felhasználó.</description>
-    <description lang="id_ID">Subjudul film dan serial TV dalam multibahasa, ribuan subjudul diterjemah dan diunggah setiap harinya. Pengunduhan gratis dari sumber, didukung fitur antarmuka pemrograman aplikasi, dan jutaan pengguna.</description>
-    <description lang="is_IS">Textar fyrir myndir og sjónvarpsþ. á mörgum tungumálum, þúsundir af þýddum textum upphlaðið daglega. Frítt niðurhal frá síðu, API stuðningur, milljónir notenda.</description>
-    <description lang="it_IT">Sottotitoli di Film e TV in più lingue,migliaia di sottotitoli tradotti caricati ogni giorno.Download gratuito,supporto API, milioni di utenti.</description>
-    <description lang="ja_JP">映画やテレビの字幕をさまざまな言語で。毎日数多くの翻訳字幕がアップロードされています。ソースを無料ダウンロード、API 対応、数百万を超えるユーザー。</description>
-    <description lang="ka_GR">სუბტიტრები ფილმებისა და ტვ-სთვის მრავალ ენაზე. ათასობიტ თარგმნილი სუბტიტრის ატვირთვა ყოველდღიურად. უდასო ჩამოტვირტვა წყაროდან, API მხარდაჭერა, მილიონობით მომხმარებელი</description>
-    <description lang="km_KH">អត្ថបទរឿងសម្រាប់ ខ្សែភាពយន្ត និងកម្មវិធីទូរទស្សន៍​ ជាភាសាជាច្រើន រួមនឹងអត្ថបទរឿងបកប្រែរាប់ពាន់​រឿង​ដែល​ត្រូវបាន​អ័ពឡូដជារៀងរាល់ថ្ងៃ។ ទាញយកដោយឥតគិតថ្លៃពីប្រភពដើម គាំទ្រ API និងមានអ្នកប្រើប្រាស់រាប់លាននាក់។</description>
-    <description lang="ko_KR">Movie and TV Subtitles in multiple languages, thousands of translated subtitles uploaded daily. Free download from source, API support, millions of users.</description>
-    <description lang="ms_MY">Sarikata TV dan Movie dalam pelbagai bahasa, ribuan terjemahan sarikata dimuat-naik setiap hari.Muat-turun percuma dari sumber utama, sokongan API, jutaan pengguna.</description>
-    <description lang="nl_NL">Ondertitels voor films en tv-series in meerdere talen, dagelijks upload van duizenden vertaalde ondertitels. Gratis downloaden van de bron, API ondersteuning, miljoenen gebruikers.</description>
-    <description lang="no_NO">Undertekster for film og TV på mange språk, med tusener av nye oversettelser hver dag. Vi har gratis nedlasting av undertekster, API-support, og mange millioner brukere.</description>
-    <description lang="pl_PL">Napisy do filmów i seriali w wielu językach. Tysiące napisów dodawanych codziennie. Darmowe pobranie, miliony użytkowników.</description>
-    <description lang="pt_BR">Milhares de legendas para filmes e seriados de TV, em vários idiomas, são traduzidas e enviadas diariamente. Download grátis, suporte API e milhões de usuários.</description>
-    <description lang="pt_PT">Legendas de filmes e séries de TV em vários idiomas, milhares de legendas traduzidas e enviadas diariamente. Download grátis a partir da fonte, suporte API, milhões de utilizadores.</description>
-    <description lang="ro_RO">Subtitrari pentru filme in multe limbi, mii de subtitrari traduse si încărcate in fiecare zi. Descărca gratuit de la sursă, suport API, milioane de utilizatori.</description>
-    <description lang="ru_RU">Кино и ТВ субтитры на нескольких языках, тысячи переведенными субтитрами загружены ежедневно. Бесплатно скачать из исходных текстов, поддержка API, миллионы пользователей.</description>
-    <description lang="sk_SK">Titulky pre filmy a TV seriály, denne nahratých tisíce titulkov preložených vo viacerých jazykoch. Sťahuj zadarmo zo zdroja, podpora API, milióny používateľov.</description>
-    <description lang="sl_SI">Filmski in televizijski podnapisi v mnogo jezikih, na tisoče prevedenih podnapisov dnevno. Brezplačen prenos iz vira, podpora API, miljoni uporabnikov.</description>
-    <description lang="sq_AL">Titra filmash dhe serialesh në shumë gjuhë, mijëra titra të përkthyera që vendosen çdo ditë. Shkarko nga burimi, apo nga mbështetja e API-së, miliona përdorues.</description>
-    <description lang="sr_CS">Titlovi za filmove i TV na mnogim jezicima, hiljade prevoda okačenih svakodnevno. Besplatno skidanje sa izvora, podrška za API, milioni korisnika.</description>
-    <description lang="sv_SE">Filmer och Tv-undertexter med olika språk, tusentals översatta undertexter uppladdade dagligen. Gratis nerladdning från källor, API support, miljoner av användare.</description>
-    <description lang="tr_TR">Her gün eklenen, pek çok dildeki binlerce film ve dizi altyazısı. Kaynağından ücretsiz indirme, API desteği ve milyonlarca kullanıcı.</description>
-    <description lang="uz_UZ">Film va TV Taglavhalari ko'p tillarda, minglab tarjima qilingan taglavhalar har kuni tizimga yuklanadi. Bepul resursdan yuklab oling, API qo'llaydi, millionlab foydalanuvchilar.</description>
-    <description lang="zh_CN">多语种的电影及剧集字幕，每日更新千余条翻译好的字幕。免费下载，提供API接口，已拥有上百万的用户。</description>
-    <disclaimer lang="en_GB">Users need to provide OpenSubtitles.org username and password in add-on configuration</disclaimer>                                             <news>
-v5.1.2 (2020-03-21) by enen92
-- Fixes for python3/matrix. Remove sys.path.append.
-    </news>
-    <platform>all</platform>
-    <license>GPL-2.0-only</license>
-    <forum>https://forum.opensubtitles.org/viewtopic.php?f=8&amp;t=15847</forum>
-    <website>http://www.opensubtitles.org</website>
-    <email>admin [at] opensubtitles {dot} org</email>
-    <assets>
-      <icon>resources/media/os_logo_512x512.png</icon>
-      <fanart>resources/media/os_fanart.jpg</fanart>
-      <screenshot>resources/media/screenshot_1.jpg</screenshot>
-      <screenshot>resources/media/screenshot_2.jpg</screenshot>
-      <screenshot>resources/media/screenshot_3.jpg</screenshot>
-    </assets>
-    <source>https://github.com/juokelis/service.subtitles.opensubtitles</source>
   </extension>
 </addon>
 
@@ -2372,6 +2546,95 @@ v5.3.2 (2020-09-30)
   </extension>
 </addon>
 
+<!-- Pysocks -->
+<addon id="script.module.pysocks" name="PySocks" version="1.7.0+matrix.1" provider-name="anorov">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">A SOCKS proxy client and wrapper for Python</summary>
+    <description lang="en_GB">PySocks lets you send traffic through SOCKS and HTTP proxy servers. It is a modern fork of SocksiPy with bug fixes and extra features.</description>
+    <platform>all</platform>
+    <language></language>
+    <license>BSD</license>
+    <forum></forum>
+    <website>https://github.com/Anorov/PySocks</website>
+    <source>https://github.com/Anorov/PySocks</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<!-- PyQRcode -->
+<addon id="script.module.pyqrcode" version="1.2.1+matrix.4" name="pyQRcode" provider-name="Michael Nooner">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">A Python interface to generate QR Code</summary>
+    <description lang="en_GB">A Python interface to generate QR Code</description>
+    <website>https://pypi.org/project/PyQRCode</website>
+    <license>BSD-3-Clause</license>
+    <platform>all</platform>
+    <source>https://github.com/mnooner256/pyqrcode</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Pytjhon Twitch-->
+<addon id="script.module.python.twitch" name="python-twitch for Kodi" version="3.0.1" provider-name="anxdpanic, A Talented Community">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <news>
+[fix] oauth queries
+[lang] updated translations from Weblate
+    </news>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+    </assets>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <source>https://github.com/anxdpanic/script.module.python.twitch</source>
+    <forum>https://twitchaddon.panicked.xyz/forum</forum>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="da_DK">Modul til interaktion med Twitch.tv API</summary>
+    <summary lang="de_DE">Modul für die Interaktion mit der Twitch.tv-API</summary>
+    <summary lang="en_GB">Module for interaction with the Twitch.tv API</summary>
+    <summary lang="es_ES">Módulo para interactuar con la API de Twitch.tv</summary>
+    <summary lang="fi_FI">Moduuli Twitch.tv-rajapinnan käyttöön</summary>
+    <summary lang="hr_HR">Modul za interakciju s Twitch.tv API</summary>
+    <summary lang="hu_HU">Modul a Twitch.tv API -val való interakcióhoz</summary>
+    <summary lang="it_IT">Modulo per l&apos;interazione con l&apos;API di Twitch.tv</summary>
+    <summary lang="ko_KR">Twitch.tv API와의 상호작용을 위한 모듈</summary>
+    <summary lang="pl_PL">Moduł do interakcji z API Twitch.tv</summary>
+    <summary lang="ru_RU">Модуль для взаимодействия с Twitch.tv API</summary>
+    <summary lang="zh_CN">与 Twitch.tv API 交互的模块</summary>
+    <description lang="da_DK">python-twitch til Kodi er et modul til interaktion med Twitch.tv API baseret på python-twitch af ingwinlu.</description>
+    <description lang="de_DE">python-twitch für Kodi ist ein Modul für die Interaktion mit der Twitch.tv-API, basierend auf python-twitch von ingwinlu.</description>
+    <description lang="en_GB">python-twitch for Kodi is module for interaction with the Twitch.tv API based on python-twitch by ingwinlu.</description>
+    <description lang="es_ES">python-twitch para Kodi es un módulo para interactuar con la API de Twitch.tv basado en python-twitch de ingwinlu.</description>
+    <description lang="fi_FI">&apos;Python-twitch for Kodi&apos; on Twitch.tv-palvelun rajapinnan hyödyntämisen mahdollistava moduuli, joka perustuu kehittäjän ingwinlu luomaan python-twitch-moduuliin.</description>
+    <description lang="hr_HR">python-twitch za Kodi je modul za interakciju s Twitch.tv API-jem temeljenom na python-twitch by ingwinlu.</description>
+    <description lang="hu_HU">A python-twitch a Kodi számára a Twitch.tv API-val való interakció modulja, amely az ingwinlu python-twitch-jén alapul.</description>
+    <description lang="it_IT">python-twitch per Kodi è un modulo per l&apos;interazione con l&apos;API di Twitch.tv basato su python-twitch di ingwinlu.</description>
+    <description lang="ko_KR">Kodi용 python-twitch는 ingwinlu의 python-twitch를 기반으로 하는 Twitch.tv API와 상호 작용하기 위한 모듈입니다.</description>
+    <description lang="pl_PL">python-twitch dla Kodi to moduł do interakcji z API Twitch.tv oparty na python-twitch autorstwa ingwinlu.</description>
+    <description lang="ru_RU">python-twitch это модуль для взаимодействия с Twitch.tv API. Основан на модуле python-twitch от ingwinlu.</description>
+    <description lang="zh_CN">Kodi 的 python-twitch 是从 ingwinlu 开发版本移植的与 twitch.tv API 交互的模块。</description>
+  </extension>
+</addon>
+
 <!-- RSS Feeds -->
 <addon id="script.rss.editor" name="RSS Editor" version="4.0.2" provider-name="rwparris2, Team Kodi">
   <requires>
@@ -2474,7 +2737,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.98" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.101" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2831,6 +3094,26 @@ Version 1.0.0
   </extension>
 </addon>
 
+<!-- Unidecode -->
+<addon id="script.module.unidecode" name="unidecode" version="1.1.1+matrix.2" provider-name="Tomaz Solc (Tomaz.solc@tablix.org)">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</summary>
+    <description lang="en_GB">ASCII transliterations of Unicode text by Sean M. Burke and Tomaz Solc</description>
+    <disclaimer lang="en_GB">Code taken from https://pypi.org/project/Unidecode</disclaimer>
+    <license>GPL-2.0-or-later</license>
+    <website>https://pypi.org/project/Unidecode</website>
+    <source>https://pypi.org/project/Unidecode</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <!-- URL Resolver -->
 <addon id="script.module.urlresolver" name="URLResolver" version="6.1.03a" provider-name="tvaddons">
   <requires>
@@ -2954,6 +3237,25 @@ v0.9.7
     <assets>
       <icon>icon.png</icon>
     </assets>
+  </extension>
+</addon>
+
+<!-- Websocket -->
+<addon id="script.module.websocket" name="websocket library" version="0.58.0+matrix.2" provider-name="liris">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.six" version="1.14.0+matrix.2" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary lang="en_GB">websocket library repacked for Kodi</summary>
+    <source>https://github.com/pkscout/script.module.websocket</source>
+    <website>https://github.com/websocket-client/websocket-client</website>
+    <platform>all</platform>
+    <license>LGPL-2.1-only</license>
   </extension>
 </addon>
 

@@ -21,9 +21,8 @@ class InstallFFmpeg():
 
     def get_ffmpeg(self):
         version = ''
-        if self.is_tool_installed('ffmpeg') is False:
-            if self.is_user_root:
-                self.install_tool('ffmpeg')
+        if not self.is_tool_installed('ffmpeg'):
+            self.install_tool('ffmpeg')
         command = 'ffmpeg -version'
         output = Popen(command.split(), stdout=PIPE).communicate()[0]
         results = str(output)
@@ -39,10 +38,11 @@ class InstallFFmpeg():
             Popen([name],
                   stdout=devnull,
                   stderr=devnull).communicate()
+            return True
         except OSError as e:
             if e.errno == errno.ENOENT:
                 return False
-        return True
+        return False
 
 
     # Install FFmpeg
@@ -57,6 +57,19 @@ class InstallFFmpeg():
                     name], stdout=devnull, stderr=devnull)
 
 
+    # Remove FFmpeg
+    def remove_tool(self, name):
+        # Install tool and suppress output
+        devnull = open(os.devnull, 'w')
+        check_call(["sudo",
+                    "apt-get",
+                    "--purge",
+                    "autoremove",
+                    "-y",
+                    "-qq",
+                    name], stdout=devnull, stderr=devnull)
+
+
 # Check if running stand-alone or imported
 if __name__ == u'__main__':
     if platform.system() != u'Windows':
@@ -65,4 +78,4 @@ if __name__ == u'__main__':
         info = si.get_ffmpeg()
         print(info)
     else:
-        print(u'This script does not work with a Windows operating system. :( - Yet!')
+        print(u'This script does not work with a Windows operating system. :(')

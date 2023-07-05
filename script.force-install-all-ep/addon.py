@@ -228,6 +228,7 @@ if __name__ == '__main__':
                 si = installffmpeg.InstallFFmpeg()
                 resp = si.get_ffmpeg()
                 commontasks.message(resp, "FFmpeg")
-#            if params['action'] == 'remove_ffmpeg':
-#                resp = installffmpeg.remove_ffmpeg()
-#                commontasks.message(resp, "FFmpeg")
+            if params['action'] == 'remove_ffmpeg':
+                si = installffmpeg.InstallFFmpeg()
+                resp = si.remove_tool('ffmpeg')
+                commontasks.message(resp, "FFmpeg")
