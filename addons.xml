@@ -1071,7 +1071,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- Fido K19 Video Addon -->
-<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.0.8e" provider-name="Fido">
+<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.1.2" provider-name="Fido">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -1122,6 +1122,40 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+</addon>
+
+<!-- Formula 1 -->
+<addon id="plugin.video.formula1" name="Formula 1" version="2.0.2" provider-name="jaylinski">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Videos von der Formula 1 Website</summary>
+        <summary lang="en_GB">Videos from the Formula 1 website</summary>
+        <disclaimer lang="en_GB">This plugin is not official, approved or endorsed by Formula 1.</disclaimer>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=352138</forum>
+        <website>https://www.formula1.com</website>
+        <source>https://github.com/jaylinski/kodi-addon-formula1</source>
+        <news>2.0.2 (2021-05-22)
+Switched to new player API (the old player API did not display the latest videos)
+
+2.0.1 (2021-04-16)
+Fixed error when viewing driver standings
+
+2.0.0 (2020-12-05)
+Added support for Kodi v19 (Matrix)
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <!-- Future Module -->
@@ -1562,6 +1596,31 @@ Known issues:
     <platform>all</platform>
     <assets>
       <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Jew Repo -->
+<addon id="repository.jewrepo" name="[COLOR purple]JewRepo[/COLOR]" version="1.6.0" provider-name="JewBMX">
+  <extension point="xbmc.addon.repository" name="[COLOR purple]JewRepo[/COLOR]">
+  <dir>
+    <info compressed="false">https://raw.githubusercontent.com/jewbmx/repo/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/jewbmx/repo/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/jewbmx/repo/master/zips/</datadir>
+  </dir>
+  <dir>
+    <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+  </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Free the People, Free the World!</summary>
+    <description>JewBMX's Official Repository</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>icon.png</fanart>
     </assets>
   </extension>
 </addon>
@@ -2713,6 +2772,62 @@ v5.3.2 (2020-09-30)
   </extension>
 </addon>
 
+<!-- Red Bull TV -->
+<addon id="plugin.video.redbull.tv" name="Red Bull TV" version="3.2.2+matrix.1" provider-name="piejanssens">
+  <requires>
+    <import addon="script.module.dateutil" version="2.8.0"/>
+    <import addon="script.module.routing" version="0.2.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/addon_entry.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Watch Red Bull TV, live and on demand.</summary>
+    <description lang="en_GB">Red Bull TV gives you front-row access to live events, the best inaction sports, new music and entertainment, and thrilling videos from world adventurers.</description>
+    <disclaimer lang="en_GB">This add-on is not endorsed by Red Bull GmbH and is provided 'as is' without any warranty of any kind.</disclaimer>
+    <summary lang="nl_NL">Bekijk Red Bull TV, live en op aanvraag.</summary>
+    <description lang="nl_NL">Red Bull TV geeft je toegang vanop de eerste rij voor live evenementen, de beste actie sporten, muziek en entertainment, en spannende videos van avonturiers.</description>
+    <disclaimer lang="nl_NL">Deze add-on wordt niet herkend door Red Bull GmbH en wordt zonder enige garantie van welke aard dan ook aangeboden.</disclaimer>
+    <license>GPL-2.0-only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=355054</forum>
+    <website>http://www.redbull.tv/</website>
+    <platform>all</platform>
+    <source>https://github.com/add-ons/plugin.video.redbull.tv</source>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot01.jpg</screenshot>
+      <screenshot>resources/media/screenshot02.jpg</screenshot>
+      <screenshot>resources/media/screenshot03.jpg</screenshot>
+      <screenshot>resources/media/screenshot04.jpg</screenshot>
+    </assets>
+    <news>
+v3.2.2
+- Fix EPG loading
+- Support for Python 3.9
+- Allow installing IPTV Manager from the add-on settings 
+
+v3.2.1
+- Fix OK dialog
+- Catch missing EPG time markers
+
+v3.2.0
+- Support VOD playback from EPG via context menu
+- Add YouTube integration (requires YouTube add-on)
+- Improve channel listing
+- New add-on icon
+
+v3.1.0
+- IPTV Manager support
+
+v3.0.0
+- Harder, Better, Faster, Stronger
+    </news>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+  </extension>
+</addon>
+
 <!-- Requests Module -->
 <addon id="script.module.requests" name="requests" version="2.27.1+matrix.1" provider-name="Python Software Foundation">
   <requires>
@@ -2737,7 +2852,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.104" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.111" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2801,6 +2916,59 @@ v5.3.2 (2020-09-30)
 
 <!-- Rockcrusher Repository -->
 
+<!-- Samsung TV -->
+<addon id="slyguy.samsung.tv.plus" name="Samsung TV Plus" provider-name="SlyGuy" version="0.1.9">
+  <requires>
+    <import addon="script.module.slyguy" version="0.63.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Just free TV. Whether you're a news buff, sports fan, gamer, an aspiring chef, or need something for the kids, Samsung TV Plus offers TV that everyone can enjoy.</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news>Move EPG url into Playlist</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Scrub V2 -->
+<addon id="plugin.video.scrubsv2" version="5.1.38" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+  <requires>
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.resolveurl" />
+    <import addon="script.scrubsv2.artwork" optional="true" />
+    <import addon="script.trakt" optional="true" />
+    <import addon="plugin.video.json_iptv" optional="true" />
+    <import addon="plugin.video.youtube" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A Clean Source To Dirty Things...</summary>
+    <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
+    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <license>Free the People!, Free the World!!</license>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/images/icon.png</icon>
+      <fanart>resources/images/fanart.jpg</fanart>
+    </assets>
+    <news>Total CleanUp of Providers : Checked and Cleaned as of June 2023. [CR] Check ChangeLog For More Details. [CR] (Please Report Any Issues To Me Directly By Email Or GitHub.)</news>
+  </extension>
+</addon>
+
 <!-- Simple JSON Module -->
 <addon id="script.module.simplejson" name="simplejson" version="3.17.0+matrix.2" provider-name="Bob Ippolito">
   <requires>
@@ -2837,6 +3005,72 @@ v5.3.2 (2020-09-30)
     <website>https://pypi.org/project/six/</website>
     <assets>
       <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Sly Guy Dependencies -->
+<addon id="slyguy.dependencies" name="SlyGuy Dependencies" provider-name="SlyGuy" version="0.0.16">
+  <requires>
+    <import addon="repository.slyguy"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Dependencies required by all Slyguy add-ons</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Sly Guy Module -->
+<addon id="script.module.slyguy" name="SlyGuy Common" provider-name="SlyGuy" version="0.74.0">
+  <requires>
+    <import addon="slyguy.dependencies" version="0.0.8"/>
+    <import addon="repository.slyguy" version="0.0.4"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.python.pluginsource" library="default.py" />
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Common code required by all Slyguy add-ons</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Sly Guy Repo -->
+<addon id="repository.slyguy" name="SlyGuy Repository (slyguy.uk)" provider-name="SlyGuy" version="0.0.8">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
+    <dir>
+      <info compressed="false">https://slyguy.uk/.repo/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon>
