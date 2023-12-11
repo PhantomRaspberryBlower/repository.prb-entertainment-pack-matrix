@@ -197,7 +197,7 @@
 </addon>
 
 <!-- BBC Podcasts -->
-<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.4" provider-name="Heckie">
+<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.5" provider-name="Heckie">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.25.1" />
@@ -221,6 +221,9 @@
     <website>https://github.com/Heckie75/kodi-addon-bbc-podcasts</website>
     <source>https://github.com/Heckie75/kodi-addon-bbc-podcasts/tree/main/plugin.audio.bbcpodcasts</source>
     <news>
+v2.0.5 (2023-11-15)
+- Changed parser after changes on website, i.e. fix paging 
+            
 v2.0.4 (2023-02-02)
 - Improved thumbnail if item is added to favourites
 
@@ -1071,7 +1074,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- Fido K19 Video Addon -->
-<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.1.2" provider-name="Fido">
+<addon id="plugin.video.fidoK19" name="Fido.K19" version="0.1.5" provider-name="Fido">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -1100,6 +1103,49 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
       <screenshot>resources/screenshots/screenshot001.jpg</screenshot>
       <screenshot>resources/screenshots/screenshot002.jpg</screenshot>
       <screenshot>resources/screenshots/screenshot003.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Fido Repo -->
+<addon id="repository.Fido" name="[COLOR aqua]Fido Repository[/COLOR]" version="1.5e" provider-name="Fido">
+  <extension point="xbmc.addon.repository" name="[COLOR aqua]Fido Repository[/COLOR]">
+    <dir>
+      <info compressed="false">http://fantazyrepo.uk/_repo/addons.xml</info>
+      <checksum>http://fantazyrepo.uk/_repo/addons.xml.md5</checksum>
+      <datadir zip="true">http://fantazyrepo.uk/_repo/</datadir>
+      <hashes>false</hashes>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+    </dir>	
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+      <hashes>false</hashes>
+    </dir>
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+    </dir> 
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
+    <description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
+    <platform>all</platform>
+    <genre>movies,usa</genre>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>    
     </assets>
   </extension>
 </addon>
@@ -1159,7 +1205,7 @@ Added support for Kodi v19 (Matrix)
 </addon>
 
 <!-- Future Module -->
-<addon id="script.module.future" name="future" version="0.18.2+matrix.1" provider-name="Ed Schofield">
+<addon id="script.module.future" name="future" version="0.18.3+matrix.1" provider-name="Ed Schofield">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
@@ -1167,12 +1213,12 @@ Added support for Kodi v19 (Matrix)
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Clean single-source support for Python 3 and 2</summary>
     <description lang="en_GB">future is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.</description>
-    <platform>all</platform>
     <license>MIT</license>
+    <platform>all</platform>
+    <website>https://python-future.org</website>
     <source>https://github.com/PythonCharmers/python-future</source>
-    <website>http://python-future.org</website>
     <assets>
-      <icon>icon.png</icon>
+      <icon>resources/icon.png</icon>
     </assets>
   </extension>
 </addon>
@@ -1377,18 +1423,18 @@ You can clone the project and host it in your own server.
 </addon>
 
 <!-- Homelander Addon -->
-<addon id="plugin.video.homelander" name="[COLOR red]Homelander[/COLOR]" provider-name="Homelander" version="1.2.0">
+<addon id="plugin.video.homelander" name="Homelander" provider-name="Ghost" version="1.2.2">
   <requires>
-      <!--<import addon="xbmc.python" version="2.20.0" />-->
-      <!--<import addon="script.homelander.metadata" />-->
-      <import addon="script.homelander.artwork" />
-      <import addon="script.module.resolveurl" />
-      <import addon="script.module.requests" />
-      <import addon="script.module.homelanderscrapers" />
-      <import addon="script.module.six" />
-      <import addon="script.module.kodi-six" />
-      <import addon="script.module.simplejson" />
-      <import addon="plugin.video.youtube" optional="true" />
+    <!--<import addon="xbmc.python" version="2.20.0" />-->
+    <!--<import addon="script.homelander.metadata" />-->
+    <import addon="script.homelander.artwork" />
+    <import addon="script.module.resolveurl" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.homelanderscrapers" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.simplejson" />
+    <import addon="plugin.video.youtube" optional="true" />
   </requires>
   <extension library="homelander.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
@@ -1396,7 +1442,7 @@ You can clone the project and host it in your own server.
   <extension library="service.py" point="xbmc.service" start="startup" />
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>false</reuselanguageinvoker>
-    <summary lang="en_GB">Homelander All In One</summary>
+    <summary lang="en_GB">All In One Addon (Debrid Scrapers)</summary>
     <description lang="en_GB">[COLOR red]The Crew Team[/COLOR]</description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
@@ -1536,7 +1582,7 @@ You can clone the project and host it in your own server.
 </addon>
 
 <!-- iPlayer Addon -->
-<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.14" provider-name="CaptainT, Cas, ihurst, primaeval">
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="4.0.17" provider-name="CaptainT, Cas, ihurst, primaeval">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.7.0"/>
@@ -1559,8 +1605,8 @@ You can clone the project and host it in your own server.
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <news>
-v4.0.14
-Fix for further changes to JSON format.
+v4.0.17
+Live radio authentication token fixes and simplifications.
 
 Known issues:
 - No Red Button
@@ -1963,7 +2009,7 @@ Known issues:
 </addon>
 
 <!-- Multi Weather Addon -->
-<addon id="weather.multi" name="Multi Weather" version="0.0.16" provider-name="ronie">
+<addon id="weather.multi" name="Multi Weather" version="0.0.20" provider-name="ronie">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.openweathermap.maps" version="1.0.4"/>
@@ -1987,9 +2033,9 @@ Known issues:
 </addon>
 
 <!-- Mutagen Module -->
-<addon id="script.module.mutagen" name="Mutagen" version="1.44.0+matrix.1" provider-name="Christoph Reiter">
+<addon id="script.module.mutagen" name="Mutagen" version="1.47.0" provider-name="Christoph Reiter">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -2000,7 +2046,7 @@ Known issues:
     <website>https://mutagen.readthedocs.io/en/latest/</website>
     <source>https://github.com/quodlibet/mutagen</source>
     <assets>
-      <icon>icon.png</icon>
+      <icon>resources/icon.png</icon>
     </assets>
   </extension>
 </addon>
@@ -2852,7 +2898,7 @@ v3.0.0
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.111" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.118" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2917,7 +2963,7 @@ v3.0.0
 <!-- Rockcrusher Repository -->
 
 <!-- Samsung TV -->
-<addon id="slyguy.samsung.tv.plus" name="Samsung TV Plus" provider-name="SlyGuy" version="0.1.9">
+<addon id="slyguy.samsung.tv.plus" name="Samsung TV Plus" provider-name="SlyGuy" version="0.1.10">
   <requires>
     <import addon="script.module.slyguy" version="0.63.1"/>
   </requires>
@@ -2991,20 +3037,20 @@ v3.0.0
 </addon>
 
 <!-- Six Module -->
-<addon id="script.module.six" name="six" version="1.15.0+matrix.1" provider-name="gutworth">
+<addon id="script.module.six" name="six" version="1.16.0+matrix.1" provider-name="Benjamin Peterson">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Python 2 and 3 compatibility utilities.</summary>
-    <description lang="en_GB">Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
-    <platform>all</platform>
+    <summary lang="en_GB">Python 2 and 3 compatibility utilities</summary>
+    <description lang="en_GB">Python 2 and 3 compatibility utilities</description>
     <license>MIT</license>
+    <platform>all</platform>
+    <website>https://github.com/benjaminp/six</website>
     <source>https://github.com/benjaminp/six</source>
-    <website>https://pypi.org/project/six/</website>
     <assets>
-      <icon>icon.png</icon>
+      <icon>resources/icon.png</icon>
     </assets>
   </extension>
 </addon>
@@ -3030,16 +3076,19 @@ v3.0.0
 </addon>
 
 <!-- Sly Guy Module -->
-<addon id="script.module.slyguy" name="SlyGuy Common" provider-name="SlyGuy" version="0.74.0">
+<addon id="script.module.slyguy" name="SlyGuy Common" provider-name="SlyGuy" version="0.76.0">
   <requires>
     <import addon="slyguy.dependencies" version="0.0.8"/>
     <import addon="repository.slyguy" version="0.0.4"/>
   </requires>
-  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.python.script" library="script.py">
+    <provides>executable</provides>
+  </extension>
   <extension point="xbmc.python.pluginsource" library="default.py" />
+  <extension point="xbmc.service" library="service.py" start="login" />
   <extension point="xbmc.python.module" library="resources/modules" />
   <extension point="xbmc.addon.metadata">
-    <description lang="en">Common code required by all Slyguy add-ons</description>
+    <description lang="en">Common code, proxy and settings required by all Slyguy add-ons</description>
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <license></license>
     <language></language>
@@ -3053,12 +3102,12 @@ v3.0.0
 </addon>
 
 <!-- Sly Guy Repo -->
-<addon id="repository.slyguy" name="SlyGuy Repository (slyguy.uk)" provider-name="SlyGuy" version="0.0.8">
-  <extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
+<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.9">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository">
     <dir>
-      <info compressed="false">https://slyguy.uk/.repo/addons.xml</info>
-      <checksum>https://slyguy.uk/.repo/addons.xml.md5</checksum>
-      <datadir zip="true">https://slyguy.uk/.repo/</datadir>
+      <info compressed="false">https://slyguy.uk/.repo/repository.slyguy/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
@@ -3374,9 +3423,9 @@ Version 1.0.0
 </addon>
 
 <!-- Urllib3 Module -->
-<addon id="script.module.urllib3" name="urllib3" version="1.26.9+matrix.1" provider-name="urllib3">
+<addon id="script.module.urllib3" name="urllib3" version="2.1.0" provider-name="urllib3">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -3384,7 +3433,7 @@ Version 1.0.0
     <description lang="en_GB">urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries</description>
     <license>MIT</license>
     <platform>all</platform>
-    <website>https://urllib3.readthedocs.io/en/latest/</website>
+    <website>https://urllib3.readthedocs.io/</website>
     <source>https://github.com/urllib3/urllib3</source>
     <assets>
       <icon>resources/icon.png</icon>
@@ -3411,6 +3460,57 @@ Version 1.0.0
     <assets>
       <icon>icon.png</icon>
     </assets>		
+  </extension>
+</addon>
+
+<!-- WatchNixToons 2 -->
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.11.6" provider-name="WNT2">
+  <requires>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.six"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">WatchNixtoons2</summary>
+    <description lang="en">
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.tv[/B][/COLOR].
+
+Support the WatchCartoonOnline website with a PayPal donation to:
+[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on originally by doko.
+Random updates by lolage.
+    </description>
+    <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+    <language>en</language>
+    <platform lang="en">all</platform>
+    <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.11.5:[/B]
+- add wcofun.org in old domain list
+
+[B]0.11.5:[/B]
+- Remove wcofun.org domain
+
+[B]0.11.4:[/B]
+- Code clean-up and restructure
+- Add Warning to user if video is a premium video
+- Give an option which domain to use in settings
+- Update User Agent
+- Update Thumbnail Hashes
+
+[B]0.11.3:[/B]
+- Quick fix for decoding source
+
+[B]0.11.2:[/B]
+- Fix dubbed listing
+- Some code cleanup
+- Update Thumbnail Hashes
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
@@ -3475,21 +3575,21 @@ v0.9.7
 </addon>
 
 <!-- Websocket -->
-<addon id="script.module.websocket" name="websocket library" version="0.58.0+matrix.2" provider-name="liris">
+<addon id="script.module.websocket" name="websocket-client" version="1.6.4" provider-name="liris">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.six" version="1.14.0+matrix.2" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-    <summary lang="en_GB">websocket library repacked for Kodi</summary>
-    <source>https://github.com/pkscout/script.module.websocket</source>
+    <summary lang="en_GB">WebSocket client for Python with low level API options</summary>
+    <description lang="en_GB">WebSocket client for Python with low level API options</description>
+    <source>https://github.com/websocket-client/websocket-client</source>
     <website>https://github.com/websocket-client/websocket-client</website>
+    <license>Apache-2.0</license>
     <platform>all</platform>
-    <license>LGPL-2.1-only</license>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
@@ -3544,12 +3644,13 @@ v0.9.7
 </addon>
 
 <!-- YouTube Addon -->
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.25+matrix.1a" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="7.0.2.2" provider-name="anxdpanic, bromix">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="inputstream.adaptive" version="20.3.1"/>
     <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+    <import addon="script.module.infotagger" version="0.0.5"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
     <provides>video</provides>
@@ -3558,14 +3659,19 @@ v0.9.7
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
     <news>
-[fixup] resolve playback history not being updated
-[add] add opus audio support
-[upd] use more descript reasons for failed playback
+[new] quality and stream feature selection
+[new] enable HLS live streams
+[new] stream and language labelling
+[chg] separately enable local/remote history
+[chg] restore unsupported compatibility for Kodi v19 (Matrix)
+[fix] fix various playback issues |contrib: various|
+[fix] Limit host connections getting subscription feeds |contrib: cas--|
+[fix] fix handling of connection failures
 [upd] Translations updated from Kodi Weblate
-        </news>
+    </news>
     <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
     </assets>
     <platform>all</platform>
     <license>GPL-2.0-only</license>
@@ -3607,12 +3713,12 @@ v0.9.7
     <description lang="es_ES">YouTube es uno de los sitios web más grande del mundo para compartir vídeos.</description>
     <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
     <description lang="fi_FI">YouTube on yksi maailman suurimmista videoiden jakosivustoista.</description>
-    <description lang="fr_FR">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
+    <description lang="fr_FR">YouTube est l&apos;un des plus grands sites de partage vidéos du monde.</description>
     <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
     <description lang="hr_HR">YouTube je jedna od najvećih stranica za dijeljenje video sadržaja na svijetu.</description>
     <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
     <description lang="id_ID">YouTube adalah salah satu situs web berbagi video terbesar di dunia.</description>
-    <description lang="it_IT">YouTube è uno dei più grandi siti web di condivisione video del mondo.</description>
+    <description lang="it_IT">YouTube è uno dei più grandi siti di condivisione video del mondo.</description>
     <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
     <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
     <description lang="nl_NL">YouTube is een van de grootste videodelenwebsite in de hele wereld.</description>
@@ -3631,7 +3737,7 @@ v0.9.7
     <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
     <disclaimer lang="es_MX">Este complemento no está respaldado por Google</disclaimer>
     <disclaimer lang="fi_FI">Google ei tue tätä lisäosaa</disclaimer>
-    <disclaimer lang="fr_FR">Ce module n'est pas validé par Google</disclaimer>
+    <disclaimer lang="fr_FR">Ce module n&apos;est pas validé par Google</disclaimer>
     <disclaimer lang="hr_HR">Ovaj dodatak nije podržan od strane Googlea</disclaimer>
     <disclaimer lang="id_ID">Plugin ini tidak didukung oleh Google</disclaimer>
     <disclaimer lang="it_IT">Questo plugin non è approvato da Google</disclaimer>
