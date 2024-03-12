@@ -197,7 +197,7 @@
 </addon>
 
 <!-- BBC Podcasts -->
-<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.5" provider-name="Heckie">
+<addon id="plugin.audio.bbcpodcasts" name="BBC Podcasts" version="2.0.7" provider-name="Heckie">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" version="2.25.1" />
@@ -221,6 +221,12 @@
     <website>https://github.com/Heckie75/kodi-addon-bbc-podcasts</website>
     <source>https://github.com/Heckie75/kodi-addon-bbc-podcasts/tree/main/plugin.audio.bbcpodcasts</source>
     <news>
+v2.0.7 (2024-02-21)
+- Minor bugfix
+
+v2.0.6 (2024-02-10)
+- Changed parser after changes on website, i.e. switched to API
+
 v2.0.5 (2023-11-15)
 - Changed parser after changes on website, i.e. fix paging 
             
@@ -2898,7 +2904,7 @@ v3.0.0
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.124" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.128" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -2963,7 +2969,7 @@ v3.0.0
 <!-- Rockcrusher Repository -->
 
 <!-- Samsung TV -->
-<addon id="slyguy.samsung.tv.plus" name="Samsung TV Plus" provider-name="SlyGuy" version="0.1.10">
+<addon id="slyguy.samsung.tv.plus" name="Samsung TV Plus" provider-name="SlyGuy" version="0.1.12">
   <requires>
     <import addon="script.module.slyguy" version="0.63.1"/>
   </requires>
@@ -3519,7 +3525,7 @@ Version 1.0.0
 </addon>
 
 <!-- WatchNixToons 2 -->
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.11.6" provider-name="WNT2">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.12.2" provider-name="WNT2">
   <requires>
     <import addon="script.module.requests"/>
     <import addon="script.module.six"/>
@@ -3530,7 +3536,7 @@ Version 1.0.0
   <extension point="xbmc.addon.metadata">
     <summary lang="en">WatchNixtoons2</summary>
     <description lang="en">
-Watch cartoons and anime from [COLOR orange][B]www.wcofun.tv[/B][/COLOR].
+Watch cartoons and anime from [COLOR orange][B]www.wcofun.net[/B][/COLOR].
 
 Support the WatchCartoonOnline website with a PayPal donation to:
 [COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
@@ -3542,29 +3548,27 @@ Random updates by lolage.
     <language>en</language>
     <platform lang="en">all</platform>
     <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
-[B]0.11.5:[/B]
-- add wcofun.org in old domain list
+[B]0.12.2:[/B]
+- Change wcofun.tv domain to wcofun.net
+- Update Thumbnail Hashes
+- Fix getting plot (wcostream)
+- Change how chapters are retrieved
 
-[B]0.11.5:[/B]
-- Remove wcofun.org domain
-
-[B]0.11.4:[/B]
-- Code clean-up and restructure
-- Add Warning to user if video is a premium video
-- Give an option which domain to use in settings
+[B]0.12.1:[/B]
 - Update User Agent
 - Update Thumbnail Hashes
 
-[B]0.11.3:[/B]
-- Quick fix for decoding source
-
-[B]0.11.2:[/B]
-- Fix dubbed listing
-- Some code cleanup
-- Update Thumbnail Hashes
-    </news>
+[B]0.12.0:[/B]
+- Code clean-up and restructure
+- allow for different site profiles
+- add wcostream.tv domain as option
+- add premium video work around for wcostream
+- modify resolver for wcostream
+- change default setting form popular thumbnails to true
+- Update User Agent
+- Update Thumbnail Hashes</news>
     <assets>
-        <icon>icon.png</icon>
+      <icon>icon.png</icon>
     </assets>
   </extension>
 </addon>
@@ -3699,7 +3703,7 @@ v0.9.7
 </addon>
 
 <!-- YouTube Addon -->
-<addon id="plugin.video.youtube" name="YouTube" version="7.0.2.2" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="7.0.2.2a" provider-name="anxdpanic, bromix">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
     <import addon="script.module.requests" version="2.12.4"/>
@@ -3714,14 +3718,8 @@ v0.9.7
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
     <news>
-[new] quality and stream feature selection
-[new] enable HLS live streams
-[new] stream and language labelling
-[chg] separately enable local/remote history
-[chg] restore unsupported compatibility for Kodi v19 (Matrix)
-[fix] fix various playback issues |contrib: various|
-[fix] Limit host connections getting subscription feeds |contrib: cas--|
-[fix] fix handling of connection failures
+[fix] error when filtering short videos
+[fix] fix playback |contrib: MoojMidge|
 [upd] Translations updated from Kodi Weblate
     </news>
     <assets>

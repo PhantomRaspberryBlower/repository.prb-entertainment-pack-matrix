@@ -82,6 +82,11 @@
                     <default>false</default>
                     <control type="toggle"/>
                 </setting>
+                <setting help="" id="youtube.hide_shorts" label="30736" type="boolean">
+                    <level>0</level>
+                    <default>false</default>
+                    <control type="toggle"/>
+                </setting>
                 <setting help="" id="kodion.play_count.percent" label="30668" type="integer">
                     <level>0</level>
                     <default>85</default>
@@ -160,7 +165,9 @@
                         <step>5</step>
                         <maximum>50</maximum>
                     </constraints>
-                    <control format="string" type="spinner"/>
+                    <control format="integer" type="slider">
+                        <popup>false</popup>
+                    </control>
                 </setting>
                 <setting help="" id="kodion.search.size" label="30023" type="integer">
                     <level>0</level>
@@ -557,6 +564,18 @@
         </category>
         <category help="" id="advanced" label="30031">
             <group id="1">
+                <setting help="" id="youtube.client.selection" label="30737" type="integer">
+                    <level>0</level>
+                    <default>0</default>
+                    <constraints>
+                        <options>
+                            <option label="30532">0</option>
+                            <option label="30738">1</option>
+                            <option label="30739">2</option>
+                        </options>
+                    </constraints>
+                    <control format="string" type="spinner"/>
+                </setting>
                 <setting help="" id="simple.requests.ssl.verify" label="30578" type="boolean">
                     <level>0</level>
                     <default>true</default>
@@ -733,7 +752,7 @@
             <group id="1">
                 <setting help="" id="youtube.api.key" label="30201" type="string">
                     <level>0</level>
-                    <default>AIzaSyCfNRb2-D_PuN5huKnyYpC_yldyEJbQqCg</default>
+                    <default/>
                     <constraints>
                         <allowempty>true</allowempty>
                     </constraints>
@@ -743,7 +762,7 @@
                 </setting>
                 <setting help="" id="youtube.api.id" label="30202" type="string">
                     <level>0</level>
-                    <default>849400600923-jc8dutd24lhqm5dlm5jj2j8nk9ulsfr7</default>
+                    <default/>
                     <constraints>
                         <allowempty>true</allowempty>
                     </constraints>
@@ -753,7 +772,7 @@
                 </setting>
                 <setting help="" id="youtube.api.secret" label="30203" type="string">
                     <level>0</level>
-                    <default>yo0SOMIdR1h9i7WuQkvnUDqh</default>
+                    <default/>
                     <constraints>
                         <allowempty>true</allowempty>
                     </constraints>
