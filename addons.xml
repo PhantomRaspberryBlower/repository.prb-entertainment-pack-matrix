@@ -2,27 +2,25 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.0.9" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.1.0" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
-    <import addon="plugin.image.dumpert"/>
-    <import addon="plugin.audio.absolute-radio"/>
+    <import addon="repository.resolveurl"/>
     <import addon="plugin.audio.bbcpodcasts"/>
     <import addon="plugin.audio.bandcamp"/>
     <import addon="plugin.audio.mp3music"/>
     <import addon="plugin.audio.prb-radio"/>
-    <import addon="plugin.video.dumpert"/>
     <import addon="plugin.video.freelivetv.tva"/>
     <import addon="plugin.video.fidoK19"/>
     <import addon="plugin.video.homelander"/>
     <import addon="plugin.video.iplayerwww"/>
     <import addon="plugin.video.npr"/>
-    <import addon="plugin.video.nightwing"/>
     <import addon="plugin.video.Rising.Tides"/>
+    <import addon="plugin.video.scrubsv2"/>
     <import addon="plugin.video.sporthdme"/>
     <import addon="plugin.video.ted.talks"/>
-    <import addon="plugin.video.theoath"/>
+    <import addon="plugin.video.watchnixtoons2"/>
     <import addon="plugin.video.xtasy19"/>
     <import addon="plugin.video.youtube"/>
     <import addon="script.globalsearch"/>
@@ -44,7 +42,7 @@
     <summary lang="es_ES">.</summary>
     <summary lang="fr_FR">.</summary>
     <summary lang="it_IT">.</summary>
-    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Dumpert, Free Live TV, Homelander, MP3 Music, Nightwing, NPR, OpenWeatherMap, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, The Oath, XtasyD, YouTube[CR]</description>
+    <description lang="en_GB">Defines media sources and download settings.[CR][CR]Downloads and installs add-ons from Phantom Raspberry Blower Repo[CR][CR]Addons installed by this addon are:[CR]Absolute Radio, BBC Radio, Free Live TV, Homelander, MP3 Music, NPR, OpenWeatherMap, PRB Clean, Rising Tides, RSS Editor, RSS Viewer, Sport HD, TED Talks, XtasyD, YouTube[CR]</description>
     <description lang="de_DE">.</description>
     <description lang="es_ES">.</description>
     <description lang="fr_FR">.</description>
@@ -2399,7 +2397,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- PRB Clean Service -->
-<addon id="service.prb-clean" name="PRB Clean" version="1.0.2" provider-name="Phantom Raspberry Blower">
+<addon id="service.prb-clean" name="PRB Clean" version="1.1.0" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -2928,6 +2926,29 @@ v3.0.0
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
+  </extension>
+</addon>
+
+<!-- Revolve URL Repo -->
+<addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
+  <extension point="xbmc.addon.repository" name="ResolveURL Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en_GB">ResolveURL and Link Tester</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets> 
   </extension>
 </addon>
 

@@ -12,15 +12,12 @@ Addons installed by this addon:
   - BBC Radio (Stream Live Radio)
   - Bandcamp (Music Albums & Songs)
   - Confluence OSMC (Confluence Skin for OSMC)
-  - Dumpert (Pictures)
-  - Dumpert (Short Videos)
   - Exodus (Movies & TV Shows)
   - Free Live TV (Live TV)
   - Homelander (Movies & TV Shows)
   - iPlayer (Live and Catch-Up TV)
   - MP3 Music (Music Albums & Songs)
   - NPR Music (Music Videos)
-  - Nightwing (Movies & TV Shows)
   - PRB Clean (Removes obsolete addons)
   - PRB Radio (Stream music)
   - PRB Install Everything EP (Forces installation of most addons)
@@ -31,7 +28,6 @@ Addons installed by this addon:
   - Sports HD (Sports Live)
   - System Info (Displays System Information)
   - TED Talks (lectures)
-  - The Oath (Movies & TV Shows)
   - YouTube
   - YouTube DL (Download Playing Video)
 
