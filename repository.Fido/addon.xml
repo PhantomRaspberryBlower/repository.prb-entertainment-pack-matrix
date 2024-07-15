@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.Fido" name="[COLOR aqua]Fido Repository[/COLOR]" version="1.5e" provider-name="Fido">
+    <addon id="repository.Fido" name="[COLOR aqua]Fido Repository[/COLOR]" version="1.5f" provider-name="Fido">
         <extension point="xbmc.addon.repository" name="[COLOR aqua]Fido Repository[/COLOR]">
 		    <dir>
                 <info compressed="false">http://fantazyrepo.uk/_repo/addons.xml</info>
