@@ -1,6 +1,7 @@
 context.venom<>Context Venom
 plugin.program.indigo<>Indigo
 plugin.audio.kxmxpxtx.bandcamp<>Bandcamp
+plugin.image.dumpert<>Dumpert
 plugin.video.Aspis<>Aspis
 plugin.video.AtTheFlix<>At The Flix
 plugin.video.yt-comedy<>Best British Comedy
@@ -12,6 +13,7 @@ plugin.video.covenant<>Covenant
 plugin.video.crackler<>Crackler
 plugin.video.crackle<>Crackle
 plugin.video.ds<>DeathStar
+plugin.video.dumpert<>Dumpert
 plugin.video.elysium<>Elysium
 plugin.video.exodus<>Exodus
 plugin.video.f1-replay<>F1 Replay
@@ -28,6 +30,7 @@ plugin.video.motogp-replay<>MotoGP Replay
 plugin.video.neptune<>Neptune Rising
 plugin.video.nba-replay<>NBA Replay
 plugin.video.nfl-replay<>NFL Replay
+plugin.video.nightwing<>Nightwing
 plugin.video.one242415<>One242415
 plugin.video.phstreams<>Phoenix
 plugin.video.pressplay<>Press Play
@@ -43,14 +46,16 @@ plugin.video.supremacy<>Supremacy
 plugin.video.Supremacy.Sports<>Supremacy Sports
 plugin.video.tsunami<>Tsunami OG
 plugin.video.tvonline.cc<>TV Online
+plugin.video.theoath<>The Oath
 plugin.video.ukturk<>UK Turks
 plugin.video.uktvplay<>UKTV Play
 plugin.video.venom<>Venom
 plugin.video.ZemTV-shani<>Zem TV
-repository.slyguy<>SlyGuy Repo
 script.covenant.artwork<>Covenant Artwork
 script.covenant.metadata<>Covenant Metadata
 script.elysium.artwork<>Elysium Artwork
+script.exodus.artwork<>Exodus Artwork
+script.exodus.metadata<>Exodus Metadata
 script.module.Aspis<>Aspis
 script.module.Aspis.Mobdro<>Aspis Mobdro
 script.module.Aspis.Sports<>Aspis Sports
@@ -66,6 +71,9 @@ script.module.jokerHD<>Joker Module
 script.module.MaverickLive<>Maverick Live
 script.module.myaccounts<>My Accounts
 script.module.nanscrapers<>NaN Scrapers
+script.module.nightwingscrapers<>Nightwing Scrapers
+script.module.oathscrapers<>The Oath Scrapers
+script.module.playscrapers<>PressPlay Scrapers
 script.module.slyguy<>SlyGuy Common
 script.module.supremacy<>Supremacy Scrapers
 script.module.Supremacy.sportsHD<>Supremacy Sports HD
@@ -76,8 +84,8 @@ script.movietheaterbutter.metadata<>Movie Theater Butter Metadata
 script.module.TheYid.common<>The Yid
 script.mrknow.urlresolver<>Mr Know resolver
 script.navi-x<>Navi X
-plugin.image.dumpert<>Dumpert
-plugin.video.dumpert<>Dumpert
-plugin.video.nightwing<>Nightwing
-plugin.video.theoath<>The Oath
+script.pressplay.artwork<>PressPlay Artwork
+script.pressplay.metadata<>PressPlay Metadata
+script.theoath.artwork<>The Oath Artwork
+
 

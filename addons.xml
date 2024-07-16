@@ -2,7 +2,7 @@
 <addons>
 
 <!-- PRB Install Everything Addon -->
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.1.0" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.1.1" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
@@ -11,11 +11,14 @@
     <import addon="plugin.audio.bandcamp"/>
     <import addon="plugin.audio.mp3music"/>
     <import addon="plugin.audio.prb-radio"/>
+    <import addon="script.elementum.burst"/>
+    <import addon="plugin.video.elementum"/>
     <import addon="plugin.video.freelivetv.tva"/>
     <import addon="plugin.video.fidoK19"/>
     <import addon="plugin.video.homelander"/>
     <import addon="plugin.video.iplayerwww"/>
     <import addon="plugin.video.npr"/>
+    <import addon="plugin.video.redbull.tv"/>
     <import addon="plugin.video.Rising.Tides"/>
     <import addon="plugin.video.scrubsv2"/>
     <import addon="plugin.video.sporthdme"/>
@@ -906,8 +909,6 @@ You can clone the project and host it in your own server.
   </extension>
 </addon>
 
-<!-- Demon FM -->
-
 <!-- Dobbelina Repo -->
 <addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.4" provider-name="dobbelina">
   <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
@@ -936,144 +937,181 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- Dropbox Addon -->
-
-<!-- Dumpert Image -->
-<addon id="plugin.image.dumpert" name="Dumpert" version="1.0.4+matrix.1" provider-name="Skipmode A1">
+<!-- Elementum lt2http Service -->
+<addon id="service.lt2http" name="lt2http" version="0.0.16" provider-name="ElementumOrg">
   <requires>
-    <import addon="xbmc.python"                     version="3.0.0"/>
-    <import addon="script.module.beautifulsoup4"    version="4.3.2"/>
-    <import addon="script.module.requests"          version="2.4.3"/>
-    <import addon="script.module.future"            version="0.0.1"/>
-    <import addon="script.module.html5lib"          version="0.999.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" 	library="addon.py">
-    <provides>image</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Watch funny pictures from Dumpert.nl (dutch)</summary>
-    <description lang="en_GB">Watch funny pictures from Dumpert.nl (dutch)</description>
-    <disclaimer lang="en_GB">For bugs, requests or general questions visit the Dumpert.nl thread on the Kodi forum.</disclaimer>
-    <summary lang="nl_NL">Bekijk grappige plaatjes van Dumpert.nl (dutch)</summary>
-    <description lang="nl_NL">Bekijk grappige plaatjes van Dumpert.nl (dutch)</description>
-    <disclaimer lang="nl_NL">Bugs of andere feedback op deze plugin kan geplaatst worden in de Dumpert.nl thread op het Kodi forum.</disclaimer>
-    <language>nl</language>
-    <platform>all</platform>
-    <license>GNU General Public License v3.0 only</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=315439</forum>
-    <website>https://dumpert.nl</website>
-    <source>https://github.com/skipmodea1/plugin.image.dumpert</source>
-    <news>v1.0.4 (2019-09-21)
-    - MAJOR changes in the addon due to redesigned website
-    - moved to Krypton
-    - updated logos
-    </news>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<!-- Dumpert Video -->
-<addon id="plugin.video.dumpert" name="Dumpert" version="1.1.11+matrix.1" provider-name="Skipmode A1">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-    <import addon="script.module.requests" version="2.4.3"/>
-    <import addon="script.module.future" version="0.0.1"/>
-    <import addon="script.module.html5lib" version="0.999.0"/>
-    <import addon="plugin.video.youtube" version="5.1.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Watch funny videos from Dumpert.nl (dutch)</summary>
-    <description lang="en_GB">Watch funny videos from Dumpert.nl (dutch)</description>
-    <disclaimer lang="en_GB">For bugs, requests or general questions visit the Dumpert.nl thread on the Kodi forum.</disclaimer>
-    <summary lang="nl_NL">Bekijk grappige filmpjes van Dumpert.nl (dutch)</summary>
-    <description lang="nl_NL">Bekijk grappige filmpjes van Dumpert.nl (dutch)</description>
-    <disclaimer lang="nl_NL">Bugs of andere feedback op deze plugin kan geplaatst worden in de Dumpert.nl thread op het Kodi forum.</disclaimer>
-    <language>nl</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-    <forum>https://forum.kodi.tv/showthread.php?tid=162635</forum>
-    <website>https://dumpert.nl</website>
-    <source>https://github.com/skipmodea1/plugin.video.dumpert.python3</source>
-    <news>v1.1.11 (2022-12-27)
-    - Not using xbmc.translatePath anymore as that method has been removed in Kodi 20 and up.
-    </news>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<!-- Exodus Video Addon -->
-<addon id="plugin.video.exodus" name="[COLOR orange]ExodusVPN.com[/COLOR]" provider-name="ExodusVPN.com" version="14.0.0a">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.exodus.artwork" />
-    <import addon="script.exodus.metadata" />
-    <import addon="script.module.urlresolver" />
+    <import addon="xbmc.addon" version="16.0.0" />
+    <import addon="repository.elementum" optional="true" />
+    <import addon="script.module.kodi-six" />
     <import addon="script.module.requests" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.playscrapers" />
-    <import addon="plugin.video.pressplay" />
-    <import addon="script.module.six" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.metahandler" optional="true" />
-    <import addon="plugin.video.youtube" optional="true" />
   </requires>
-  <extension library="exodus.py" point="xbmc.python.pluginsource">
-    <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="startup" />
+  <extension point="xbmc.python.pluginsource" library="navigation.py" />
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="resources/site-packages" />
   <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>false</reuselanguageinvoker>
-    <summary lang="en_GB">Exodus</summary>
-    <description lang="en_GB">Get Better Streaming and Support Exodus with a VPN from [COLOR pink]ExodusVPN.com[/COLOR]</description>
+    <summary lang="en">LT2http: LibTorrent-to-HTTP streaming addon</summary>
+    <description lang="en">LT2http is a torrent download and streaming engine.</description>
+    <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+    <language>en el es de fi fr he hr it nl pt ro sk</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum />
-    <website>https://www.exodusvpn.com</website>
-    <source />
-    <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+    <website>http://elementum.surge.sh/</website>
+    <source>https://github.com/ElementumOrg/lt2http</source>
+    <forum></forum>
+    <license>Non commercial. See https://github.com/ElementumOrg/service/blob/master/LICENSE</license>
+    <assets>
+      <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- Elementun Burst Addon -->
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.89" provider-name="elgatito">
+  <requires>
+    <import addon="xbmc.addon" version="16.0.0" />
+    <import addon="plugin.video.elementum" optional="true"/>
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.future" version="0.16.0.4"/>
+    <import addon="script.module.pycryptodome" optional="true" />
+  </requires>
+  <extension point="xbmc.python.script" library="burst.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Elementum torrents provider</summary>
+    <summary lang="hr">Elementum torrent pružatelji usluga</summary>
+    <summary lang="es">Proveedor de torrents Elementum</summary>
+    <summary lang="ru">Поисковое дополнение Elementum</summary>
+    <summary lang="sv">Elementum-torrentleverantör</summary>
+    <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
+    <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
+    <description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
+    <description lang="ru">Elementum Burst это поисковое дополнение, для поиска торрентов для Elementum.</description>
+    <description lang="sv">Elementum Burst är en enkel och effektiv multi-leverantör för Elementum.</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+    <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
+    <disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>
+    <disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
+    <disclaimer lang="sv">Skaparen är inte värd eller distribuerar något av innehållet som visas av detta tillägg. Skaparen har ingen anslutning till innehållsleverantörerna.</disclaimer>
+    <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+    <website>https://elementum.surge.sh</website>
+    <source>https://github.com/elgatito/script.elementum.burst</source>
+    <forum>TODO</forum>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>
-- See Changelog on Tools menu
-    </news>
   </extension>
 </addon>
 
-<!-- Exodus Artwork Addon -->
-<addon id="script.exodus.artwork" version="10.0.0" name="Exodus Artwork" provider-name="Exodus">
+<!-- Elementun Context Addon -->
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.13" provider-name="elgatito">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.addon" version="16.0.0" />
+    <import addon="script.module.requests"/>
+    <import addon="plugin.video.elementum" optional="true"/>
+    <import addon="script.module.future" version="0.16.0.4"/>
   </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Themes for the Exodus Addon</summary>
-    <description></description>
-    <platform>all</platform>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <menu>
+        <label>32011</label>
+        <item library="context_play.py">
+          <label>32000</label>
+          <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+        </item>
+        <item library="context_custom_play.py">
+          <label>32020</label>
+          <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+        </item>
+        <item library="context_download.py">
+          <label>32012</label>
+          <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+        </item>
+        <item library="context_custom_download.py">
+          <label>32021</label>
+          <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+        </item>
+        <item library="context_assign.py">
+          <label>32002</label>
+          <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season)</visible>
+        </item>
+        <item library="context_library.py" args="remove">
+          <label>32017</label>
+          <visible>Integer.IsGreater(ListItem.DBID,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+        </item>
+        <item library="context_trakt.py" args="watched">
+          <label>32018</label>
+          <visible>[Integer.IsGreater(ListItem.DBID,0) | Integer.IsGreater(ListItem.UniqueID(tmdb),0)]+Integer.IsEqual(ListItem.PlayCount,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+        </item>
+        <item library="context_trakt.py" args="unwatched">
+          <label>32019</label>
+          <visible>[Integer.IsGreater(ListItem.DBID,0) | Integer.IsGreater(ListItem.UniqueID(tmdb),0)]+Integer.IsGreater(ListItem.PlayCount,0)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+        </item>
+        <item library="context_info.py">
+          <label>32001</label>
+          <visible>System.GetBool(debug.extralogging)+[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+        </item>
+      </menu>
+    </menu>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <summary lang="ru">Elementum Контекстное меню</summary>
+    <summary lang="en">Elementum Context Menu</summary>
+    <description lang="ru">Контекстное меню для Elementum.</description>
+    <description lang="en">Context Menu for Elementum.</description>
+    <disclaimer lang="ru">Автор не несёт ответственности за использование дополнения, не распространяет данные, выводимые дополнением.</disclaimer>
+    <disclaimer lang="en">The author is not responsible for addon usage and does not host or distribute any of the content displayed by this addon.</disclaimer>
+    <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+    <website>https://elementum.surge.sh</website>
+    <source>https://github.com/elgatito/context.elementum</source>
+    <forum></forum>
   </extension>
 </addon>
 
-<!-- Exodus Metadata Addon -->
-<addon id="script.exodus.metadata" version="10.0.0" name="Exodus Metadata" provider-name="Exodus">
+<!-- Elementum Video Addon -->
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.103" provider-name="elgatito">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.addon" version="16.0.0" />
+    <import addon="repository.elementumorg" optional="true" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.requests" version="2.9.1" />
   </requires>
-  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="navigation.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="resources/site-packages" />
+  <extension point="xbmc.subtitle.module" library="navigation.py" />
   <extension point="xbmc.addon.metadata">
-    <summary>Metadata for the Exodus Addon</summary>
-    <description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+    <summary lang="ru">Elementum: Стриминг видео</summary>
+    <summary lang="en">Elementum: Media streaming</summary>
+    <summary lang="hr">Elementum: Medijsko strujanje</summary>
+    <summary lang="es">Elementum: Transmisión de medios</summary>
+    <summary lang="sv">Elementum: medieströmning</summary>
+    <description lang="ru">Elementum это дополнение для поиска и воспроизведения торрентов. Дополнение не ходит на запрещенные сайты самостоятельно. Хотя, для поиска используются дополнения (называемые провайдерами), которые устанавливаются отдельно.[CR]Этот проект является ответвлением хорошо извесных, но не поддерживаемых Pulsar/Quasar от steeve и scakemyer.</description>
+    <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+    <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+    <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+    <description lang="sv">Elementum är en torrentsöknings- och strömningsmotor. Det går inte till torrentwebbplatser av juridiska skäl. Den anropar dock speciellt utformade tillägg (kallade leverantörer) som installeras separat.[CR]Detta projekt är en förgrening av de välkända, men inte längre underhållna Pulsar/Quasar-projekten av steeve och scakemyer. </description>
+    <disclaimer lang="ru">Автор дополнения не несёт ответственности за скачивание или поиск информации и содержимого в этом дополнении. Автор никак не связан с Kodi, командой Kodi, или XBMC Foundation.</disclaimer>
+    <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+    <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+    <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+    <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
+    <language>en el es de fi fr he hr it nl pt ro sk sv</language>
     <platform>all</platform>
+    <website>http://elementum.surge.sh/</website>
+    <source>https://github.com/elgatito/plugin.video.elementum</source>
+    <forum></forum>
+    <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/home.png</screenshot>
+      <screenshot>resources/screenshots/movies.png</screenshot>
+      <screenshot>resources/screenshots/webui.png</screenshot>
+    </assets>
   </extension>
 </addon>
 
@@ -1495,7 +1533,6 @@ You can clone the project and host it in your own server.
   </extension>
 </addon>
 
-
 <!-- Homelander Artwork -->
 <addon id="script.homelander.artwork" version="1.0.4" name="[COLOR red]Homelander [/COLOR]Artwork" provider-name="Homelander">
   <requires>
@@ -1531,8 +1568,6 @@ You can clone the project and host it in your own server.
     </assets>
   </extension>
 </addon>
-
-<!-- Input Stream Helper Module -->
 
 <!-- IP 2 Location Addon -->
 <addon id="script.ip-2-location" name="IP 2 Location" version="1.0.1" provider-name="Phantom Raspberry Blower">
@@ -1681,10 +1716,6 @@ Known issues:
   </extension>
 </addon>
 
-<!-- Kodi Bae Repo -->
-
-<!-- Kodi Israel Repo -->
-
 <!-- Kodi Six Module -->
 <addon id="script.module.kodi-six" name="Kodi Six" version="0.1.3.1" provider-name="Roman V.M.">
   <requires>
@@ -1705,8 +1736,6 @@ Known issues:
 - Fix non-UTF-8 byte string decoding in Python 2.</news>
   </extension>
 </addon>
-
-<!-- Learning A Language -->
 
 <!-- Leicester Community Radio -->
 <addon id="plugin.audio.leicester-community-radio" name="Leicester Community Radio" version="1.0.1" provider-name="Phantom Raspberry Blower">
@@ -1783,8 +1812,6 @@ Known issues:
   </extension>
 </addon>
 
-<!-- Live Resolver Addon -->
-
 <!-- Log Viewer Addon -->
 <addon id="script.logviewer" name="Log Viewer for Kodi" provider-name="i96751414" version="2.1.6+matrix.1">
   <requires>
@@ -1850,8 +1877,6 @@ Known issues:
     <website>https://m7kodi.dev</website>
   </extension>
 </addon>
-
-<!-- Mail -->
 
 <!-- Magic Dragon -->
 <addon id="plugin.video.magicdragon" name="Magic Dragon" provider-name="tomb raider" version="3.1.5">
@@ -2077,71 +2102,6 @@ Known issues:
   </extension>
 </addon>
 
-<!-- Nightwing Video Addon -->
-<addon id="plugin.video.nightwing" name="[COLORblue]Nightwing[/COLOR]" provider-name="Magnetic" version="1.1.7a">
-  <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <import addon="script.module.resolveurl" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.nightwingscrapers" />
-    <import addon="script.module.six" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.metahandler" optional="true" />
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension library="nightwing.py" point="xbmc.python.pluginsource">
-    <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>false</reuselanguageinvoker>
-    <summary lang="en_GB">Nightwing</summary>
-    <description lang="en_GB"></description>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum />
-    <website></website>
-    <source />
-    <disclaimer lang="en_GB">A small but packed with goodies! A huge shoutout to the Way Of Kodi Learning Team, for their teaching. The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <news>
-    </news>
-  </extension>
-</addon>
-
-<!-- Nightwing Scrappers -->
-<addon id="script.module.nightwingscrapers" name="nightwingscrapers Module" version="1.0.4a" provider-name="Nightwing">
-  <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.simplejson" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.python.pluginsource" library="lib/default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">nightwingscrapers Module</summary>
-    <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart></fanart>
-    </assets>
-    <news></news>
-  </extension>
-</addon>
-
 <!-- NPR Video Addon -->
 <addon id="plugin.video.npr" name="NPR Music Videos" version="4.0.1" provider-name="t1m">
   <requires>
@@ -2170,87 +2130,6 @@ Known issues:
       <icon>resources/icon.png</icon>
       <fanart>resources/fanart.jpg</fanart>
     </assets>
-  </extension>
-</addon>
-
-<!-- Oath Video Addon-->
-<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="4.11.09">
-  <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <!--<import addon="script.theoath.metadata" />-->
-    <import addon="script.theoath.artwork" />
-    <import addon="script.module.resolveurl" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.oathscrapers" />
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.simplejson" />
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension library="theoath.py" point="xbmc.python.pluginsource">
-    <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>false</reuselanguageinvoker>
-    <summary lang="en_GB">TheOath</summary>
-    <description lang="en_GB">Multi-source add-on</description>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum />
-    <website />
-    <source />
-    <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk![CR]This project uses the TMDb, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <news>
-- See Changelog on Tools menu
-    </news>
-  </extension>
-</addon>
-
-<!-- Oath Artwork -->
-<addon id="script.theoath.artwork" version="1.1.0" name="TheOath Artwork" provider-name="host505">
-  <requires>
-    <!--<import addon="xbmc.python" version="2.19.0"/>-->
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Themes for the TheOath Addon</summary>
-    <description></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<!-- Oath Scrapers -->
-<addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.02.04" provider-name="TheOath">
-  <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.orion" optional="true" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.python.pluginsource" library="lib/default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">OathScrapers Module</summary>
-    <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart></fanart>
-    </assets>
-    <news></news>
   </extension>
 </addon>
 
@@ -2397,7 +2276,7 @@ v5.3.2 (2020-09-30)
 </addon>
 
 <!-- PRB Clean Service -->
-<addon id="service.prb-clean" name="PRB Clean" version="1.1.0" provider-name="Phantom Raspberry Blower">
+<addon id="service.prb-clean" name="PRB Clean" version="1.1.1" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -2585,101 +2464,6 @@ v5.3.2 (2020-09-30)
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-  </extension>
-</addon>
-
-<!-- PressPlay Video Addon -->
-<addon id="plugin.video.pressplay" name="PressPlay" provider-name="PressPlay" version="4.0.0a">
-    <requires>
-        <!--<import addon="xbmc.python" version="2.20.0" />-->
-        <import addon="script.pressplay.artwork" />
-        <import addon="script.pressplay.metadata" />
-        <import addon="script.module.urlresolver" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.playscrapers" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.metahandler" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension library="pressplay.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en_GB">PressPlay</summary>
-        <description lang="en_GB">Multi-source and multi-scraper package add-on. A basic scraper pack is provided but also supports Playscrapers, and native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <website />
-        <source />
-        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
-- See Changelog on Tools menu
-        </news>
-    </extension>
-</addon>
-
-<!-- PressPlay Artwork -->
-<addon id="script.pressplay.artwork" version="1.0.0" name="PressPlay Artwork" provider-name="PressPlay">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Themes for the PressPlay Addon</summary>
-    <description></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<!-- PressPlay Metadata -->
-<addon id="script.pressplay.metadata" version="1.0.0" name="PressPlay Metadata" provider-name="PressPlay">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Metadata for the PressPlay Addon</summary>
-    <description>Metadata for PressPlay are maintained separately to make distribution of the the addon itself easier/faster.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<!-- PressPlay Scrapers -->
-<addon id="script.module.playscrapers" name="PlayScrapers Module" version="7.0.0" provider-name="PressPlay">
-  <requires>
-    <!--<import addon="xbmc.python" version="2.20.0" />-->
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.six" />
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.simplejson" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.python.pluginsource" library="lib/default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">PlayScrapers Module</summary>
-    <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart></fanart>
-    </assets>
-    <news></news>
   </extension>
 </addon>
 
@@ -3015,8 +2799,6 @@ v3.0.0
 
 <!-- Rising Tides Repository -->
 
-<!-- Rockcrusher Repository -->
-
 <!-- Samsung TV -->
 <addon id="slyguy.samsung.tv.plus" name="Samsung TV Plus" provider-name="SlyGuy" version="0.1.16">
   <requires>
@@ -3279,8 +3061,6 @@ v1.0.1 (2019-08-06)
   </extension>
 </addon>
 
-<!-- Streamlink Base module -->
-
 <!-- System Info Addon -->
 <addon id="script.system-info" name="System Info" version="1.0.4" provider-name="Phantom Raspberry Blower">
   <requires>
@@ -3330,8 +3110,6 @@ v1.0.1 (2019-08-06)
     <source>https://github.com/PhantomRaspberryBlower/repository.prb-entertainment-pack-matrix/tree/master/script.system-info</source>
   </extension>
 </addon>
-
-<!-- T0mm0's Common Stuff Module -->
 
 <!-- T1mlib Module -->
 <addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.7">
@@ -3398,8 +3176,6 @@ v.5.0.0
     </assets>
   </extension>
 </addon>
-
-<!-- The Backup Repo -->
 
 <!-- The Crew Repo -->
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.6">
@@ -3709,8 +3485,6 @@ Version 1.0.0
   </extension>
 </addon>
 
-<!-- Virtual DJ -->
-
 <!-- Watchdog Addon -->
 <addon id="script.module.watchdog" name="watchdog" version="0.10.2+matrix.1" provider-name="Yesudeep Mangalapilly">
   <requires>
@@ -3819,8 +3593,6 @@ v0.9.7
   </extension>
 </addon>
 
-<!-- Web PDB Addon -->
-
 <!-- Web Encodings Module -->
 <addon id="script.module.webencodings" name="webencodings" version="0.5.1+matrix.2" provider-name="gsneller">
   <requires>
@@ -3858,12 +3630,6 @@ v0.9.7
     </assets>
   </extension>
 </addon>
-
-<!-- Websters Wildshots Addon -->
-
-<!-- Websters Wildshots Scraper -->
-
-<!-- World News Live Addon -->
 
 <!-- XMLtoDict Module -->
 <addon id="script.module.xmltodict" name="xmltodict" version="0.12.0+matrix.2" provider-name="martinblech">

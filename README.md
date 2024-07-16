@@ -12,7 +12,7 @@ Addons installed by this addon:
   - BBC Radio (Stream Live Radio)
   - Bandcamp (Music Albums & Songs)
   - Confluence OSMC (Confluence Skin for OSMC)
-  - Exodus (Movies & TV Shows)
+  - Elementum (Movies & TV Shows)
   - Free Live TV (Live TV)
   - Homelander (Movies & TV Shows)
   - iPlayer (Live and Catch-Up TV)
@@ -21,14 +21,16 @@ Addons installed by this addon:
   - PRB Clean (Removes obsolete addons)
   - PRB Radio (Stream music)
   - PRB Install Everything EP (Forces installation of most addons)
+  - Red Bull TV (Sports Videos)
   - Rising Tides (Sports Live)
   - RSS Editor (Add RSS Subcriptions)
   - RSS Reader (Displays RSS Feeds)
+  - ScrubsV2 (Movies & TV Shows)
   - Speed Tester (Broadband Speed Tester)
   - Sports HD (Sports Live)
   - System Info (Displays System Information)
   - TED Talks (lectures)
-  - YouTube
+  - YouTube (Videos)
   - YouTube DL (Download Playing Video)
 
 Optional Addons:
