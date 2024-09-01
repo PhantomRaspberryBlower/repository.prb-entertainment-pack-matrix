@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Norwegian Bokmål (Norway) (http://www.transifex.com/projects/p/kodi-main/language/nb_NO/)\n"
+"PO-Revision-Date: 2024-04-12 17:30+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Norwegian Bokmål <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/nb_no/>\n"
+"Language: nb_no\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nb_NO\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Confluence-drakt av Jezz_X. (Kodis forvalgte drakt)"
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluence er forvalgt drakt for Kodi 9.11 og oppover. Det er en kombinasjon av konseptene fra mange populære drakter, og prøver å omfavne og integrere de gode idéene i en drakt som bør være lett å forstå og benytte seg av for nye Kodi-brukere."
 
 msgctxt "#31000"
 msgid "Change your"
@@ -25,7 +34,9 @@ msgid "GAMES"
 msgstr "SPILL"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
 msgstr "[B]Spillinnstillinger[/B][CR][CR]Sett opp tilbakespolingsstøtte og valg ·  Sett opp tastaturbruk og antall tastaturspillere"
 
 msgctxt "#31003"
@@ -88,6 +99,27 @@ msgctxt "#31017"
 msgid "Unavailable"
 msgstr "Utilgjengelig"
 
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "Avspillingshastighet"
+
 msgctxt "#31023"
 msgid "Playing"
 msgstr "Spiller"
@@ -116,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "Brukerkunstbidrag"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "Bildeminiatyrer"
@@ -128,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Informasjon"
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Handlinger"
@@ -135,6 +191,10 @@ msgstr "Handlinger"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "Spilles nå"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -166,11 +226,11 @@ msgstr "Ferdig klokken"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr "Rekkefølge: Stigende"
+msgstr "Sorter: Stigende"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr "Rekkefølge: Synkende"
+msgstr "Sorter: Synkende"
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -209,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Vis «Pause» under lysbildefremvisning"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "Spill trailere i et vindu[COLOR=grey3](Kun videoinformasjonsdialog)[/COLOR]"
 
 msgctxt "#31106"
@@ -217,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "Øvrige alternativer"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "Gjem «sett»-flagg fra videofilnavn [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
@@ -240,9 +304,17 @@ msgctxt "#31112"
 msgid "Options"
 msgstr "Alternativer"
 
+msgctxt "#31113"
+msgid "Background path Master:"
+msgstr ""
+
 msgctxt "#31114"
 msgid "System"
 msgstr "System"
+
+msgctxt "#31115"
+msgid "Main button playlists"
+msgstr ""
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -252,6 +324,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "Vis nylig tilføyde videoer"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
 msgstr "Undermenyen \"Tillegg\" på startsiden"
@@ -260,10 +333,12 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Skjul brukerkunstbidrag-bakgrunn"
 
+#. In main language strings its used as submenu
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
 msgstr "Undermenyen \"Spill\" på startsiden"
 
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Skjul EGP dersom RDS er vist i kanalvinduet"
@@ -275,6 +350,10 @@ msgstr "Vis videoer i bakgrunnen"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Vis «spilles nå» bakgrunnen i visualisering"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr ""
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -288,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Sangtekst-utvidelse"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Hjemmeskjerm video-undermeny"
@@ -312,6 +392,26 @@ msgctxt "#31143"
 msgid "Use"
 msgstr "Bruk"
 
+msgctxt "#31144"
+msgid "playlist"
+msgstr ""
+
+msgctxt "#31145"
+msgid "playlist path"
+msgstr ""
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr ""
+
 msgctxt "#31200"
 msgid "Shortcuts"
 msgstr "Snarveier"
@@ -335,6 +435,10 @@ msgstr "Finn flere elementer"
 msgctxt "#31208"
 msgid "Upcoming episodes"
 msgstr "Kommende episoder"
+
+msgctxt "#31209"
+msgid "Hide Master profile main menu buttons"
+msgstr ""
 
 msgctxt "#31300"
 msgid "Current temperature"
@@ -438,7 +542,7 @@ msgstr "Aktivert"
 
 msgctxt "#31390"
 msgid "Skin default"
-msgstr "Forvalg for drakt"
+msgstr "Forvalg for drakten"
 
 msgctxt "#31391"
 msgid "Skin default with no caps"
@@ -453,7 +557,12 @@ msgid "First run help..."
 msgstr "Førstegangsintroduksjon…"
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "Denne fanen viser at det er en meny på siden av vinduet om inneholder ekstra alternativer for denne avdelingen. For å få åpne menyen, trykk til venstre med fjernkontrollen, tastaturet eller plaser musepekeren over fanen. [CR][CR]Trykk \"OK\" for å lukke denne ruten. Den vil ikke vises igjen."
 
 msgctxt "#31413"
@@ -473,35 +582,52 @@ msgid "Show or hide the login screen at startup."
 msgstr "Vis eller skjul innloggingsskjermen ved oppstart"
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "Velg profil som vil bli brukt ved oppstart når innloggingsskjermen er deaktivert ."
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
 msgstr "[B]SPILLER INNSTILLINGER[/B][CR][CR]Sett opp handlinger som kan brukes under avspilling · Sett opp hvordan media avspilles"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]BIBLIOTEK INNSTILLINGER[/B][CR][CR]Sett opp hvordan bibliotek/filer viser mediainnhold · Sett opp hvordan bibliotek lister/visninger er navigert · Sett opp databaseinnstillinger for media"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]PVR INNSTILLINGER[/B][CR][CR]Sett opp hvordan kanaler og guider er administrert · Sett opp hvordan direkte-TV og opptak administreres"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]TILLEGG INNSTILLINGER[/B][CR][CR]Sett opp dine installerte tillegg · Bla etter og installer tillegg fra Kodi.tv"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]TJENESTE INNSTILLINGER[/B][CR][CR]Sett opp og administrer mediadelingstjenester· Sett opp vevtjener · Sett opp og administrer værtjenestene"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
 msgstr "[B]SYSTEM INNSTILLINGER[/B][CR][CR]Sett opp skjerm · Sett opp lyd · Sett opp internettilgang · Sett opp strømsparing · Sett opp loggføring"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]GRENSESNITT INNSTILLINGER[/B][CR][CR]Sett opp drakt · Sett opp region · Sett opp kontroll · Sett opp skjermsparer · Sett opp systemlås"
 
 msgctxt "#31501"
@@ -526,7 +652,7 @@ msgstr "Slett gruppe"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr "Ledige[CR]grupper"
+msgstr "Ledige[CR]Grupper"
 
 msgctxt "#31509"
 msgid "Channel group"
@@ -616,14 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "Tdsforskyvning"
 
+#. Choose profile identifier
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
 msgstr "Velg hvilken type profil identifikasjon"
 
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "Profilnavn"
 
+#. Label for the kind of profile identification
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "Profil avatar"

@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Slovak (Slovakia) (http://www.transifex.com/projects/p/kodi-main/language/sk_SK/)\n"
+"PO-Revision-Date: 2024-04-12 17:30+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Slovak <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/sk_sk/>\n"
+"Language: sk_sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sk_SK\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Confluence skin od Jezz_X, (predvolený skin Kodi)."
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluence je predvolený pre Kodi 9.11 a vyššie. Je kombináciou konceptov z mnoho populárnych skinov a pokusom integrovať ich dobré nápady do skinu, ktorý by bol ľahko zrozumiteľný a použiteľný pre nových používateľov Kodi."
 
 msgctxt "#31000"
 msgid "Change your"
@@ -25,7 +34,9 @@ msgid "GAMES"
 msgstr "HRY"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
 msgstr "[B]HERNÉ NASTAVENIA[/B][CR][CR]Konfigurovať podporu pretáčania a možnosti ·  Konfigurovať použitie klávesnice a počet hráčov na klávesnici"
 
 msgctxt "#31003"
@@ -88,6 +99,27 @@ msgctxt "#31017"
 msgid "Unavailable"
 msgstr "Nedostupné"
 
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "Rýchlosť prehrávania"
+
 msgctxt "#31023"
 msgid "Playing"
 msgstr "Práve hrá"
@@ -116,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "Fanart"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "Obrázky náhľadov"
@@ -128,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Informácie"
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Akcie"
@@ -135,6 +191,10 @@ msgstr "Akcie"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "Práve hrá"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -166,11 +226,11 @@ msgstr "Čas konca"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr "Triediť: Vzostupne"
+msgstr "Zoradiť: Vzostupne"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr "Triediť: Zostupne"
+msgstr "Zoradiť: Zostupne"
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -209,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Zobrazovať \"Pauza\" pri prezentácii obrázkov"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "Prehrávať ukážky v okne [COLOR=grey3](iba z okna Informácie o videu)[/COLOR]"
 
 msgctxt "#31106"
@@ -217,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "Rôzne nastavenia"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "Nezobrazovať ikonky zdroja videa [COLOR=grey3](napr. Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
@@ -260,6 +324,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "Zobrazovať naposledy pridané videá"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
 msgstr "Podmenu \"Doplnky\" domovskej stránky"
@@ -268,10 +333,12 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Skryť Fanart na pozadí"
 
+#. In main language strings its used as submenu
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
 msgstr "Podmenu \"Hry\" domovskej stránky"
 
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Ak je v okne kanálu informácia RDS, skryť EPG"
@@ -283,6 +350,10 @@ msgstr "Zobrazovať práve prehrávané video na pozadí"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Zobrazovať práve prehrávanú vizualizáciu na pozadí"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr "Pre hudobné videá namiesto miniatúr zobrazovať plagáty"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -296,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Doplnok Texty skladieb"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Domovská stránka / podmenu Videá"
@@ -327,6 +399,18 @@ msgstr "zoznam stôp"
 msgctxt "#31145"
 msgid "playlist path"
 msgstr "cesta k zoznamu stôp"
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr ""
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -473,7 +557,12 @@ msgid "First run help..."
 msgstr "Pomocník po prvom spustení..."
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "Táto záložka zvýrazňuje, že sa na bočnej strane okna nachádza skryté menu. Aby ste sa k nemu dostali, kurzorovými tlačidlami na vašom diaľkovom ovládači alebo klávesnici choďte doľava, prípadne umiestnite kurzor myši ponad túto záložku. [CR][CR]Kliknutím na tlačidlo \"OK\" sa zavrie toto dialógové okno. V budúcnosti sa už nezobrazí."
 
 msgctxt "#31413"
@@ -493,35 +582,52 @@ msgid "Show or hide the login screen at startup."
 msgstr "Zobraziť alebo skryť prihlasovaciu obrazovku pri štarte."
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "Zvoľte profil, ktorý bude použitý pri štarte, ak je prihlasovacia obrazovka vypnutá."
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
 msgstr "[B]NASTAVENIA PREHRÁVAČA[/B][CR][CR]Konfigurujte akcie, ktoré je možné použiť počas prehrávania · Konfigurujte ako sa má zobraziť mediálny obsah"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]NASTAVENIA KNIŽNICE[/B][CR][CR]Konfigurujte ako zobrazenia knižnice/súborov zobrazia mediálny obsah ·  Konfigurujte ako sa má navigovať v zoznamoch/zobrazeniach knižnice · Konfigurujte možnosti databázy médií"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]PVR NASTAVENIA[/B][CR][CR]Nakonfigurujte ako sa majú spravovať kanály a tv program  · Nakonfigurujte ako sa má spravovať televízia a nahrávky"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]NASTAVENIA DOPLNKOV[/B][CR][CR]Konfigurujte vaše nainštalované doplnky · Prehľadávajte a inštalujte si doplnky z kodi.tv"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]NASTAVENIA SLUŽIEB[/B][CR][CR]Konfigurujte a spravujte služby pre zdieľanie médií · Konfigurujte webový server · Konfigurujte a spravujte službu pre počasie"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
 msgstr "[B]NASTAVENIA SYSTÉMU[/B][CR][CR]Konfigurujte obrazovku · Konfigurujte zvuk · Konfigurujte prístup k internetu · Konfigurujte úsporný režim· Konfigurujte záznam udalostí"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]NASTAVENIA PROSTREDIA[/B][CR][CR]Konfigurujte vzhľad · Konfigurujte región · Konfigurujte ovládanie · Konfigurujte šetrič obrazovky · Konfigurujte hlavný zámok"
 
 msgctxt "#31501"
@@ -636,14 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "Časový posun"
 
+#. Choose profile identifier
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
 msgstr "Vyberte si spôsob identifikácie profilu"
 
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "Názov profilu"
 
+#. Label for the kind of profile identification
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "Profilový avatar"

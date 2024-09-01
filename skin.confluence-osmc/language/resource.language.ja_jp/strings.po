@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/kodi-main/language/ja_JP/)\n"
+"PO-Revision-Date: 2024-04-12 17:30+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Japanese <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/ja_jp/>\n"
+"Language: ja_jp\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Confluenceスキン by Jezz_X."
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluenceは、さまざまな人気のあるスキンのコンセプトを組み合わせ、ユーザが初めて Kodi に触れる際、使い勝手が良いようにアイデアを盛り込み、簡単で分かり易くユーザーが使用できるようにしてあります。"
 
 msgctxt "#31000"
 msgid "Change your"
@@ -25,7 +34,9 @@ msgid "GAMES"
 msgstr "ゲーム"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
 msgstr "[B]ゲームの設定[/B][CR][CR]巻き戻しサポートとオプションの設定 · キーボードの使用とキーボードプレイヤー数の設定"
 
 msgctxt "#31003"
@@ -88,6 +99,27 @@ msgctxt "#31017"
 msgid "Unavailable"
 msgstr "利用不可"
 
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "再生速度"
+
 msgctxt "#31023"
 msgid "Playing"
 msgstr "再生中"
@@ -116,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "ファンアート"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "写真サムネイル"
@@ -128,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "インフォ"
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "アクション"
@@ -135,6 +191,10 @@ msgstr "アクション"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "再生中"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -209,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "ピクチャスライドショーで「停止中」と表示"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "ウィンドウ内で予告を再生 [COLOR=grey3](ビデオ情報ダイアログのみ)[/COLOR]"
 
 msgctxt "#31106"
@@ -217,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "その他の設定"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "ビデオファイル名から読み取りフラグを隠す [COLOR=grey3](Blu-ray, HD-DVD等)[/COLOR]"
 
 msgctxt "#31108"
@@ -260,6 +324,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "最近追加されたビデオを表示"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
 msgstr "ホーム画面\"アドオン\"のサブメニュー"
@@ -268,10 +333,12 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "背景のファンアートを隠す"
 
+#. In main language strings its used as submenu
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
 msgstr "ホーム画面\"ゲーム\"のサブメニュー"
 
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "チャンネルウインドウ上にRDSがある場合はEPGを隠す"
@@ -283,6 +350,10 @@ msgstr "背景に再生中のビデオを表示"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "背景に再生中のビジュアライゼーションを表示"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr "ミュージックビデオのサムネイルの代わりにポスターを表示する"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -296,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "歌詞アドオン"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "ホーム画面「ビデオ」のサブメニュー"
@@ -327,6 +399,18 @@ msgstr "プレイリスト"
 msgctxt "#31145"
 msgid "playlist path"
 msgstr "プレイリストのパス"
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr "ホーム画面のボタンを非表示にする"
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr "非表示 - お気に入り"
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr "非表示 - 検索"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -366,7 +450,7 @@ msgstr "最終更新"
 
 msgctxt "#31303"
 msgid "Data provider"
-msgstr "気象データ提供元"
+msgstr "データの提供元"
 
 msgctxt "#31308"
 msgid "Movie details"
@@ -454,11 +538,11 @@ msgstr "モードを変更"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr "有効"
+msgstr "LCD有効"
 
 msgctxt "#31390"
 msgid "Skin default"
-msgstr "Skin default"
+msgstr "スキンデフォルト"
 
 msgctxt "#31391"
 msgid "Skin default with no caps"
@@ -473,7 +557,12 @@ msgid "First run help..."
 msgstr "初回起動時のヘルプ..."
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "このタブはウィンドウの端に追加オプションメニューがある事を示しています。このメニューにアクセスするには、リモコンやキーボードで左端に移動するか、マウスポインターをタブの上にのせます。[CR][CR]このダイアログを閉じるには、「OK」を選択してください。このメッセージは再び表示されません。"
 
 msgctxt "#31413"
@@ -490,38 +579,55 @@ msgstr "Kodi ユーザープロファイルを選択して[CR]ログインして
 
 msgctxt "#31422"
 msgid "Show or hide the login screen at startup."
-msgstr "起動時にログイン画面を表示または非表示する"
+msgstr "起動時にログイン画面を表示または非表示にする。"
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "ログイン画面が無効になっている状態の時、起動時に使用されるプロファイルを選択してください。"
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
 msgstr "[B]プレイヤー設定[/B][CR][CR]再生時に使用できるアクションを設定・メディアコンテンツを再生する方法を設定"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]ライブラリ設定[/B][CR][CR]ライブラリ/ファイルやメディアコンテンツの設定・ライブラリの表示に関する設定・メディアデータベースの設定"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]PVR設定[/B][CR][CR]チャンネルや番組表の管理設定・Live TVや録画番組の管理設定"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]アドオン設定[/B][CR][CR]インストール済のアドオン設定・kodi.tvからアドオンのブラウズやインストール"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]サービス設定[/B][CR][CR]メディア共有サービスの管理と設定・Webサーバー設定・天気サービスの管理と設定"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
 msgstr "[B]システム設定[/B][CR][CR]ディスプレイ設定・オーディオ設定・インターネットアクセス設定・省電力設定・ログイン設定"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]インターフェース設定[/B][CR][CR]スキン設定・地域設定・コントロール設定・スクリーンセーバー設定・マスターロック設定"
 
 msgctxt "#31501"
@@ -636,14 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "タイムシフト"
 
+#. Choose profile identifier
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
 msgstr "プロファイルの確認と種類を選択"
 
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "プロファイル名"
 
+#. Label for the kind of profile identification
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "プロファイルのアバター"

@@ -16,6 +16,14 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr ""
+
 msgctxt "#31000"
 msgid "Change your"
 msgstr ""
@@ -88,7 +96,25 @@ msgctxt "#31017"
 msgid "Unavailable"
 msgstr ""
 
-#empty strings from id 31018 to 31022
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+msgctxt "#31022"
+msgid "Play speed"
+msgstr ""
 
 msgctxt "#31023"
 msgid "Playing"
@@ -118,7 +144,9 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr ""
 
-#empty string with id 31030
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -132,7 +160,25 @@ msgctxt "#31033"
 msgid "Info"
 msgstr ""
 
-#empty strings from id 31034 to 31038
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
 
 msgctxt "#31039"
 msgid "Actions"
@@ -142,7 +188,9 @@ msgctxt "#31040"
 msgid "Now playing"
 msgstr ""
 
-#empty string with id 31041
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -310,7 +358,11 @@ msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr ""
 
-#empty strings from id 31126 to 31127
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr ""
+
+#empty string with ID 31127
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -365,7 +417,19 @@ msgctxt "#31145"
 msgid "playlist path"
 msgstr ""
 
-#empty strings from id 31146 to 31199
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr ""
+
+#empty strings from id 31149 to 31199
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -383,13 +447,7 @@ msgctxt "#31205"
 msgid "Lyrics source"
 msgstr ""
 
-msgctxt "#31206"
-msgid "Found"
-msgstr ""
-
-msgctxt "#31207"
-msgid "Find more items"
-msgstr ""
+#empty strings from id 31206 to 31207
 
 msgctxt "#31208"
 msgid "Upcoming episodes"
@@ -425,11 +483,7 @@ msgctxt "#31309"
 msgid "Memory used:"
 msgstr ""
 
-msgctxt "#31310"
-msgid "Track number"
-msgstr ""
-
-#empty strings from id 31311 to 31318
+#empty strings from id 31310 to 31318
 
 msgctxt "#31319"
 msgid "Selected profile"
@@ -459,9 +513,7 @@ msgctxt "#31327"
 msgid "Resolution"
 msgstr ""
 
-msgctxt "#31328"
-msgid "Recently added"
-msgstr ""
+#empty string with id 31328
 
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
@@ -522,9 +574,7 @@ msgctxt "#31390"
 msgid "Skin default"
 msgstr ""
 
-msgctxt "#31391"
-msgid "Skin default with no caps"
-msgstr ""
+#empty string with id 31391
 
 msgctxt "#31392"
 msgid "Arial based"
@@ -598,9 +648,7 @@ msgctxt "#31501"
 msgid "Scheduled time"
 msgstr ""
 
-msgctxt "#31502"
-msgid "TV"
-msgstr ""
+#empty string with id 31502
 
 msgctxt "#31503"
 msgid "Add group"
@@ -654,11 +702,7 @@ msgctxt "#31905"
 msgid "Forecast"
 msgstr ""
 
-#empty strings from id 31906 to 31908
-
-msgctxt "#31909"
-msgid "Fetching forecast info..."
-msgstr ""
+#empty strings from id 31906 to 31909
 
 msgctxt "#31910"
 msgid "Maps"

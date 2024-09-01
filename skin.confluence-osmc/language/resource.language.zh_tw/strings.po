@@ -5,27 +5,38 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/kodi-main/language/zh_TW/)\n"
+"PO-Revision-Date: 2024-04-12 17:31+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Chinese (Taiwan) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/zh_tw/>\n"
+"Language: zh_tw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Jezz_X 製作的面板 (Kodi 的預設面板)。"
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluence 是從 Kodi 9.11 開始預設的面板。它結合了許多受歡迎面板的概念，且試圖包含並整合它們的優點，使第一次使用 Kodi 的使用者可以簡單地上手。"
 
 msgctxt "#31000"
 msgid "Change your"
-msgstr "修改你的"
+msgstr "變更您的"
 
 msgctxt "#31001"
 msgid "GAMES"
 msgstr "遊戲"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
 msgstr "[B]遊戲設定[/B][CR][CR]設定倒轉支援及相關選項 · 設定鍵盤的使用及鍵盤玩家的人數"
 
 msgctxt "#31003"
@@ -34,7 +45,7 @@ msgstr "電源選項"
 
 msgctxt "#31004"
 msgid "Working..."
-msgstr "處理中..."
+msgstr "正在處理..."
 
 msgctxt "#31005"
 msgid "Hide information"
@@ -42,7 +53,7 @@ msgstr "隱藏資訊"
 
 msgctxt "#31006"
 msgid "View options"
-msgstr "瀏覽設定"
+msgstr "檢視選項"
 
 msgctxt "#31007"
 msgid "Video process information"
@@ -88,6 +99,27 @@ msgctxt "#31017"
 msgid "Unavailable"
 msgstr "不可用"
 
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "播放速度"
+
 msgctxt "#31023"
 msgid "Playing"
 msgstr "正在播放"
@@ -116,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "劇照"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "圖片縮圖"
@@ -128,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "資訊"
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "動作"
@@ -135,6 +191,10 @@ msgstr "動作"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "現正播放"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -209,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "在圖片幻燈片秀中顯示\"已暫停\"狀態"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "在視窗中播放預告片[COLOR=grey3](只在影片資訊對話框中)[/COLOR]"
 
 msgctxt "#31106"
@@ -217,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "其他選項"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "隱藏影片檔案名稱的媒體標示 [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
@@ -226,7 +290,7 @@ msgstr "隱藏主選單按鈕"
 
 msgctxt "#31109"
 msgid "Enable custom background"
-msgstr "啟用 自訂背景"
+msgstr "啟用自訂背景"
 
 msgctxt "#31110"
 msgid "Background path:"
@@ -240,9 +304,17 @@ msgctxt "#31112"
 msgid "Options"
 msgstr "選項"
 
+msgctxt "#31113"
+msgid "Background path Master:"
+msgstr "背景路徑主要："
+
 msgctxt "#31114"
 msgid "System"
 msgstr "系統"
+
+msgctxt "#31115"
+msgid "Main button playlists"
+msgstr "主要按鈕播放清單"
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -252,6 +324,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "顯示最近加入的影片"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
 msgstr "首頁 \"附加元件\" 子功能表"
@@ -260,10 +333,12 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "隱藏背景劇照圖"
 
+#. In main language strings its used as submenu
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
 msgstr "首頁 \"遊戲\" 子功能表"
 
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "如果該頻道畫面中有自帶RDS訊息，則不顯示電子節目表"
@@ -275,6 +350,10 @@ msgstr "在背景顯示正在播放的影片"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "在背景顯示正在播放的視覺效果"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr "為音樂影片顯示海報而不是縮圖"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -288,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "歌詞附加元件"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "首頁影片子選單"
@@ -306,11 +386,31 @@ msgstr "音樂播放工具列"
 
 msgctxt "#31142"
 msgid "Settings level"
-msgstr "設定值"
+msgstr "設定層級"
 
 msgctxt "#31143"
 msgid "Use"
 msgstr "使用"
+
+msgctxt "#31144"
+msgid "playlist"
+msgstr "播放清單"
+
+msgctxt "#31145"
+msgid "playlist path"
+msgstr "播放清單路徑"
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr "隱藏主畫面按鈕"
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr "因此 - 最愛"
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr "因隱藏 - 搜尋"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -335,6 +435,10 @@ msgstr "尋找更多項目"
 msgctxt "#31208"
 msgid "Upcoming episodes"
 msgstr "劇集預告"
+
+msgctxt "#31209"
+msgid "Hide Master profile main menu buttons"
+msgstr "隱藏主要設定檔主選單按鈕"
 
 msgctxt "#31300"
 msgid "Current temperature"
@@ -438,11 +542,11 @@ msgstr "啟用"
 
 msgctxt "#31390"
 msgid "Skin default"
-msgstr "主題預設"
+msgstr "面板預設"
 
 msgctxt "#31391"
 msgid "Skin default with no caps"
-msgstr "佈景主題預設（沒有開頭大寫）"
+msgstr "面板預設 (沒有開頭大寫)"
 
 msgctxt "#31392"
 msgid "Arial based"
@@ -453,7 +557,12 @@ msgid "First run help..."
 msgstr "第一次使用說明..."
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "這個標籤表示這個部分在視窗的側邊有提供額外選項的選單。你可以使用遙控器或鍵盤的左鍵或者是將滑鼠指標移動到這個標籤的範圍來存取這個選單。[CR][CR]按一下\"Ok\" 可以關閉這個對話框。它不會再出現。"
 
 msgctxt "#31413"
@@ -470,39 +579,56 @@ msgstr "選擇您的 Kodi 使用者設定檔[CR]登入並繼續"
 
 msgctxt "#31422"
 msgid "Show or hide the login screen at startup."
-msgstr "啟動時顯示或隱藏登入畫面"
+msgstr "啟動時顯示或隱藏登入畫面。"
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "選擇當不使用登入畫面時使用的設定檔。"
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
 msgstr "[B]播放器設定[/B][CR][CR]設定播放中可執行的動作 · 設定媒體檔案播放的方式"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]資料庫設定[/B][CR][CR]設定如何以各種檢視方式顯示資料庫或檔案 · 設定如何進行資料庫或檔案的導覽 · 設定媒體資料庫的選項"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]PVR設定[/B][CR][CR]設定管理頻道及節目表的方式 · 設定管理即時電視節目及錄影的方式"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]附加元件設定[/B][CR][CR]設定已安裝的附加元件 · 瀏覽並安裝來自kodi.tv的附加元件"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]服務設定[/B][CR][CR]設定並管理媒體共享服務 · 設定網頁伺服器 · 設定並管理天氣服務"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
 msgstr "[B]系統設定[/B][CR][CR]設定顯示器 · 設定音效 · 設定網路存取 · 設定電力節約 · 設定記錄檔"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
-msgstr "[B]介面設定[/B][CR][CR]設定佈景主題 · 設定地區 · 設定控制項 · 設定螢幕保護程式 ·  設定主密碼鎖"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
+msgstr "[B]介面設定[/B][CR][CR]設定面板 · 設定地區 · 設定控制項 · 設定螢幕保護程式 · 設定主密碼鎖"
 
 msgctxt "#31501"
 msgid "Scheduled time"
@@ -616,14 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "時間平移"
 
+#. Choose profile identifier
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
 msgstr "選擇設定檔案標識的類型"
 
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "設定檔名稱"
 
+#. Label for the kind of profile identification
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "個人資料圖像"

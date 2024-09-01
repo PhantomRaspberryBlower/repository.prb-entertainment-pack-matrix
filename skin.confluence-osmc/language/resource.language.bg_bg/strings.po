@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Bulgarian (Bulgaria) (http://www.transifex.com/projects/p/kodi-main/language/bg_BG/)\n"
+"PO-Revision-Date: 2024-04-12 17:30+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Bulgarian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/bg_bg/>\n"
+"Language: bg_bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Confluence облик от Jezz_X. (стандартния облик за Kodi)"
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluence е стандартният облик на Kodi 9.11 и по-новите версии. Представлява смесица от концепциите на много от популярните облици. Целта е да се интегрират тези добри идеи в подходящ и удобен вид за хора, които се сблъскват за първи път с Kodi."
 
 msgctxt "#31000"
 msgid "Change your"
@@ -25,7 +34,9 @@ msgid "GAMES"
 msgstr "ИГРИ"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
 msgstr "[B]ИГРАЛНИ НАСТРОЙКИ[/B][CR][CR]Настройки за превъртане назад и други ·  Настройки за клавиатура и брой играчи, използващи клавиатура"
 
 msgctxt "#31003"
@@ -88,6 +99,27 @@ msgctxt "#31017"
 msgid "Unavailable"
 msgstr "Не е налично"
 
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "Скорост на възпроизвеждане"
+
 msgctxt "#31023"
 msgid "Playing"
 msgstr "Възпроизвеждане"
@@ -98,7 +130,7 @@ msgstr "Страница"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr "Елементи"
+msgstr "Елемента"
 
 msgctxt "#31026"
 msgid "Misc options"
@@ -116,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "Фен-арт"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "Снимка и миниатюри"
@@ -128,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Инф."
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Действия"
@@ -135,6 +191,10 @@ msgstr "Действия"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "Сега се възпроизвежда"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -209,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "При авт. превъртане на снимки да се показва „На пауза“"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "Възпроизвеждане на трейлърите в прозорец [COLOR=grey3](Само прозорец с информация за видеото)[/COLOR]"
 
 msgctxt "#31106"
@@ -217,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "Разни настройки"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "Скриване на флаговете, прочеетни от имената на файлове [COLOR=grey3](напр. „Blu-ray“, „HD-DVD“)[/COLOR]"
 
 msgctxt "#31108"
@@ -248,6 +312,10 @@ msgctxt "#31114"
 msgid "System"
 msgstr "Системни"
 
+msgctxt "#31115"
+msgid "Main button playlists"
+msgstr ""
+
 msgctxt "#31116"
 msgid "Show recently added albums"
 msgstr "Показване на последно добавените албуми"
@@ -256,6 +324,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "Показване на последно добавените видеа"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
 msgstr "Подменю на елемента „Добавки“ от началния екран"
@@ -264,10 +333,12 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Скриване на фоновия фен-арт"
 
+#. In main language strings its used as submenu
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
 msgstr "Подменю на елемента „Игри“ от началния екран"
 
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Скрий ЕПС ако СПД е наличен за канала"
@@ -279,6 +350,10 @@ msgstr "Ползвай за фон възпроизвеждания видео �
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Ползвай за фон възпроизвежданата визуализация"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr "Показване на плакати вместо миниатюри за музикалните видеа"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -292,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Добавка за лирики"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Подменю на елемента „Видео“ от началния екран"
@@ -323,6 +399,18 @@ msgstr "списък"
 msgctxt "#31145"
 msgid "playlist path"
 msgstr "път до списъка"
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr ""
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -469,7 +557,12 @@ msgid "First run help..."
 msgstr "Помощ при първо стартиране"
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "Тази хватка обозначава наличието на меню, което е извън видимия екран, съдържащо опции за текущата секция. За достъп до него е необходим да се придвижите наляво, с помощта на дистанционното или клавиатурата, или да поставите курсора на мишката над хватката. [CR][CR]Натиснете „Добре“, за да затворите този прозорец. Той няма да се появи повече."
 
 msgctxt "#31413"
@@ -489,35 +582,52 @@ msgid "Show or hide the login screen at startup."
 msgstr "Определя да се ползва или не, екрана за влизане."
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "Изберете кой профил да се ползва за влизане, когато екрана за вписване е изключен."
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
 msgstr "[B]НАСТРОЙКИ ЗА ВЪЗПРОИЗВЕЖДАНЕ[/B][CR][CR]Настройки за наличните действия по време на възпроизвеждане · Настройки за начина на възпроизвеждане на медийните файлове"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]НАСТРОЙКИ НА БИБЛИОТЕКАТА[/B][CR][CR]Настройки на изгледите в библиотеката ·  Настройки за начина на придвижване в списъците/изгледите на библиотеката · Настройки за базата данни с медийни файлове"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]НАСТРОЙКИ НА ПВР[/B][CR][CR]Настройки за управлението на каналите и справочника  · Настройки за управлението на телевизията на живо и записите"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]НАСТРОЙКИ НА ДОБАВКИТЕ[/B][CR][CR]Настройки на инсталираните добавки · Разглеждане и инсталира на добавки от kodi.tv"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]НАСТРОЙКИ НА УСЛУГИТЕ[/B][CR][CR]Настройки на услугите за споделяне · Настройки на уеб сървъра · Настройки на услугата за метеорологична прогноза"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
 msgstr "[B]НАСТРОЙКИ НА СИСТЕМАТА[/B][CR][CR]Настройки на екрана · Настройки на звука · Настройки на достъпа до Интернет · Настройки на режима за пестене на енергия · Настройки на журнала"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]НАСТРОЙКИ НА ИНТЕРФЕЙСА[/B][CR][CR]Настройки на облика · Настройки за езика и региона · Настройки на управлението · Настройки на скрийнсейвъра · Настройки за заключване с код"
 
 msgctxt "#31501"
@@ -632,14 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "Изместване във времето"
 
+#. Choose profile identifier
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
 msgstr "Изберете начин за идентифициране на профила"
 
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "Име на профила"
 
+#. Label for the kind of profile identification
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "Снимка на профила"

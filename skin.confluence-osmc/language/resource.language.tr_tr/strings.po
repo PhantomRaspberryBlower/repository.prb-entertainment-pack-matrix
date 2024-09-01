@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Turkish (Turkey) (http://www.transifex.com/projects/p/kodi-main/language/tr_TR/)\n"
+"PO-Revision-Date: 2024-04-12 17:31+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Turkish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/tr_tr/>\n"
+"Language: tr_tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr_TR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Jezz_X tarafından geliştirilen Confluence dış görünümü."
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluence Kodi 14.0 ve yukarısı için varsayılan dış görünümdür. Birçok popüler dış görünümün kavramlarını bir araya getirip ilk kez Kodi kullananlar için anlaşılması ve kullanımı kolaydır."
 
 msgctxt "#31000"
 msgid "Change your"
@@ -25,7 +34,9 @@ msgid "GAMES"
 msgstr "OYUNLAR"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
 msgstr "[B]OYUN AYARLARI[/B][CR][CR]Gerisarma destek ve seçeneklerini ayarlayın ·  Klavye kullanınımı ve klavye kullanıcı sayısını ayarlayın"
 
 msgctxt "#31003"
@@ -86,7 +97,28 @@ msgstr "Geçen zaman"
 
 msgctxt "#31017"
 msgid "Unavailable"
-msgstr "Kullanılamaz"
+msgstr "Kullanılamıyor"
+
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "Oynatma hızı"
 
 msgctxt "#31023"
 msgid "Playing"
@@ -116,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "Fanart"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "Küçük resimler"
@@ -128,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Bilgi"
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Eylemler"
@@ -135,6 +191,10 @@ msgstr "Eylemler"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "Şimdi oynatılıyor"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -209,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Resim slayt gösterisinde \"Duraklatıldı\" mesajını göster"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "Fragmanları pencere içinde oynat [COLOR=grey3](Sadece video bilgisi iletişim kutusu için)[/COLOR]"
 
 msgctxt "#31106"
@@ -217,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "Çeşitli seçenekler"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "Video dosya adlarında etiket okumayı gizle [COLOR=grey3](örn. Blu-ray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
@@ -260,6 +324,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "Son eklenen videoları göster"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
 msgstr "Ana sayfa \"Eklentiler\" alt menüsü"
@@ -268,10 +333,12 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Arka plan fanartını gizle"
 
+#. In main language strings its used as submenu
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
 msgstr "Ana sayfa \"Oyunlar\" alt menüsü"
 
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Eğer kanal penceresinde RDS varsa EPG'yi gizle"
@@ -283,6 +350,10 @@ msgstr "Arkaplanda oynatılan videoyu göster"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Arkaplanda görsel öğeyi göster"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr "Müzik videoları için küçük resimler yerine poster gösterin"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -296,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Şarkı sözleri eklentisi"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Ana sayfa \"Videolar\" alt menüsü"
@@ -327,6 +399,18 @@ msgstr "çalma listesi"
 msgctxt "#31145"
 msgid "playlist path"
 msgstr "çalma listesi yolu"
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr "Giriş ekranı düğmelerini gizle"
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr "Gizle - Favoriler"
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr "Gizle - Ara"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -473,7 +557,12 @@ msgid "First run help..."
 msgstr "İlk çalıştırma yardımı..."
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "Bu sekme bu bölüm için ekstra özellikleri içeren bir menüye, bu pencerenin kenarından ulaşılabileceğini belirtir. Menüye ulaşmak için, uzaktan kumanda, klavye veya fare imlecini sekmenin sol tarafına götürün. [CR][CR]Pencereyi kapatmak için \"Tamam\" tuşuna basın. Bu bildiri bir daha çıkmayacaktır."
 
 msgctxt "#31413"
@@ -493,35 +582,52 @@ msgid "Show or hide the login screen at startup."
 msgstr "Başlangıçta oturum açma ekranını göster veya gizle."
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "Oturum açma ekranı devre dışı olduğunda başlangıçta kullanılacak profilinizi seçin."
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
-msgstr "[B]OYNATICI SEÇENEKLERİ[/B][CR][CR]Oynatım sırasında kullanılacak eylemleri yapılandırın · Medya içeriğinin nasıl oynatılacağını yapılandırın."
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
+msgstr "[B]OYNATICI SEÇENEKLERİ[/B][CR][CR]Oynatım sırasında kullanılacak eylemleri yapılandırın · Medya içeriğinin nasıl oynatılacağını yapılandırın"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]KİTAPLIK AYARLARI[/B][CR][CR]Kitaplık/dosya görünümlerinin medya içeriğini nasıl göstereceğini yapılandırın ·  Kitaplık listelerine/görünümlerine nasıl gidileceğini yapılandırın · Medya veritabanı seçeneklerini yapılandırın"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]PVR AYARLARI[/B][CR][CR]Kanalların ve rehberin nasıl yönetileceğini yapılandırın · Canlı yayın ve kayıtların nasıl yönetileceğini yapılandırın"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]EKLENTİ AYARLARI[/B][CR][CR]Yüklü eklentilerinizi yapılandırın · kodi.tv'deki eklentilere göz atın ve yükleyin"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]HIZMET AYARLARI[/B][CR][CR]Medya paylaşım hizmetlerini yönetin ve yapılandırın · Web sunucusunu yapılandırın · Hava durumu hizmetini yönetin ve yapılandırın"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
 msgstr "[B]SİSTEM AYARLARI[/B][CR][CR]Görüntüyü yapılandırın · Sesi yapılandırın · İnternet erişimini yapılandırın · Güç tasarrufunu yapılandırın · Günlüğü yapılandırın"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]ARABİRİM AYARLARI[/B][CR][CR]Dış görünümü yapılandırın · Bölge ayarlarını yapılandırın · Denetim ayarlarını yapılandırın · Ekran koruyucuyu yapılandırın · Yönetici kilidini yapılandırın"
 
 msgctxt "#31501"
@@ -636,14 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "Zaman Kaydırma"
 
+#. Choose profile identifier
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
 msgstr "Profil kimliği türünü seçin"
 
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "Profil adı"
 
+#. Label for the kind of profile identification
 msgctxt "#31964"
 msgid "Profile avatar"
 msgstr "Profil avatarı"

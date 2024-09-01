@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.1.1" provider-name="Phantom Raspberry Blower">
+<addon id="script.force-install-all-ep" name="PRB Install Everything EP" version="2.1.2" provider-name="Phantom Raspberry Blower">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="repository.prb-entertainment-pack-matrix"/>
@@ -12,7 +12,6 @@
     <import addon="plugin.video.elementum"/>
     <import addon="plugin.video.freelivetv.tva"/>
     <import addon="plugin.video.fidoK19"/>
-    <import addon="plugin.video.homelander"/>
     <import addon="plugin.video.iplayerwww"/>
     <import addon="plugin.video.npr"/>
     <import addon="plugin.video.redbull.tv"/>

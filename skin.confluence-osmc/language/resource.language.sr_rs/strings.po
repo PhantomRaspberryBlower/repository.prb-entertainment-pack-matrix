@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Serbian (Serbia) (http://www.transifex.com/projects/p/kodi-main/language/sr_RS/)\n"
+"PO-Revision-Date: 2024-04-12 17:31+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Serbian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-confluence/sr_rs/>\n"
+"Language: sr_rs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sr_RS\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.4.3\n"
+
+msgctxt "Addon Summary"
+msgid "Confluence skin by Jezz_X."
+msgstr "Confluence маска аутора Jezz_X."
+
+msgctxt "Addon Description"
+msgid "Confluence is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time Kodi users to understand and use."
+msgstr "Confluence је мешавина концепата из многих других популарних маски, и покушај да се обједине њихове добре идеје у маску која би трeбала да буде лака за разумевање и употребу новим корисницима Kodi-а."
 
 msgctxt "#31000"
 msgid "Change your"
@@ -23,6 +32,12 @@ msgstr "Промените ваше"
 msgctxt "#31001"
 msgid "GAMES"
 msgstr "ИГРИЦЕ"
+
+msgctxt "#31002"
+msgid ""
+"[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure "
+"keyboard use and number of keyboard players"
+msgstr ""
 
 msgctxt "#31003"
 msgid "Power options"
@@ -76,9 +91,34 @@ msgctxt "#31015"
 msgid "Minute"
 msgstr "Минута"
 
+msgctxt "#31016"
+msgid "Elapsed time"
+msgstr ""
+
 msgctxt "#31017"
 msgid "Unavailable"
 msgstr "Недоступно"
+
+msgctxt "#31018"
+msgid "Set default startup item"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Press 'Up' to set this item as default"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Game saves"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Movie title format"
+msgstr ""
+
+# empty strings from id 31018 to 31021
+msgctxt "#31022"
+msgid "Play speed"
+msgstr "Брзина репродукције"
 
 msgctxt "#31023"
 msgid "Playing"
@@ -108,6 +148,10 @@ msgctxt "#31029"
 msgid "Fanart"
 msgstr "Уметност љубитеља"
 
+msgctxt "#31030"
+msgid "No changes"
+msgstr ""
+
 msgctxt "#31031"
 msgid "Pic thumbs"
 msgstr "Сличице слика"
@@ -120,6 +164,26 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Информације"
 
+msgctxt "#31034"
+msgid "Original title (Localised title)"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Localised title (Original title)"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Just Original title"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Select + X"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Select + Start"
+msgstr ""
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Акције"
@@ -127,6 +191,10 @@ msgstr "Акције"
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "Сада пуштено"
+
+msgctxt "#31041"
+msgid "Select + Right Stick"
+msgstr ""
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -158,11 +226,11 @@ msgstr "Време краја"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr "Сложи: Узлазно"
+msgstr "Сортирај Растуће"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr "Сложи: Силазно"
+msgstr "Сортирај Опадајуће"
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -201,7 +269,9 @@ msgid "Show \"Paused\" in picture slideshow"
 msgstr "Прикажи \"Паузирано\" при репродукцији слајдова слика"
 
 msgctxt "#31104"
-msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgid ""
+"Play trailers in a window [COLOR=grey3](Video information dialogue only)[/"
+"COLOR]"
 msgstr "Пусти најаве у прозору [COLOR=grey3](Само дијалог података видеа)[/COLOR]"
 
 msgctxt "#31106"
@@ -209,7 +279,9 @@ msgid "Miscellaneous options"
 msgstr "Разне опције"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgid ""
+"Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/"
+"COLOR]"
 msgstr "Сакриј ознаке прочитане из назива видео датотека [COLOR=grey3](нпр. Blu-ray,, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
@@ -232,9 +304,17 @@ msgctxt "#31112"
 msgid "Options"
 msgstr "Опције"
 
+msgctxt "#31113"
+msgid "Background path Master:"
+msgstr ""
+
 msgctxt "#31114"
 msgid "System"
 msgstr "Систем"
+
+msgctxt "#31115"
+msgid "Main button playlists"
+msgstr ""
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -244,10 +324,21 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "Прикажи недавно додате видее"
 
+#. In main language strings its used as submenu
+msgctxt "#31118"
+msgid "Home page \"Add-ons\" submenu"
+msgstr ""
+
 msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Сакриј позадинску слику уметности љубитеља"
 
+#. In main language strings its used as submenu
+msgctxt "#31120"
+msgid "Home page \"Games\" submenu"
+msgstr ""
+
+#. Boolean settings value
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Сакриј EPG ако је RDS присутан на прозору канала"
@@ -259,6 +350,10 @@ msgstr "Прикажи у позадини \"Сада пуштени\" виде�
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Прикажи у позадини \"Сада пуштено\" визуелизацију"
+
+msgctxt "#31126"
+msgid "Show posters instead of thumbs for musicvideos"
+msgstr ""
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -272,6 +367,7 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Додатни програм за текстове песама"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Подмени \"Видеи\" на главном екрану"
@@ -296,6 +392,26 @@ msgctxt "#31143"
 msgid "Use"
 msgstr "Користи"
 
+msgctxt "#31144"
+msgid "playlist"
+msgstr ""
+
+msgctxt "#31145"
+msgid "playlist path"
+msgstr ""
+
+msgctxt "#31146"
+msgid "Hide home screen buttons"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Hide - Favourites"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Hide - Search"
+msgstr ""
+
 msgctxt "#31200"
 msgid "Shortcuts"
 msgstr "Пречице"
@@ -319,6 +435,10 @@ msgstr "Потражи још ставки"
 msgctxt "#31208"
 msgid "Upcoming episodes"
 msgstr "Предстојеће епизоде"
+
+msgctxt "#31209"
+msgid "Hide Master profile main menu buttons"
+msgstr ""
 
 msgctxt "#31300"
 msgid "Current temperature"
@@ -437,7 +557,12 @@ msgid "First run help..."
 msgstr "Помоћ код првог покретања...."
 
 msgctxt "#31412"
-msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgid ""
+"This tab signifies that there is a menu off to the side of this window that "
+"contains extra options for this section. To access the menu, navigate to the "
+"left with your remote control or keyboard or place your mouse pointer over "
+"the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear "
+"again."
 msgstr "Овај таб показује да постоји мени са стране овог прозора који садржи додатне опције за овај одељак. Да би приступили овом менију, идите на леву страну вашим даљинским управљачем или тастатуром или поставите поинтер миша преко таба. [CR][CR]Кликните на \"У реду\" да би затворили овај дијалог. Неће се појавити поново."
 
 msgctxt "#31413"
@@ -457,35 +582,52 @@ msgid "Show or hide the login screen at startup."
 msgstr "Прикажи или сакриј екран за пријаву при покретању."
 
 msgctxt "#31423"
-msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgid ""
+"Select the profile that will be used at startup when the login screen is "
+"disabled."
 msgstr "Одаберите профил који ће се користити приликом покретања када је екран за пријаву онемогућен."
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgid ""
+"[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during "
+"playback · Configure how media content is played"
 msgstr "[B]ПОДЕШАВАЊА УРЕЂАЈА ЗА РЕПРОДУКЦИЈУ[/B][CR][CR]Подесите акције које се могу користити током репродукције · Подесите како се медијски садржаји репродукују"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid ""
+"[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display "
+"media content ·  Configure how library lists/views are navigated · Configure "
+"the media database options"
 msgstr "[B]ПОДЕШАВАЊА БИБЛИОТЕКЕ[/B][CR][CR]Подесите како прикази библиотеке/датотеке приказују медијски садржај · Подесите како се врши навигација у листама/приказима библиотеке · Подесите опције базе података медија"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid ""
+"[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · "
+"Configure how Live TV and recordings are managed"
 msgstr "[B]ПВР ПОДЕШАВАЊА[/B][CR][CR]Подесите како се управља каналима & водичем · Подесите како се управља ТВ-ом Уживо и снимцима"
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgid ""
+"[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for "
+"and install add-ons from kodi.tv"
 msgstr "[B]ПОДЕШАВАЊА ДОДАТНИХ ПРОГРАМА[/B][CR][CR]Подесите ваше инсталиране додатне програме · Потражите и инсталирајте додатне програме од kodi.tv"
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgid ""
+"[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · "
+"Configure web server · Configure & manage the weather service"
 msgstr "[B]ПОДЕШАВАЊА СЕРВИСА[/B][CR][CR]Подесите & управљајте сервисима дељења медија · Подесите web сервер · Подесите & управљајте сервисом временске прогнозе"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
-msgstr "[B]ПОДЕШАВАЊА СИСТЕМА[/B][CR][CR]Подесите приказ ·  Подесите аудио · Подесите приступ интернету · Подесите уштеду енергије · Подесите евидентирање"
+msgid ""
+"[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · "
+"Configure internet access · Configure power saving· Configure logging"
+msgstr "[B]ПОДЕШАВАЊА СИСТЕМА[/B][CR][CR]Подесите приказ · Подесите аудио · Подесите приступ интернету · Подесите уштеду енергије · Подесите евидентирање"
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgid ""
+"[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · "
+"Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]ПОДЕШАВАЊА ИНТЕРФЕЈСА[/B][CR][CR]Подесите маску · Подесите регион · Подесите контролу · Подесите чувара екрана · Подесите главно закључавање"
 
 msgctxt "#31501"
@@ -510,7 +652,7 @@ msgstr "Избриши групу"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr "Доступне[CR]Групе"
+msgstr "Доступне[CR]групе"
 
 msgctxt "#31509"
 msgid "Channel group"
@@ -580,6 +722,10 @@ msgctxt "#31956"
 msgid "MUSIC"
 msgstr "МУЗИКА"
 
+msgctxt "#31957"
+msgid "ADD-ONS"
+msgstr ""
+
 msgctxt "#31958"
 msgid "PLAY DISC"
 msgstr "ПУСТИ ДИСК"
@@ -596,6 +742,17 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "Померај времена"
 
+#. Choose profile identifier
+msgctxt "#31962"
+msgid "Choose kind of profile identification"
+msgstr ""
+
+#. Label for the kind of profile identification
 msgctxt "#31963"
 msgid "Profile name"
 msgstr "Име профила"
+
+#. Label for the kind of profile identification
+msgctxt "#31964"
+msgid "Profile avatar"
+msgstr ""
