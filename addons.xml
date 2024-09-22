@@ -2855,7 +2855,7 @@ v3.0.0
 </addon>
 
 <!-- Resolve URL -->
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.144" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.147" provider-name="gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="3.0.0" /> -->
     <import addon="script.module.six" />
@@ -3164,7 +3164,7 @@ v1.0.1 (2019-08-06)
 </addon>
 
 <!-- Sports HD Video Addon -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.62" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.64" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -3178,7 +3178,7 @@ v1.0.1 (2019-08-06)
     <summary lang="en">SportHD by Bugatsinho</summary>
     <description lang="en">Sport Streams from SportHD.me</description>
     <disclaimer lang="en">All the streams on this add-on are hosted on the third party site and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
-    <language>EN</language>
+      <language>EN</language>
     <license>GNU GPL, version 2</license>
     <twitter>https://twitter.com/Bugatsinho</twitter>
     <news>
